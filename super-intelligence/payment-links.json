@@ -1,0 +1,16 @@
+{
+  "mode": "test",
+  "links": {
+    "price_openclaw_monthly": "https://buy.stripe.com/test_8x2dR95L20Xddp525xd7q00",
+    "price_hermes_monthly": "https://buy.stripe.com/test_8x24gzflC7lBbgX7pRd7q01",
+    "price_nanobot_monthly": "https://buy.stripe.com/test_4gM7sLehyfS770H5hJd7q02",
+    "price_nanoclaw_monthly": "https://buy.stripe.com/test_cNi14nehybBR2Kr4dFd7q03",
+    "price_paperclip_monthly": "https://buy.stripe.com/test_7sYaEXc9q0XdgBhh0rd7q04",
+    "price_picoclaw_monthly": "https://buy.stripe.com/test_28E14nflC35lbgX39Bd7q05",
+    "price_zeroclaw_monthly": "https://buy.stripe.com/test_5kQ7sLc9qcFV4Sz39Bd7q06",
+    "price_openfang_monthly": "https://buy.stripe.com/test_dRmcN54GYeO3fxddOfd7q07",
+    "price_ironclaw_monthly": "https://buy.stripe.com/test_7sY8wP3CU5dt84L39Bd7q08",
+    "price_nullclaw_monthly": "https://buy.stripe.com/test_eVqfZhb5m35l2Kr8tVd7q09",
+    "price_fleet_monthly": "https://buy.stripe.com/test_aFadR98XefS7acT4dFd7q0a"
+  }
+}
