@@ -11,6 +11,8 @@
     "price_openfang_monthly": "https://buy.stripe.com/dRmcN54GYeO3fxddOfd7q07",
     "price_ironclaw_monthly": "https://buy.stripe.com/7sY8wP3CU5dt84L39Bd7q08",
     "price_nullclaw_monthly": "https://buy.stripe.com/eVqfZhb5m35l2Kr8tVd7q09",
-    "price_fleet_monthly": "https://buy.stripe.com/aFadR98XefS7acT4dFd7q0a"
+    "price_fleet_monthly": "https://buy.stripe.com/aFadR98XefS7acT4dFd7q0a",
+    "price_langchain_monthly": "https://buy.stripe.com/6oU5kDflC0Xd5WDfWnd7q0b",
+    "price_crewai_monthly": "https://buy.stripe.com/6oUbJ10qI49pcl19xZd7q0c"
   }
 }

@@ -39,6 +39,8 @@ const PRODUCTS = [
   { id: 'openfang',  name: 'OpenFang',  description: CODING_DESC, amount: 4900,  lookupKey: 'price_openfang_monthly' },
   { id: 'ironclaw',  name: 'IronClaw',  description: CODING_DESC, amount: 4900,  lookupKey: 'price_ironclaw_monthly' },
   { id: 'nullclaw',  name: 'NullClaw',  description: CODING_DESC, amount: 4900,  lookupKey: 'price_nullclaw_monthly' },
+  { id: 'langchain', name: 'LangChain', description: 'Run LangChain agents, chains, and RAG pipelines on private, isolated hosting.', amount: 4900, lookupKey: 'price_langchain_monthly' },
+  { id: 'crewai',    name: 'CrewAI',    description: 'Deploy CrewAI crews on private, isolated hosting for coordinated multi-agent workflows.', amount: 4900, lookupKey: 'price_crewai_monthly' },
   { id: 'fleet',     name: 'SU Fleet',  description: 'Run OpenCLaw, Hermes, and more as a coordinated fleet with shared memory and priority compute.', amount: 19900, lookupKey: 'price_fleet_monthly' },
 ];
 
