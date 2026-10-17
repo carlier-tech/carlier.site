@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CARLIER SECURITY TEAM // Offensive Defense. Elite Protection.</title>
+<meta name="description" content="Carlier Security Team — elite cybersecurity operations. Penetration testing, threat intelligence, incident response and 24/7 SOC monitoring." />
+<meta name="theme-color" content="#05060a" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 92 20v33c0 24-18 36-42 42C26 89 8 77 8 53V20z' fill='none' stroke='%2300f0ff' stroke-width='7'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============ BACKDROP LAYERS ============ -->
+<canvas id="matrix" aria-hidden="true"></canvas>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#home" class="brand" aria-label="Carlier Security Team home">
+    <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 4 94 20v34c0 25-19 38-44 44C25 92 6 79 6 54V20z" />
+      <path class="brand-mark-inner" d="M50 32 28 41v15c0 12 9 19 22 22 13-3 22-10 22-22V41z" />
+      <path class="brand-mark-bolt" d="M56 34 42 56h9l-5 14 16-22h-9z" />
+    </svg>
+    <span class="brand-text" data-text="CARLIER">CARLIER</span>
+    <span class="brand-sub">SECURITY_TEAM</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#services">SERVICES</a>
+    <a href="#about">ABOUT</a>
+    
+  </nav>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="dot"></span>SECURE // CONNECT // PROTECT</p>
+
+    <h1 class="glitch" data-text="CARLIER">CARLIER</h1>
+    <h2 class="hero-h2">SECURITY<span class="accent">_TEAM</span></h2>
+
+    <p class="lede">
+      We hunt vulnerabilities before anyone else can. Elite red-team operations,
+      real-time threat intelligence and hardened infrastructure defense —
+      engineered for organizations that cannot afford a breach.
+    </p>
+
+    <div class="hero-actions">
+   
+      <a href="#services" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>VIEW SERVICES</span>
+      </a>
+    </div>
+
+    <div class="hero-badges">
+      <span>ISO 27001</span><span>SOC 2 TYPE II</span><span>CREST</span><span>GDPR</span>
+    </div>
+  </div>
+
+  <!-- LIVE TERMINAL -->
+  <div class="hero-panel">
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+        <span class="term-title">root@carlier:~/secure-shell</span>
+      </div>
+      <div class="term-body" id="termBody"></div>
+      <div class="term-scan"></div>
+    </div>
+
+    <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+    <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>THREATS NEUTRALIZED: 4,281,907</span><span>//</span>
+    <span>ZERO TRUST ENABLED</span><span>//</span>
+    <span>AVG RESPONSE TIME: 47s</span><span>//</span>
+    <span>GLOBAL SOC ONLINE</span><span>//</span>
+    <span>VULNERABILITY SCORE: 0.04%</span><span>//</span>
+    <span>ENCRYPTION: AES-256-GCM</span><span>//</span>
+  </div>
+</div>
+
+
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="section-head">
+    <span class="tag">02 // CAPABILITIES</span>
+    <h2>SERVICES_<span class="accent">GRID</span></h2>
+    <p>Six disciplines. One unified defense posture.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card reveal">
+      <div class="card-glow"></div>
+      <span class="card-no">01</span>
+      <svg class="card-ico" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+      <h3>PENETRATION TESTING</h3>
+      <p>Adversary emulation across web, mobile, cloud and physical attack surfaces — full kill-chain simulation by certified operators.</p>
+      <ul><li>Red/Blue teaming</li><li>API abuse analysis</li><li>Social engineering</li></ul>
+    </article>
+
+    <article class="card reveal">
+      <div class="card-glow"></div>
+      <span class="card-no">02</span>
+      <svg class="card-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <h3>24/7 SOC MONITORING</h3>
+      <p>Always-on security operations center with AI triage plus human analysts, wired directly into your SIEM and SOAR stack.</p>
+      <ul><li>Alert triage</li><li>Threat hunting</li><li>Escalation playbooks</li></ul>
+    </article>
+
+    <article class="card reveal">
+      <div class="card-glow"></div>
+      <span class="card-no">03</span>
+      <svg class="card-ico" viewBox="0 0 24 24"><path d="M4 18V7m0 11h16M8 15V9m4 6v-3m4 3V6"/></svg>
+      <h3>THREAT INTELLIGENCE</h3>
+      <p>Dark-web monitoring, IOC enrichment and actor attribution that turns raw indicators into decisions before damage spreads.</p>
+      <ul><li>Brand &amp; leak tracking</li><li>IOC automation</li><li>Actor profiling</li></ul>
+    </article>
+
+    <article class="card reveal">
+      <div class="card-glow"></div>
+      <span class="card-no">04</span>
+      <svg class="card-ico" viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 5-4 8.5-9 10-5-1.5-9-5-9-10V6z"/><path d="M12 8v5M12 16h.01"/></svg>
+      <h3>INCIDENT RESPONSE</h3>
+      <p>Rapid containment, forensics and recovery. We isolate, eradicate and rebuild — with a full evidence-grade post-mortem.</p>
+      <ul><li>Forensic analysis</li><li>Ransomware recovery</li><li>Breach notification</li></ul>
+    </article>
+
+    <article class="card reveal">
+      <div class="card-glow"></div>
+      <span class="card-no">05</span>
+      <svg class="card-ico" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+      <h3>DATA SECURITY</h3>
+      <p>Zero-trust architecture, encryption strategy and data-loss prevention that keep regulated data compliant and untraceable.</p>
+      <ul><li>Zero-trust design</li><li>DLP &amp; CASB</li><li>Compliance audits</li></ul>
+    </article>
+
+    <article class="card reveal">
+      <div class="card-glow"></div>
+      <span class="card-no">06</span>
+      <svg class="card-ico" viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 10l-4.5 4 1.5 6-5-3-5 3 1.5-6L4 10l5.5-1.5z"/></svg>
+      <h3>SECURITY TRAINING</h3>
+      <p>War-gaming exercises, phishing simulations and executive briefings that build a security-first culture that actually sticks.</p>
+      <ul><li>Tabletop exercises</li><li>Phishing sims</li><li>CISO advisory</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-head">
+    <span class="tag">03 // DOSSIER</span>
+    <h2>Bring the <span class="accent">machine </span></h2>
+  </div>
+
+  <div class="about-wrap">
+    <div class="about-text reveal">
+      <h3>Do not wait for a god.</h3>
+      <p class="dial-src">EURIPIDES &middot; <cite>MEDEA</cite> &middot; 431 BC</p>
+      <blockquote class="dial">
+        <p><span class="who">JASON</span><span class="say">&#8220;What is this? You move things with mechanisms, trying to force open the doors to escape me? &#8230; May you perish! Now I see clearly what I did not see then&#8230;&#8221;</span></p>
+        <p><span class="who">MEDEA</span><span class="say">&#8220;Why do you rattle the doors, trying to unbar them to find the corpses and me who did the deed? Cease your labor. If you have need of me, say what you wish, but your hand will never touch me. Such is the chariot which Helios, my father&#8217;s father, has given me, <em>a defense against the hand of my enemies.</em>&#8221;</span></p>
+      </blockquote>
+      <p>
+        The oldest deus ex machina is not a rescue. It is a machine, built in advance by
+        someone who knew the ending before everyone else did.
+      </p>
+
+      <div class="pillars">
+        <div class="pillar"><span>01</span><strong>SUPERINTELLIGENCE</strong><p>Analysts on the front line, ASI as a force multiplier? or the reverse?</p></div>
+        <div class="pillar"><span>02</span><strong>TRANSPARENT</strong><p>Live reporting. No fear-mongering. Fixable findings ranked by real risk.</p></div>
+        <div class="pillar"><span>03</span><strong>OFFENSIVE</strong><p>We assume breach, then prove it can't happen. Every single time.</p></div>
+        <div class="pillar"><span>04</span><strong>DEFENCE</strong><p>Every offensive finding ships with the hardened fix. Detection, hardening and recovery — shipped together, not later.</p></div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-mark sm" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 4 94 20v34c0 25-19 38-44 44C25 92 6 79 6 54V20z" />
+        <path class="brand-mark-bolt" d="M56 34 42 56h9l-5 14 16-22h-9z" />
+      </svg>
+      <p>CARLIER SECURITY TEAM<br /><span>Offense-informed defense since March 11, 2038.</span></p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+  
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"> March 11, 2038</span> Carlier Security Team. All rights reserved.</p>
+    <p class="status"><i></i>ALL SYSTEMS NOMINAL</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

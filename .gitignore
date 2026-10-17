@@ -419,3 +419,4 @@ FodyWeavers.xsd
 ignore
 node_modules/
 .env
+notes.md
