@@ -4,7 +4,7 @@ const translations = {
       "brand": "Carlier",
       "home": "Home",
       "about": "About",
-      "productApps": "Product Apps",
+      "productApps": "Products and services",
       "skills": "Skills",
       "aiApps": "AI mobile apps"
     },
@@ -69,7 +69,7 @@ const translations = {
       "aiApps": "AI Apps",
       "contact": "Contact",
       "main": "Accueil",
-      "productApps": "Applications produit",
+      "productApps": "Produits et services",
       "landing": {
         "aiMobileApps": "Applications mobiles IA",
         "chinese": "Learn Chinese AI App",
@@ -86,7 +86,7 @@ const translations = {
       "brand": "Carlier",
       "home": "Accueil",
       "about": "À propos",
-      "productApps": "Applications produit",
+      "productApps": "Produits et services",
       "skills": "Compétences",
       "aiApps": "Apps IA",
       "contact": "Contactez-nous"
@@ -152,7 +152,7 @@ const translations = {
       "aiApps": "Apps IA",
       "contact": "Contact",
       "main": "Accueil",
-      "productApps": "Applications produit",
+      "productApps": "Produits et services",
       "landing": {
         "aiMobileApps": "Applications mobiles IA",
         "chinese": "Apprendre le Chinois AI App",
@@ -169,7 +169,7 @@ const translations = {
       "brand": "Carlier",
       "home": "Startseite",
       "about": "Über mich",
-      "productApps": "Produkt-Apps",
+      "productApps": "Produkte und Dienstleistungen",
       "skills": "Fähigkeiten",
       "aiApps": "KI-Apps",
       "contact": "Kontakt"
@@ -235,7 +235,7 @@ const translations = {
       "aiApps": "KI-Apps",
       "contact": "Kontakt",
       "main": "Startseite",
-      "productApps": "Produkt-Apps",
+      "productApps": "Produkte und Dienstleistungen",
       "landing": {
         "aiMobileApps": "KI-Mobile-Apps",
         "chinese": "Chinesisch lernen AI App",
@@ -252,7 +252,7 @@ const translations = {
       "brand": "Carlier",
       "home": "Inicio",
       "about": "Acerca de",
-      "productApps": "Apps del producto",
+      "productApps": "Productos y servicios",
       "skills": "Habilidades",
       "aiApps": "Apps de IA",
       "contact": "Hablemos"
@@ -318,7 +318,7 @@ const translations = {
       "aiApps": "Apps de IA",
       "contact": "Contacto",
       "main": "Inicio",
-      "productApps": "Apps del producto",
+      "productApps": "Productos y servicios",
       "landing": {
         "aiMobileApps": "Apps móviles de IA",
         "chinese": "Aprender Chino AI App",
@@ -335,7 +335,7 @@ const translations = {
       "brand": "Carlier",
       "home": "Home",
       "about": "Chi sono",
-      "productApps": "App del prodotto",
+      "productApps": "Prodotti e servizi",
       "skills": "Competenze",
       "aiApps": "App IA",
       "contact": "Contattaci"
@@ -401,7 +401,7 @@ const translations = {
       "aiApps": "App IA",
       "contact": "Contatto",
       "main": "Home",
-      "productApps": "App del prodotto",
+      "productApps": "Prodotti e servizi",
       "landing": {
         "aiMobileApps": "App mobili IA",
         "chinese": "Impara il Cinese AI App",
@@ -418,7 +418,7 @@ const translations = {
       "brand": "Carlier",
       "home": "Início",
       "about": "Sobre",
-      "productApps": "Apps do produto",
+      "productApps": "Produtos e serviços",
       "skills": "Habilidades",
       "aiApps": "Apps de IA",
       "contact": "Vamos conversar"
@@ -484,7 +484,7 @@ const translations = {
       "aiApps": "Apps de IA",
       "contact": "Contato",
       "main": "Início",
-      "productApps": "Apps do produto",
+      "productApps": "Produtos e serviços",
       "landing": {
         "aiMobileApps": "Apps móveis de IA",
         "chinese": "Aprender Chinês AI App",
@@ -501,7 +501,7 @@ const translations = {
       "brand": "Carlier",
       "home": "ホーム",
       "about": "について",
-      "productApps": "製品アプリ",
+      "productApps": "製品とサービス",
       "skills": "スキル",
       "aiApps": "AIアプリ",
       "contact": "お問い合わせ"
@@ -567,7 +567,7 @@ const translations = {
       "aiApps": "AIアプリ",
       "contact": "お問い合わせ",
       "main": "ホーム",
-      "productApps": "製品アプリ",
+      "productApps": "製品とサービス",
       "landing": {
         "aiMobileApps": "AIモバイルアプリ",
         "chinese": "中国語を学ぶ AI App",
@@ -584,7 +584,7 @@ const translations = {
       "brand": "Carlier",
       "home": "首页",
       "about": "关于",
-      "productApps": "产品应用",
+      "productApps": "产品与服务",
       "skills": "技能",
       "aiApps": "AI应用",
       "contact": "联系我们"
@@ -650,7 +650,7 @@ const translations = {
       "aiApps": "AI应用",
       "contact": "联系",
       "main": "首页",
-      "productApps": "产品应用",
+      "productApps": "产品与服务",
       "landing": {
         "aiMobileApps": "AI移动应用",
         "chinese": "学习中文 AI App",
@@ -667,7 +667,7 @@ const translations = {
       "brand": "Carlier",
       "home": "首頁",
       "about": "關於",
-      "productApps": "產品應用",
+      "productApps": "產品與服務",
       "skills": "技能",
       "aiApps": "AI應用",
       "contact": "聯繫我們"
@@ -733,7 +733,7 @@ const translations = {
       "aiApps": "AI應用",
       "contact": "聯繫",
       "main": "主頁",
-      "productApps": "產品應用",
+      "productApps": "產品與服務",
       "landing": {
         "aiMobileApps": "AI移動應用",
         "chinese": "學習中文 AI App",

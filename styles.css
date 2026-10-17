@@ -373,6 +373,7 @@ html[lang="zh-CN"] {
     color: var(--color-text-muted);
     cursor: pointer;
     padding: 0;
+    white-space: nowrap;
     transition: color var(--transition-fast);
     position: relative;
 }
