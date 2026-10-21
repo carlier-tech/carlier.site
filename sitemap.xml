@@ -75,4 +75,20 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://carlier.site/legal/privacy_policy.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://carlier.site/legal/terms_of_service.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
