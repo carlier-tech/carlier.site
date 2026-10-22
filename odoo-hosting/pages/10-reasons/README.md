@@ -1,4 +1,4 @@
-# 10 Reasons — Odoo Hosting landing page
+# 10 Reasons — Odoo ERP Hosting landing page
 
 A listicle-style landing page modelled on the She's Birdie bundle page, using the
 Carlier colour palette (`#05070f`, `#3b82f6`, `#06b6d4`).
@@ -34,7 +34,7 @@ buy-button iframe, so the dark visual design stays intact.
 2. **Approve or edit the founder note.** It is marked with a `DRAFT` comment in
    the `#proof` section.
 3. **Confirm the uptime SLA wording.** The page uses the 99.9% uptime SLA from
-   the main Odoo Hosting page.
+   the main Odoo ERP Hosting page.
 4. **Confirm the backups billing description.** The page describes the €240
    add-on as billed separately via Stripe, without stating a billing period.
 

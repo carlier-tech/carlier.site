@@ -1,5 +1,5 @@
 /* ============================================================
-   Odoo Hosting — listicle landing page behavior
+   Odoo ERP Hosting — listicle landing page behavior
    - Header border on scroll
    - Scroll reveal
    - Sticky offer bar after the hero, hidden at the final CTA

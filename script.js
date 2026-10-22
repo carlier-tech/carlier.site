@@ -12,7 +12,11 @@ const translations = {
             about: 'About',
             skills: 'Technical Stack',
             projects: 'Projects',
-            productApps: 'Products and services'
+            productApps: 'Products and services',
+            learnChinese: 'Learn Chinese App',
+            learnCantonese: 'Learn Cantonese App',
+            learnThai: 'Learn Thai App',
+            coinIdentifier: 'Coin Identifier App'
         },
         hero: {
             title1: 'Software Engineering & Product Development',
@@ -104,6 +108,10 @@ const translations = {
             skills: 'Навички',
             projects: 'Проєкти',
             productApps: 'Продукти та послуги',
+            learnChinese: 'Вчитись китайською App',
+            learnCantonese: 'Вчитись кантонською App',
+            learnThai: 'Вчитись тайською App',
+            coinIdentifier: 'Coin Identifier App',
             cta: "Зв'язатися"
         },
         hero: {
@@ -202,6 +210,10 @@ const translations = {
             skills: 'ทักษะ',
             projects: 'โปรเจกต์',
             productApps: 'ผลิตภัณฑ์และบริการ',
+            learnChinese: 'เรียนภาษาจีน App',
+            learnCantonese: 'เรียนภาษากวางตุ้ง App',
+            learnThai: 'เรียนภาษาไทย App',
+            coinIdentifier: 'Coin Identifier App',
             cta: "ติดต่อเรา"
         },
         hero: {
@@ -300,6 +312,10 @@ const translations = {
             skills: 'Competências',
             projects: 'Projetos',
             productApps: 'Produtos e serviços',
+            learnChinese: 'Aprender Chinês App',
+            learnCantonese: 'Aprender Cantones App',
+            learnThai: 'Aprender Tailandês App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Fale Connosco'
         },
         hero: {
@@ -398,6 +414,10 @@ const translations = {
             skills: 'Habilidades',
             projects: 'Proyectos',
             productApps: 'Productos y servicios',
+            learnChinese: 'Aprender Chino App',
+            learnCantonese: 'Aprender Cantones App',
+            learnThai: 'Aprender Tailandés App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Hablemos'
         },
         hero: {
@@ -496,6 +516,10 @@ const translations = {
             skills: 'Compétences',
             projects: 'Projets',
             productApps: 'Produits et services',
+            learnChinese: 'Apprendre le Chinois App',
+            learnCantonese: 'Apprendre le Cantonais App',
+            learnThai: 'Apprendre le Thaï App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Discutons'
         },
         hero: {
@@ -594,6 +618,10 @@ const translations = {
             skills: '技能',
             projects: '專案',
             productApps: '產品與服務',
+            learnChinese: '學習中文 App',
+            learnCantonese: '學習粵語 App',
+            learnThai: '學習泰語 App',
+            coinIdentifier: 'Coin Identifier App',
         cta: '聯繫我們'
         },
         hero: {
@@ -692,6 +720,10 @@ const translations = {
             skills: '技能',
             projects: '项目',
             productApps: '产品与服务',
+            learnChinese: '学习中文 App',
+            learnCantonese: '学习粤语 App',
+            learnThai: '学习泰语 App',
+            coinIdentifier: 'Coin Identifier App',
             cta: '联系我们'
         },
         hero: {
@@ -790,6 +822,10 @@ const translations = {
             skills: 'कौशल',
             projects: 'प्रोजेक्ट्स',
             productApps: 'उत्पाद और सेवाएँ',
+            learnChinese: 'चीनीज़ सीखें App',
+            learnCantonese: 'कैंटोनीज़ सीखें App',
+            learnThai: 'थाई सीखें App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'संपर्क करें'
         },
         hero: {
@@ -887,6 +923,10 @@ const translations = {
             skills: 'スキル',
             projects: 'プロジェクト',
             productApps: '製品とサービス',
+            learnChinese: '中国語を学ぶ App',
+            learnCantonese: '広東語を学ぶ App',
+            learnThai: 'タイ語を学ぶ App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'お問い合わせ'
         },
         hero: {
@@ -985,6 +1025,10 @@ const translations = {
             skills: 'المهارات',
             projects: 'المشاريع',
             productApps: 'المنتجات والخدمات',
+            learnChinese: 'تعلم الصينية App',
+            learnCantonese: 'تعلم الكانتونيز App',
+            learnThai: 'تعلم الثيين App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'تواصل معنا'
         },
         hero: {
@@ -1083,6 +1127,10 @@ const translations = {
             skills: 'Fähigkeiten',
             projects: 'Projekte',
             productApps: 'Produkte und Dienstleistungen',
+            learnChinese: 'Chinesisch lernen App',
+            learnCantonese: 'Kantonesisch lernen App',
+            learnThai: 'Thailändisch lernen App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Lass uns sprechen'
         },
         hero: {
@@ -1181,6 +1229,10 @@ const translations = {
             skills: 'Competenze',
             projects: 'Progetti',
             productApps: 'Prodotti e servizi',
+            learnChinese: 'Impara il Cinese App',
+            learnCantonese: 'Impara il Cantonese App',
+            learnThai: 'Impara il Thai App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Parliamone'
         },
         hero: {
@@ -1279,6 +1331,10 @@ const translations = {
             skills: '기술',
             projects: '프로젝트',
             productApps: '제품 및 서비스',
+            learnChinese: '중국어 배우기 App',
+            learnCantonese: '광둥어 배우기 App',
+            learnThai: '태국어 배우기 App',
+            coinIdentifier: 'Coin Identifier App',
             cta: '연락하기'
         },
         hero: {
@@ -1377,6 +1433,10 @@ const translations = {
             skills: 'Навыки',
             projects: 'Проекты',
             productApps: 'Продукты и услуги',
+            learnChinese: 'Учить китайский App',
+            learnCantonese: 'Учить кантонский App',
+            learnThai: 'Учить тайский App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Давайте поговорим'
         },
         hero: {
@@ -1474,6 +1534,10 @@ const translations = {
             skills: 'Umiejętności',
             projects: 'Projekty',
             productApps: 'Produkty i usługi',
+            learnChinese: 'Naucz się chińskiego App',
+            learnCantonese: 'Naucz się kantońskiego App',
+            learnThai: 'Naucz się tajskiego App',
+            coinIdentifier: 'Coin Identifier App',
             cta: 'Porozmawiajmy'
         },
 
