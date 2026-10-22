@@ -26,7 +26,7 @@
                 coin: { title: 'Coin Identifier', tag: 'AI Scanner', desc: 'AI-powered coin scanner app for collectors.', chip1: 'AI Vision', chip2: 'Coin Valuation', chip3: 'Rarity Check', chip4: 'Collection Catalog', chip5: 'Flutter' }
             },
             cta: {
-                title: 'Carlier Technologies',
+                title: 'Carlier Tech',
                 text: 'We develop AI-native mobile applications from specification to App Store and Google Play deployment.',
                 btnPrimary: 'Get in Touch',
                 btnSecondary: 'Back to Home'

@@ -52,13 +52,13 @@ const translations = {
     },
     "storeBtn": "Get on Google Play",
     "cta": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "subtitle": "We develop AI-native mobile applications from specification to App Store and Google Play deployment.",
       "primary": "Get in Touch",
       "secondary": "Back to Home"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "Available for engineering projects and technical consulting. Contact us to discuss requirements and solutions."
     },
     "footer": {
@@ -141,7 +141,7 @@ const translations = {
       "secondary": "Retour à l'accueil"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "Disponible pour des projets d'ingénierie et de consultation technique. Contactez-nous pour discuter des exigences et des solutions."
     },
     "footer": {
@@ -224,7 +224,7 @@ const translations = {
       "secondary": "Zurück zur Startseite"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "Verfügbar für Ingenieursprojekte und technische Beratung. Kontaktieren Sie uns, um Anforderungen und Lösungen zu besprechen."
     },
     "footer": {
@@ -307,7 +307,7 @@ const translations = {
       "secondary": "Volver al Inicio"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "Disponible para proyectos de ingeniería y consultoría técnica. Contáctanos para discutir requisitos y soluciones."
     },
     "footer": {
@@ -390,7 +390,7 @@ const translations = {
       "secondary": "Torna alla Home"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "Disponibile per progetti di ingegneria e consulenza tecnica. Contattaci per discutere di requisiti e soluzioni."
     },
     "footer": {
@@ -473,7 +473,7 @@ const translations = {
       "secondary": "Voltar ao Início"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "Disponível para projetos de engenharia e consultoria técnica. Contacte-nos para discutir requisitos e soluções."
     },
     "footer": {
@@ -556,7 +556,7 @@ const translations = {
       "secondary": "ホームに戻る"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "エンジニアリングプロジェクトや技術コンサルティングを承っています。要件とソリューションについてご相談ください。"
     },
     "footer": {
@@ -639,7 +639,7 @@ const translations = {
       "secondary": "返回首页"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "可提供工程项目与技术咨询服务。请联系我们讨论需求和解决方案。"
     },
     "footer": {
@@ -722,7 +722,7 @@ const translations = {
       "secondary": "返回首頁"
     },
     "contact": {
-      "title": "Carlier Technologies",
+      "title": "Carlier Tech",
       "text": "可提供工程專案與技術諮詢服務。請聯繫我們討論需求和解決方案。"
     },
     "footer": {

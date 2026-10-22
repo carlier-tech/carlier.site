@@ -74,7 +74,7 @@ const translations = {
         },
         contact: {
             tag: 'Get In Touch',
-            title: "Carlier Technologies",
+            title: "Carlier Tech",
             text: "Available for engineering projects and technical consulting. Contact us to discuss requirements and solutions."
         },
         footer: {
@@ -171,7 +171,7 @@ const translations = {
         },
         contact: {
             tag: 'Зв\'язатися',
-            title: "Carlier Technologies",
+            title: "Carlier Tech",
             text: "Доступний для інженерних проєктів та технічних консультацій. Зв'яжіться зі мною, щоб обговорити вимоги та рішення."
         },
         footer: {
@@ -269,7 +269,7 @@ const translations = {
         },
         contact: {
             tag: 'ติดต่อเรา',
-            title: "Carlier Technologies",
+            title: "Carlier Tech",
             text: "พร้อมรับโครงการวิศวกรรมและงานให้คำปรึกษาทางเทคนิค ติดต่อฉันเพื่อพูดคุยเกี่ยวกับข้อกำหนดและแนวทางแก้ไข"
         },
         footer: {
@@ -367,7 +367,7 @@ const translations = {
         },
         contact: {
             tag: 'Contacte-nos',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Disponível para projetos de engenharia e consultoria técnica. Contacte-nos para discutir requisitos e soluções.'
         },
         footer: {
@@ -465,7 +465,7 @@ const translations = {
         },
         contact: {
             tag: 'Ponte en Contacto',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Disponible para proyectos de ingeniería y consultoría técnica. Contáctanos para discutir requisitos y soluciones.'
         },
         footer: {
@@ -563,7 +563,7 @@ const translations = {
         },
         contact: {
             tag: 'Prenez Contact',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Disponible pour des projets d\'ingénierie et de consultation technique. Contactez-nous pour discuter des exigences et des solutions.'
         },
         footer: {
@@ -661,7 +661,7 @@ const translations = {
         },
         contact: {
             tag: '聯繫我們',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: '可提供工程專案與技術諮詢服務。請聯繫我們討論需求和解決方案。'
         },
         footer: {
@@ -759,7 +759,7 @@ const translations = {
         },
         contact: {
             tag: '联系我们',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: '可提供工程项目与技术咨询服务。请联系我们讨论需求和解决方案。'
         },
         footer: {
@@ -856,7 +856,7 @@ const translations = {
         },
         contact: {
             tag: 'संपर्क करें',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'इंजीनियरिंग परियोजनाओं और तकनीकी सलाहकार सेवा के लिए उपलब्ध हैं। आवश्यकताओं और समाधानों पर चर्चा करने के लिए हमसे संपर्क करें।'
         },
         footer: {
@@ -954,7 +954,7 @@ const translations = {
         },
         contact: {
             tag: 'お問い合わせ',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'エンジニアリングプロジェクトや技術コンサルティングを承っています。要件とソリューションについてご相談ください。'
         },
         footer: {
@@ -1052,7 +1052,7 @@ const translations = {
         },
         contact: {
             tag: 'تواصل معنا',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'متاح للمشاريع الهندسية والاستشارات التقنية. تواصل معنا لمناقشة المتطلبات والحلول.'
         },
         footer: {
@@ -1150,7 +1150,7 @@ const translations = {
         },
         contact: {
             tag: 'Kontaktieren',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Verfügbar für Ingenieursprojekte und technische Beratung. Kontaktieren Sie uns, um Anforderungen und Lösungen zu besprechen.'
         },
         footer: {
@@ -1248,7 +1248,7 @@ const translations = {
         },
         contact: {
             tag: 'Contattaci',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Disponibile per progetti di ingegneria e consulenza tecnica. Contattaci per discutere di requisiti e soluzioni.'
         },
         footer: {
@@ -1346,7 +1346,7 @@ const translations = {
         },
         contact: {
             tag: '연락하기',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: '엔지니어링 프로젝트 및 기술 컨설팅을 제공합니다. 요구 사항과 솔루션에 대해 논의하기 위해 문의해 주세요.'
         },
         footer: {
@@ -1443,7 +1443,7 @@ const translations = {
         },
         contact: {
             tag: 'Связаться',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Доступен для инженерных проектов и технических консультаций. Свяжитесь с нами, чтобы обсудить требования и решения.'
         },
         footer: {
@@ -1542,7 +1542,7 @@ const translations = {
         },
         contact: {
             tag: 'Napisz do nas',
-            title: 'Carlier Technologies',
+            title: 'Carlier Tech',
             text: 'Dostępny do projektów inżynierskich i konsultacji technicznych. Skontaktuj się ze mną, aby omówić wymagania i rozwiązania.'
         },
         footer: {
