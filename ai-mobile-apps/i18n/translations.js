@@ -21,15 +21,7 @@ const translations = {
     "hero": {
       "eyebrow": "Product catalog",
       "title": "Mobile applications",
-      "subtitle": "Three AI language tutors for Cantonese, Mandarin, and Thai. One coin identification tool for collectors. All published on Google Play and built with Flutter.",
-      "factAppsValue": "4",
-      "factAppsLabel": "Applications",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "Languages",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "Platform",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "Framework"
+      "subtitle": "Three AI language tutors for Cantonese, Mandarin, and Thai. One coin identification tool for collectors. All published on Google Play and built with Flutter."
     },
     "sections": {
       "language": {
@@ -126,15 +118,7 @@ const translations = {
     "hero": {
       "eyebrow": "Catalogue produits",
       "title": "Applications mobiles",
-      "subtitle": "Trois tuteurs linguistiques IA pour le cantonais, le mandarin et le thaï. Un outil d'identification de pièces pour les collectionneurs. Tous publiés sur Google Play et développés avec Flutter.",
-      "factAppsValue": "4",
-      "factAppsLabel": "Applications",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "Langues",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "Plateforme",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "Framework"
+      "subtitle": "Trois tuteurs linguistiques IA pour le cantonais, le mandarin et le thaï. Un outil d'identification de pièces pour les collectionneurs. Tous publiés sur Google Play et développés avec Flutter."
     },
     "sections": {
       "language": {
@@ -231,15 +215,7 @@ const translations = {
     "hero": {
       "eyebrow": "Produktkatalog",
       "title": "Mobile Anwendungen",
-      "subtitle": "Drei KI-Sprachtutoren für Kantonesisch, Mandarin und Thailändisch. Ein Münz-Identifikationstool für Sammler. Alle auf Google Play veröffentlicht und mit Flutter entwickelt.",
-      "factAppsValue": "4",
-      "factAppsLabel": "Anwendungen",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "Sprachen",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "Plattform",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "Framework"
+      "subtitle": "Drei KI-Sprachtutoren für Kantonesisch, Mandarin und Thailändisch. Ein Münz-Identifikationstool für Sammler. Alle auf Google Play veröffentlicht und mit Flutter entwickelt."
     },
     "sections": {
       "language": {
@@ -336,15 +312,7 @@ const translations = {
     "hero": {
       "eyebrow": "Catálogo de productos",
       "title": "Aplicaciones móviles",
-      "subtitle": "Tres tutores de idiomas con IA para cantonés, mandarín y tailandés. Una herramienta de identificación de monedas para coleccionistas. Todas publicadas en Google Play y desarrolladas con Flutter.",
-      "factAppsValue": "4",
-      "factAppsLabel": "Aplicaciones",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "Idiomas",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "Plataforma",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "Framework"
+      "subtitle": "Tres tutores de idiomas con IA para cantonés, mandarín y tailandés. Una herramienta de identificación de monedas para coleccionistas. Todas publicadas en Google Play y desarrolladas con Flutter."
     },
     "sections": {
       "language": {
@@ -441,15 +409,7 @@ const translations = {
     "hero": {
       "eyebrow": "Catalogo prodotti",
       "title": "Applicazioni mobili",
-      "subtitle": "Tre tutor linguistici IA per cantonese, mandarino e thailandese. Uno strumento di identificazione delle monete per collezionisti. Tutti pubblicati su Google Play e sviluppati con Flutter.",
-      "factAppsValue": "4",
-      "factAppsLabel": "Applicazioni",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "Lingue",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "Piattaforma",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "Framework"
+      "subtitle": "Tre tutor linguistici IA per cantonese, mandarino e thailandese. Uno strumento di identificazione delle monete per collezionisti. Tutti pubblicati su Google Play e sviluppati con Flutter."
     },
     "sections": {
       "language": {
@@ -546,15 +506,7 @@ const translations = {
     "hero": {
       "eyebrow": "Catálogo de produtos",
       "title": "Aplicações móveis",
-      "subtitle": "Três tutores de idiomas com IA para cantonês, mandarim e tailandês. Uma ferramenta de identificação de moedas para colecionadores. Todos publicados no Google Play e desenvolvidos com Flutter.",
-      "factAppsValue": "4",
-      "factAppsLabel": "Aplicações",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "Idiomas",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "Plataforma",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "Framework"
+      "subtitle": "Três tutores de idiomas com IA para cantonês, mandarim e tailandês. Uma ferramenta de identificação de moedas para colecionadores. Todos publicados no Google Play e desenvolvidos com Flutter."
     },
     "sections": {
       "language": {
@@ -651,15 +603,7 @@ const translations = {
     "hero": {
       "eyebrow": "製品カタログ",
       "title": "モバイルアプリ",
-      "subtitle": "広東語、北京語、タイ語に対応する3つのAI語学チューター。コレクター向けのコイン識別ツール1つ。すべてGoogle Playで公開され、Flutterで開発されています。",
-      "factAppsValue": "4",
-      "factAppsLabel": "アプリ",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "言語",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "プラットフォーム",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "フレームワーク"
+      "subtitle": "広東語、北京語、タイ語に対応する3つのAI語学チューター。コレクター向けのコイン識別ツール1つ。すべてGoogle Playで公開され、Flutterで開発されています。"
     },
     "sections": {
       "language": {
@@ -756,15 +700,7 @@ const translations = {
     "hero": {
       "eyebrow": "产品目录",
       "title": "移动应用",
-      "subtitle": "三款面向粤语、普通话和泰语的 AI 语言导师。一款面向收藏者的硬币识别工具。全部已在 Google Play 发布，并使用 Flutter 构建。",
-      "factAppsValue": "4",
-      "factAppsLabel": "应用",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "语言",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "平台",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "框架"
+      "subtitle": "三款面向粤语、普通话和泰语的 AI 语言导师。一款面向收藏者的硬币识别工具。全部已在 Google Play 发布，并使用 Flutter 构建。"
     },
     "sections": {
       "language": {
@@ -861,15 +797,7 @@ const translations = {
     "hero": {
       "eyebrow": "產品目錄",
       "title": "行動應用",
-      "subtitle": "三款面向粵語、國語和泰語的 AI 語言導師。一款面向收藏者的硬幣識別工具。全部已在 Google Play 發布，並使用 Flutter 構建。",
-      "factAppsValue": "4",
-      "factAppsLabel": "應用",
-      "factLanguagesValue": "3",
-      "factLanguagesLabel": "語言",
-      "factPlatformValue": "Android",
-      "factPlatformLabel": "平台",
-      "factFrameworkValue": "Flutter",
-      "factFrameworkLabel": "框架"
+      "subtitle": "三款面向粵語、國語和泰語的 AI 語言導師。一款面向收藏者的硬幣識別工具。全部已在 Google Play 發布，並使用 Flutter 構建。"
     },
     "sections": {
       "language": {
