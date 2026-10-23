@@ -37,8 +37,6 @@ const translations = {
       "common": {
         "platformLabel": "Platform",
         "platformValue": "Android · Google Play",
-        "stackLabel": "Framework",
-        "stackValue": "Flutter",
         "storeLink": "Google Play listing"
       },
       "lousi": {
@@ -134,8 +132,6 @@ const translations = {
       "common": {
         "platformLabel": "Plateforme",
         "platformValue": "Android · Google Play",
-        "stackLabel": "Framework",
-        "stackValue": "Flutter",
         "storeLink": "Fiche Google Play"
       },
       "lousi": {
@@ -231,8 +227,6 @@ const translations = {
       "common": {
         "platformLabel": "Plattform",
         "platformValue": "Android · Google Play",
-        "stackLabel": "Framework",
-        "stackValue": "Flutter",
         "storeLink": "Google-Play-Eintrag"
       },
       "lousi": {
@@ -328,8 +322,6 @@ const translations = {
       "common": {
         "platformLabel": "Plataforma",
         "platformValue": "Android · Google Play",
-        "stackLabel": "Framework",
-        "stackValue": "Flutter",
         "storeLink": "Ficha de Google Play"
       },
       "lousi": {
@@ -425,8 +417,6 @@ const translations = {
       "common": {
         "platformLabel": "Piattaforma",
         "platformValue": "Android · Google Play",
-        "stackLabel": "Framework",
-        "stackValue": "Flutter",
         "storeLink": "Scheda Google Play"
       },
       "lousi": {
@@ -522,8 +512,6 @@ const translations = {
       "common": {
         "platformLabel": "Plataforma",
         "platformValue": "Android · Google Play",
-        "stackLabel": "Framework",
-        "stackValue": "Flutter",
         "storeLink": "Página no Google Play"
       },
       "lousi": {
@@ -619,8 +607,6 @@ const translations = {
       "common": {
         "platformLabel": "プラットフォーム",
         "platformValue": "Android · Google Play",
-        "stackLabel": "フレームワーク",
-        "stackValue": "Flutter",
         "storeLink": "Google Playのページ"
       },
       "lousi": {
@@ -716,8 +702,6 @@ const translations = {
       "common": {
         "platformLabel": "平台",
         "platformValue": "Android · Google Play",
-        "stackLabel": "框架",
-        "stackValue": "Flutter",
         "storeLink": "Google Play 页面"
       },
       "lousi": {
@@ -813,8 +797,6 @@ const translations = {
       "common": {
         "platformLabel": "平台",
         "platformValue": "Android · Google Play",
-        "stackLabel": "框架",
-        "stackValue": "Flutter",
         "storeLink": "Google Play 頁面"
       },
       "lousi": {
