@@ -1,121 +1,56 @@
-# Concept, Build, Launch, Scale & Ops
+# Carlier
 
-<div align="left">
+**Concept, Build, Launch, Scale & Ops**
 
+Carlier is a software engineering and product development company. We design and build production-grade digital products end to end — from the first concept and architecture through launch, scaling, and ongoing operations.
 
----
-
-## Language Learning Apps
-
-### AI Agent Laoshi - Learn Chinese Mandarin
-
-<div align="left">
-<a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi"><img src="learn-chinese/images/AgentLaoshi512x512.png" width="135"></a>
-
-A live AI Mandarin teacher that helps you learn to speak, practice, and translate Chinese Mandarin in real time with voice and vision.
-
-**Features:**
-- Natural voice conversations with AI
-- Camera context for object learning
-- Real-time pronunciation and grammar corrections
-- Instant translation for phrases and dialogue
-
-<a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="135"></a>
-
-[View Landing Page](https://carlier.site/learn-chinese/)
+Remote-first and available worldwide, we work across mobile, web, AI systems, cybersecurity, and infrastructure engineering.
 
 ---
 
-### AI Agent Lousi - Learn Cantonese
+## What We Do
 
-<a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_lousi"><img src="learn-cantonese/images/AgentLousi512x512.png" width="135"></a>
-
-A live AI Cantonese teacher that helps you learn to speak, practice, and translate Chinese Cantonese in real time with voice and vision.
-
-**Features:**
-- Natural voice conversations with AI
-- Camera context for object learning
-- Real-time pronunciation and grammar corrections
-- Instant translation for phrases and dialogue
-
-<a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_lousi"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="135"></a>
-
-[View Landing Page](https://carlier.site/learn-cantonese/)
+- **Product engineering** — turning ideas into shipped, production-ready products
+- **AI & LLM systems** — agentic AI, RAG, orchestration, and AI API integration
+- **Cloud & infrastructure** — multi-cloud architecture, containers, Kubernetes, and infrastructure as code
+- **Business software** — B2B SaaS, ERP, CRM, workflow automation, and business intelligence
+- **Cybersecurity & DevSecOps** — secure delivery, CI/CD automation, and systems hardening
 
 ---
 
-### AI Agent Khru - Learn Thai
+## How We Work
 
-<a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_khru"><img src="learn-thai/images/AgentKhru512x512.png" width="135"></a>
+1. **Concept** — clarify the problem, users, constraints, and success criteria
+2. **Build** — design and implement with scalability, reliability, and maintainability in mind
+3. **Launch** — ship to production with the operational foundations in place
+4. **Scale & Ops** — monitor, optimize, and operate as usage and requirements grow
 
-A live AI Thai teacher that helps you learn to speak, practice, and translate Thai in real time with voice and vision.
-
-**Features:**
-- Natural voice conversations with AI
-- Camera context for object learning
-- Real-time pronunciation and grammar corrections
-- Instant translation for phrases and dialogue
-
-<a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_khru"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="135"></a>
-
-[View Landing Page](https://carlier.site/learn-thai/)
+We favor simple, robust solutions over speculative complexity, and deliver complete systems rather than isolated pieces.
 
 ---
 
-</div>
+## Expertise
+
+| Area | Focus |
+| --- | --- |
+| Mobile | Flutter (Dart), iOS (Swift), Android (Kotlin), React Native |
+| Web & SaaS | React / Next.js, JavaScript, Node.js, Python, Rust, PHP, PostgreSQL, MongoDB, Redis |
+| AI & Systems | LLMs, orchestration, agentic AI, RAG, model inference, prompt engineering |
+| Business Software | B2B SaaS, CRM, ERP, workflow automation, custom business apps |
+| Infrastructure | Multi-cloud (AWS, GCP, Azure), Cloudflare, Docker/Podman/LXC, Kubernetes, Terraform, Ansible |
+| Cybersecurity | DevSecOps, CI/CD, automation, Linux/Windows/macOS/Unix systems |
+| Product & Design | Agile delivery, analytics, product strategy, prototyping, UI/UX, Figma |
 
 ---
 
-## Collectors Apps
-
-### Coin Identifier
-
-<a href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier"><img src="coin-identifier/images/logo512x512.png" width="135"></a>
-
-An AI-powered coin scanner app for collectors and numismatists. Instantly identify coins, estimate market values, check rarity, and catalog your collection with historical insights.
-
-**Features:**
-- AI-powered coin recognition and identification
-- Market value estimation
-- Collection cataloging
-- Historical coin details
-- Camera scanner with focus controls
-
-<a href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="135"></a>
-
-[View Landing Page](https://carlier.site/coinidentifier/)
-
----
-
-## About the Developer
-
-Hi, I'm **Carlier** - a founder and software engineer passionate about creating impactful AI-powered products. With expertise spanning mobile development, SaaS, AI systems, and systems architecture, I build apps that help people learn languages and explore their passions.
+## Contact
 
 - **Website:** [carlier.site](https://carlier.site)
-- **GitHub:** [github.com/carlier-site](https://github.com/carlier-tech)
+- **Email:** [hello@carlier.site](mailto:hello@carlier.site)
+- **GitHub:** [github.com/carlier-tech](https://github.com/carlier-tech)
 - **LinkedIn:** [linkedin.com/in/yanncarlier](https://www.linkedin.com/in/yanncarlier/)
-- **Email:** hello@carlier.site
 
----
-
-## Tech Stack
-
-These apps are built using:
-
-- **Framework:** Flutter (Dart)
-- **AI Engine:** Gemini Live API
-- **Backend:** Node.js, Python
-- **Cloud:** AWS, Google Cloud
-- **CI/CD:** GitHub Actions
-
----
-
-## Support
-
-For feedback, bug reports, or requests, please reach out via:
-
-- Email: [hello@carlier.site](mailto:hello@carlier.site)
-- GitHub Issues: Open an issue on the respective repository
+For security issues, please follow the process in [SECURITY.md](SECURITY.md).
 
 ---
 
@@ -124,4 +59,3 @@ For feedback, bug reports, or requests, please reach out via:
 &copy; 2026 Carlier. All rights reserved.
 
 </div>
-
