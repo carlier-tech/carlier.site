@@ -76,12 +76,35 @@ const translations = {
                 desc: 'Learn Thai, practice real conversations, and translate in real time with a live AI Thai teacher featuring voice chat, camera-based context, and instant translation support.'
             }
         },
+        overview: {
+            tag: "Concept, Build, Launch, Scale & Ops",
+            lead: "Carlier is a software engineering and product development company. We design and build production-grade digital products end to end — from the first concept and architecture through launch, scaling, and ongoing operations.",
+            note: "Remote-first and available worldwide, we work across mobile, web, AI systems, cybersecurity, and infrastructure engineering.",
+            whatWeDo: "What We Do",
+            services: {
+                product: { title: "Product engineering", desc: "turning ideas into shipped, production-ready products" },
+                ai: { title: "AI & LLM systems", desc: "agentic AI, RAG, orchestration, and AI API integration" },
+                cloud: { title: "Cloud & infrastructure", desc: "multi-cloud architecture, containers, Kubernetes, and infrastructure as code" },
+                business: { title: "Business software", desc: "B2B SaaS, ERP, CRM, workflow automation, and business intelligence" },
+                security: { title: "Cybersecurity & DevSecOps", desc: "secure delivery, CI/CD automation, and systems hardening" },
+            },
+            howWeWork: "How We Work",
+            steps: {
+                concept: { title: "Concept", desc: "clarify the problem, users, constraints, and success criteria" },
+                build: { title: "Build", desc: "design and implement with scalability, reliability, and maintainability in mind" },
+                launch: { title: "Launch", desc: "ship to production with the operational foundations in place" },
+                scale: { title: "Scale & Ops", desc: "monitor, optimize, and operate as usage and requirements grow" },
+            }
+        },
         contact: {
             tag: 'Get In Touch',
             title: "Carlier Tech",
-            text: "Available for engineering projects and technical consulting. Contact us to discuss requirements and solutions."
+            text: "Available for engineering projects and technical consulting. Contact us to discuss requirements and solutions.",
+            location: "Remote-first · Available worldwide · Multilingual support",
         },
         footer: {
+            main: "Main",
+            mobileApps: "Mobile Apps",
             tagline: 'Engineering scalable technical solutions.',
             home: 'Home',
             about: 'About',
@@ -96,7 +119,9 @@ const translations = {
                 thai: 'Learn Thai AI App'
             },
             copyright: '© 2026 Carlier. All rights reserved.',
-            crafted: 'Crafted with passion'
+            crafted: 'Crafted with passion',
+            privacy: "Privacy Policy",
+            terms: "Terms of Service"
         },
         accessibility: {
             skipToMain: 'Skip to main content'
@@ -177,12 +202,35 @@ const translations = {
                 desc: 'Вчіть і практикуйте тайську в реальному часі з живим ШІ викладачем тайської за допомогою голосового чату, словника на основі камери та структурованих виправлень.'
             }
         },
+        overview: {
+            tag: "Концепція, Розробка, Запуск, Масштабування та Операції",
+            lead: "Carlier — компанія з розробки програмного забезпечення та продуктів. Ми проєктуємо та створюємо цифрові продукти виробничого рівня від початку до кінця — від першої концепції та архітектури до запуску, масштабування та подальшої експлуатації.",
+            note: "Працюємо віддалено та по всьому світу — у сферах мобільних застосунків, вебу, AI-систем, кібербезпеки та інфраструктурної інженерії.",
+            whatWeDo: "Що ми робимо",
+            services: {
+                product: { title: "Продуктова інженерія", desc: "перетворюємо ідеї на готові до випуску продукти виробничого рівня" },
+                ai: { title: "AI та LLM-системи", desc: "агентний AI, RAG, оркестрація та інтеграція AI API" },
+                cloud: { title: "Хмара та інфраструктура", desc: "мультихмарна архітектура, контейнери, Kubernetes та інфраструктура як код" },
+                business: { title: "Бізнес-програмне забезпечення", desc: "B2B SaaS, ERP, CRM, автоматизація робочих процесів та бізнес-аналітика" },
+                security: { title: "Кібербезпека та DevSecOps", desc: "безпечне постачання, автоматизація CI/CD та зміцнення систем" },
+            },
+            howWeWork: "Як ми працюємо",
+            steps: {
+                concept: { title: "Концепція", desc: "уточнюємо проблему, користувачів, обмеження та критерії успіху" },
+                build: { title: "Розробка", desc: "проєктуємо та впроваджуємо з урахуванням масштабованості, надійності й підтримуваності" },
+                launch: { title: "Запуск", desc: "виводимо в продакшн із закладеними операційними основами" },
+                scale: { title: "Масштабування та операції", desc: "моніторимо, оптимізуємо та керуємо в міру зростання навантаження й вимог" },
+            }
+        },
         contact: {
             tag: 'Зв\'язатися',
             title: "Carlier Tech",
-            text: "Доступний для інженерних проєктів та технічних консультацій. Зв'яжіться зі мною, щоб обговорити вимоги та рішення."
+            text: "Доступний для інженерних проєктів та технічних консультацій. Зв'яжіться зі мною, щоб обговорити вимоги та рішення.",
+            location: "Віддалено · Доступні по всьому світу · Багатомовна підтримка",
         },
         footer: {
+            main: "Основне",
+            mobileApps: "Мобільні застосунки",
             tagline: 'Розробка масштабованих технічних рішень.',
             home: 'Головна',
             about: 'Про мене',
@@ -198,7 +246,9 @@ const translations = {
                 ukrainian: 'Вчитись українською'
             },
             copyright: '© 2026 Carlier. Всі права захищені.',
-            crafted: 'Створено з пристрастю'
+            crafted: 'Створено з пристрастю',
+            privacy: "Політика конфіденційності",
+            terms: "Умови надання послуг"
         },
         accessibility: {
             skipToMain: 'Перейти до основного вмісту'
@@ -279,12 +329,35 @@ const translations = {
                 desc: 'เรียนรู้และฝึกฝนภาษาไทยแบบเรียลไทม์กับครู AI ภาษาไทยสด ด้วยแชทด้วยเสียง, คำศัพท์ที่อิงตามกล้อง และการแก้ไขที่มีโครงสร้าง.'
             }
         },
+        overview: {
+            tag: "แนวคิด สร้าง เปิดตัว ขยายขนาด และปฏิบัติการ",
+            lead: "Carlier เป็นบริษัทด้านวิศวกรรมซอฟต์แวร์และการพัฒนาผลิตภัณฑ์ เราออกแบบและสร้างผลิตภัณฑ์ดิจิทัลระดับพร้อมใช้งานจริงแบบครบวงจร ตั้งแต่แนวคิดและสถาปัตยกรรมแรกเริ่ม ไปจนถึงการเปิดตัว การขยายขนาด และการดำเนินงานอย่างต่อเนื่อง",
+            note: "เราทำงานแบบรีโมตเป็นหลักและพร้อมให้บริการทั่วโลก ครอบคลุมทั้งมือถือ เว็บ ระบบ AI ความปลอดภัยไซเบอร์ และวิศวกรรมโครงสร้างพื้นฐาน",
+            whatWeDo: "สิ่งที่เราทำ",
+            services: {
+                product: { title: "วิศวกรรมผลิตภัณฑ์", desc: "เปลี่ยนไอเดียให้เป็นผลิตภัณฑ์ที่พร้อมส่งมอบและพร้อมใช้งานจริง" },
+                ai: { title: "ระบบ AI และ LLM", desc: "AI แบบเอเจนต์ RAG การจัดการลำดับการทำงาน และการเชื่อมต่อ AI API" },
+                cloud: { title: "คลาวด์และโครงสร้างพื้นฐาน", desc: "สถาปัตยกรรมหลายคลาวด์ คอนเทนเนอร์ Kubernetes และโครงสร้างพื้นฐานในรูปแบบโค้ด" },
+                business: { title: "ซอฟต์แวร์ธุรกิจ", desc: "B2B SaaS, ERP, CRM, การทำงานอัตโนมัติของเวิร์กโฟลว์ และระบบวิเคราะห์ธุรกิจ" },
+                security: { title: "ความปลอดภัยไซเบอร์และ DevSecOps", desc: "การส่งมอบอย่างปลอดภัย การทำงานอัตโนมัติของ CI/CD และการเสริมความแข็งแกร่งของระบบ" },
+            },
+            howWeWork: "วิธีการทำงานของเรา",
+            steps: {
+                concept: { title: "แนวคิด", desc: "ทำความเข้าใจปัญหา ผู้ใช้งาน ข้อจำกัด และเกณฑ์ความสำเร็จให้ชัดเจน" },
+                build: { title: "สร้าง", desc: "ออกแบบและพัฒนาโดยคำนึงถึงการขยายขนาด ความน่าเชื่อถือ และความสามารถในการบำรุงรักษา" },
+                launch: { title: "เปิดตัว", desc: "ส่งขึ้นระบบโปรดักชันพร้อมรากฐานด้านการดำเนินงานที่ครบถ้วน" },
+                scale: { title: "ขยายขนาดและปฏิบัติการ", desc: "ตรวจสอบ ปรับแต่ง และดำเนินงานตามการเติบโตของปริมาณการใช้งานและความต้องการ" },
+            }
+        },
         contact: {
             tag: 'ติดต่อเรา',
             title: "Carlier Tech",
-            text: "พร้อมรับโครงการวิศวกรรมและงานให้คำปรึกษาทางเทคนิค ติดต่อฉันเพื่อพูดคุยเกี่ยวกับข้อกำหนดและแนวทางแก้ไข"
+            text: "พร้อมรับโครงการวิศวกรรมและงานให้คำปรึกษาทางเทคนิค ติดต่อฉันเพื่อพูดคุยเกี่ยวกับข้อกำหนดและแนวทางแก้ไข",
+            location: "รีโมตเป็นหลัก · ให้บริการทั่วโลก · รองรับหลายภาษา",
         },
         footer: {
+            main: "หลัก",
+            mobileApps: "แอปมือถือ",
             tagline: 'ออกแบบโซลูชันทางเทคนิคที่ขยายได้.',
             home: 'หน้าแรก',
             about: 'เกี่ยวกับ',
@@ -300,7 +373,9 @@ const translations = {
                 ukrainian: 'เรียนภาษาอุโกครินะ'
             },
             copyright: '© 2026 Carlier. สงวนลิขสิทธิ์.',
-            crafted: 'สร้างด้วยความหลงใหล'
+            crafted: 'สร้างด้วยความหลงใหล',
+            privacy: "นโยบายความเป็นส่วนตัว",
+            terms: "ข้อกำหนดการให้บริการ"
         },
         accessibility: {
             skipToMain: 'ข้ามไปยังเนื้อหาหลัก'
@@ -381,12 +456,35 @@ const translations = {
                 desc: 'Aprenda e pratique tailandês em tempo real com um tutor de IA ao vivo com chat de voz, vocabulário baseado em câmara e correções estruturadas.'
             }
         },
+        overview: {
+            tag: "Conceito, Desenvolvimento, Lançamento, Escala e Operações",
+            lead: "A Carlier é uma empresa de engenharia de software e desenvolvimento de produtos. Concebemos e construímos produtos digitais de nível de produção de ponta a ponta — desde o primeiro conceito e arquitetura até ao lançamento, escalabilidade e operações contínuas.",
+            note: "Trabalhamos em regime remoto e estamos disponíveis em todo o mundo, atuando em aplicações móveis, web, sistemas de IA, cibersegurança e engenharia de infraestrutura.",
+            whatWeDo: "O que fazemos",
+            services: {
+                product: { title: "Engenharia de produto", desc: "transformamos ideias em produtos prontos a lançar e de nível de produção" },
+                ai: { title: "Sistemas de IA e LLM", desc: "IA agêntica, RAG, orquestração e integração de APIs de IA" },
+                cloud: { title: "Cloud e infraestrutura", desc: "arquitetura multicloud, contentores, Kubernetes e infraestrutura como código" },
+                business: { title: "Software empresarial", desc: "SaaS B2B, ERP, CRM, automação de fluxos de trabalho e business intelligence" },
+                security: { title: "Cibersegurança e DevSecOps", desc: "entrega segura, automação de CI/CD e reforço de sistemas" },
+            },
+            howWeWork: "Como trabalhamos",
+            steps: {
+                concept: { title: "Conceito", desc: "esclarecemos o problema, os utilizadores, as restrições e os critérios de sucesso" },
+                build: { title: "Desenvolvimento", desc: "concebemos e implementamos com escalabilidade, fiabilidade e manutenção em mente" },
+                launch: { title: "Lançamento", desc: "colocamos em produção com as bases operacionais já implementadas" },
+                scale: { title: "Escala e operações", desc: "monitorizamos, otimizamos e operamos à medida que a utilização e os requisitos crescem" },
+            }
+        },
         contact: {
             tag: 'Contacte-nos',
             title: 'Carlier Tech',
-            text: 'Disponível para projetos de engenharia e consultoria técnica. Contacte-nos para discutir requisitos e soluções.'
+            text: 'Disponível para projetos de engenharia e consultoria técnica. Contacte-nos para discutir requisitos e soluções.',
+            location: "Remoto · Disponível em todo o mundo · Suporte multilingue",
         },
         footer: {
+            main: "Principal",
+            mobileApps: "Aplicações móveis",
             tagline: 'Engenharia de soluções técnicas escaláveis.',
             home: 'Início',
             about: 'Sobre',
@@ -402,7 +500,9 @@ const translations = {
                 ukrainian: 'Aprender Ucraniano'
             },
             copyright: '© 2026 Carlier. Todos os direitos reservados.',
-            crafted: 'Criado com paixão'
+            crafted: 'Criado com paixão',
+            privacy: "Política de Privacidade",
+            terms: "Termos de Serviço"
         },
         accessibility: {
             skipToMain: 'Saltar para o conteúdo principal'
@@ -483,12 +583,35 @@ const translations = {
                 desc: 'Aprende y practica tailandés en tiempo real con un tutor de IA en vivo con chat de voz, vocabulario basado en cámara y correcciones estructuradas.'
             }
         },
+        overview: {
+            tag: "Concepto, Desarrollo, Lanzamiento, Escalado y Operaciones",
+            lead: "Carlier es una empresa de ingeniería de software y desarrollo de productos. Diseñamos y construimos productos digitales de nivel de producción de principio a fin: desde el primer concepto y la arquitectura hasta el lanzamiento, la escalabilidad y las operaciones continuas.",
+            note: "Trabajamos en remoto y estamos disponibles en todo el mundo, abarcando móvil, web, sistemas de IA, ciberseguridad e ingeniería de infraestructura.",
+            whatWeDo: "Qué hacemos",
+            services: {
+                product: { title: "Ingeniería de producto", desc: "convertimos ideas en productos listos para lanzar y de nivel de producción" },
+                ai: { title: "Sistemas de IA y LLM", desc: "IA agéntica, RAG, orquestación e integración de API de IA" },
+                cloud: { title: "Nube e infraestructura", desc: "arquitectura multinube, contenedores, Kubernetes e infraestructura como código" },
+                business: { title: "Software empresarial", desc: "SaaS B2B, ERP, CRM, automatización de flujos de trabajo y business intelligence" },
+                security: { title: "Ciberseguridad y DevSecOps", desc: "entrega segura, automatización de CI/CD y refuerzo de sistemas" },
+            },
+            howWeWork: "Cómo trabajamos",
+            steps: {
+                concept: { title: "Concepto", desc: "aclaramos el problema, los usuarios, las restricciones y los criterios de éxito" },
+                build: { title: "Desarrollo", desc: "diseñamos e implementamos pensando en la escalabilidad, la fiabilidad y el mantenimiento" },
+                launch: { title: "Lanzamiento", desc: "desplegamos en producción con las bases operativas ya establecidas" },
+                scale: { title: "Escalado y operaciones", desc: "monitorizamos, optimizamos y operamos a medida que crecen el uso y los requisitos" },
+            }
+        },
         contact: {
             tag: 'Ponte en Contacto',
             title: 'Carlier Tech',
-            text: 'Disponible para proyectos de ingeniería y consultoría técnica. Contáctanos para discutir requisitos y soluciones.'
+            text: 'Disponible para proyectos de ingeniería y consultoría técnica. Contáctanos para discutir requisitos y soluciones.',
+            location: "En remoto · Disponible en todo el mundo · Soporte multilingüe",
         },
         footer: {
+            main: "Principal",
+            mobileApps: "Aplicaciones móviles",
             tagline: 'Ingeniería de soluciones técnicas escalables.',
             home: 'Inicio',
             about: 'Sobre',
@@ -504,7 +627,9 @@ const translations = {
                 ukrainian: 'Aprender Ucraniano'
             },
             copyright: '© 2026 Carlier. Todos los derechos reservados.',
-            crafted: 'Creado con pasión'
+            crafted: 'Creado con pasión',
+            privacy: "Política de privacidad",
+            terms: "Términos del servicio"
         },
         accessibility: {
             skipToMain: 'Saltar al contenido principal'
@@ -585,12 +710,35 @@ const translations = {
                 desc: 'Apprenez et pratiquez le thaï en temps réel avec un tuteur IA en direct avec chat vocal, vocabulaire basé sur la caméra et corrections structurées.'
             }
         },
+        overview: {
+            tag: "Concept, Développement, Lancement, Mise à l’échelle et Opérations",
+            lead: "Carlier est une entreprise d’ingénierie logicielle et de développement de produits. Nous concevons et construisons des produits numériques de qualité production de bout en bout — du premier concept et de l’architecture jusqu’au lancement, à la mise à l’échelle et aux opérations continues.",
+            note: "En télétravail et disponibles dans le monde entier, nous intervenons sur le mobile, le web, les systèmes d’IA, la cybersécurité et l’ingénierie d’infrastructure.",
+            whatWeDo: "Ce que nous faisons",
+            services: {
+                product: { title: "Ingénierie produit", desc: "transformer des idées en produits prêts à être livrés et de qualité production" },
+                ai: { title: "Systèmes d’IA et de LLM", desc: "IA agentique, RAG, orchestration et intégration d’API d’IA" },
+                cloud: { title: "Cloud et infrastructure", desc: "architecture multicloud, conteneurs, Kubernetes et infrastructure as code" },
+                business: { title: "Logiciels métiers", desc: "SaaS B2B, ERP, CRM, automatisation des workflows et business intelligence" },
+                security: { title: "Cybersécurité et DevSecOps", desc: "livraison sécurisée, automatisation CI/CD et durcissement des systèmes" },
+            },
+            howWeWork: "Notre façon de travailler",
+            steps: {
+                concept: { title: "Concept", desc: "clarifier le problème, les utilisateurs, les contraintes et les critères de réussite" },
+                build: { title: "Développement", desc: "concevoir et mettre en œuvre en tenant compte de l’évolutivité, de la fiabilité et de la maintenabilité" },
+                launch: { title: "Lancement", desc: "mettre en production avec les fondations opérationnelles en place" },
+                scale: { title: "Mise à l’échelle et opérations", desc: "surveiller, optimiser et exploiter à mesure que l’usage et les besoins augmentent" },
+            }
+        },
         contact: {
             tag: 'Prenez Contact',
             title: 'Carlier Tech',
-            text: 'Disponible pour des projets d\'ingénierie et de consultation technique. Contactez-nous pour discuter des exigences et des solutions.'
+            text: 'Disponible pour des projets d\'ingénierie et de consultation technique. Contactez-nous pour discuter des exigences et des solutions.',
+            location: "Télétravail · Disponible dans le monde entier · Support multilingue",
         },
         footer: {
+            main: "Principal",
+            mobileApps: "Applications mobiles",
             tagline: 'Conception de solutions techniques évolutives.',
             home: 'Accueil',
             about: 'À Propos',
@@ -606,7 +754,9 @@ const translations = {
                 ukrainian: 'Apprendre l\'Ukrainien'
             },
             copyright: '© 2026 Carlier. Tous droits réservés.',
-            crafted: 'Conçu avec passion'
+            crafted: 'Conçu avec passion',
+            privacy: "Politique de confidentialité",
+            terms: "Conditions d’utilisation"
         },
         accessibility: {
             skipToMain: 'Aller au contenu principal'
@@ -687,12 +837,35 @@ const translations = {
                 desc: '透過語音聊天、基於相機的詞彙練習與結構化糾錯，與 AI 泰語老師進行即時泰語學習與練習。'
             }
         },
+        overview: {
+            tag: "概念、開發、上線、擴展與營運",
+            lead: "Carlier 是一家軟體工程與產品開發公司。我們從最初的構想到架構設計，一路負責產品的上線、擴展與持續營運，端到端打造達到生產級品質的數位產品。",
+            note: "我們以遠端優先、服務遍及全球，領域涵蓋行動應用、網頁、AI 系統、資安與基礎設施工程。",
+            whatWeDo: "我們做什麼",
+            services: {
+                product: { title: "產品工程", desc: "將想法轉化為可交付、達到生產級品質的產品" },
+                ai: { title: "AI 與 LLM 系統", desc: "代理式 AI、RAG、協作編排與 AI API 整合" },
+                cloud: { title: "雲端與基礎設施", desc: "多雲架構、容器、Kubernetes 與基礎設施即程式碼" },
+                business: { title: "企業軟體", desc: "B2B SaaS、ERP、CRM、工作流程自動化與商業智慧" },
+                security: { title: "資安與 DevSecOps", desc: "安全交付、CI/CD 自動化與系統強化" },
+            },
+            howWeWork: "我們如何工作",
+            steps: {
+                concept: { title: "概念", desc: "釐清問題、使用者、限制條件與成功標準" },
+                build: { title: "開發", desc: "兼顧擴展性、可靠性與可維護性來設計與實作" },
+                launch: { title: "上線", desc: "在營運基礎到位後部署至生產環境" },
+                scale: { title: "擴展與營運", desc: "隨著使用量與需求成長進行監控、最佳化與營運" },
+            }
+        },
         contact: {
             tag: '聯繫我們',
             title: 'Carlier Tech',
-            text: '可提供工程專案與技術諮詢服務。請聯繫我們討論需求和解決方案。'
+            text: '可提供工程專案與技術諮詢服務。請聯繫我們討論需求和解決方案。',
+            location: "遠端優先 · 全球皆可服務 · 多語言支援",
         },
         footer: {
+            main: "主要",
+            mobileApps: "行動應用程式",
             tagline: '工程可擴展技術解決方案。',
             home: '首頁',
             about: '關於',
@@ -708,7 +881,9 @@ const translations = {
                 ukrainian: '學習烏克蘭語'
             },
             copyright: '© 2026 Carlier. 版權所有。',
-            crafted: '用心打造'
+            crafted: '用心打造',
+            privacy: "隱私權政策",
+            terms: "服務條款"
         },
         accessibility: {
             skipToMain: '跳至主要內容'
@@ -789,12 +964,35 @@ const translations = {
                 desc: '通过语音聊天、基于相机的词汇练习与结构化纠错，与 AI 泰语老师进行即时泰语学习与练习。'
             }
         },
+        overview: {
+            tag: "概念、构建、上线、扩展与运维",
+            lead: "Carlier 是一家软件工程与产品开发公司。我们端到端设计和构建生产级数字产品——从最初的概念与架构，到上线、扩展和持续运维。",
+            note: "我们以远程优先、服务全球，业务涵盖移动端、Web、AI 系统、网络安全和基础设施工程。",
+            whatWeDo: "我们做什么",
+            services: {
+                product: { title: "产品工程", desc: "将想法转化为可交付、达到生产级质量的产品" },
+                ai: { title: "AI 与 LLM 系统", desc: "智能体 AI、RAG、编排与 AI API 集成" },
+                cloud: { title: "云与基础设施", desc: "多云架构、容器、Kubernetes 与基础设施即代码" },
+                business: { title: "企业软件", desc: "B2B SaaS、ERP、CRM、工作流自动化与商业智能" },
+                security: { title: "网络安全与 DevSecOps", desc: "安全交付、CI/CD 自动化与系统加固" },
+            },
+            howWeWork: "我们如何工作",
+            steps: {
+                concept: { title: "概念", desc: "明确问题、用户、约束条件与成功标准" },
+                build: { title: "构建", desc: "在设计实现时兼顾可扩展性、可靠性与可维护性" },
+                launch: { title: "上线", desc: "在运维基础就绪后发布到生产环境" },
+                scale: { title: "扩展与运维", desc: "随着使用量和需求增长进行监控、优化与运维" },
+            }
+        },
         contact: {
             tag: '联系我们',
             title: 'Carlier Tech',
-            text: '可提供工程项目与技术咨询服务。请联系我们讨论需求和解决方案。'
+            text: '可提供工程项目与技术咨询服务。请联系我们讨论需求和解决方案。',
+            location: "远程优先 · 全球可用 · 多语言支持",
         },
         footer: {
+            main: "主要",
+            mobileApps: "移动应用",
             tagline: '工程可扩展技术解决方案。',
             home: '首页',
             about: '关于',
@@ -810,7 +1008,9 @@ const translations = {
                 ukrainian: '学习乌克兰语'
             },
             copyright: '© 2026 Carlier. 版权所有。',
-            crafted: '用心打造'
+            crafted: '用心打造',
+            privacy: "隐私政策",
+            terms: "服务条款"
         },
         accessibility: {
             skipToMain: '跳至主要内容'
@@ -890,12 +1090,35 @@ const translations = {
                 desc: 'वॉयस चैट, कैमरा-आधारित शब्दावली और संरचित सुधारों के साथ लाइव AI थाई शिक्षक के साथ वास्तविक समय में सीखें और अभ्यास करें।'
             }
         },
+        overview: {
+            tag: "कल्पना, निर्माण, लॉन्च, स्केल और संचालन",
+            lead: "Carlier एक सॉफ़्टवेयर इंजीनियरिंग और प्रोडक्ट डेवलपमेंट कंपनी है। हम शुरुआती कल्पना और आर्किटेक्चर से लेकर लॉन्च, स्केलिंग और निरंतर संचालन तक, प्रोडक्शन-ग्रेड डिजिटल प्रोडक्ट्स को शुरू से अंत तक डिज़ाइन और निर्मित करते हैं।",
+            note: "हम रिमोट-फ़र्स्ट हैं और दुनिया भर में उपलब्ध हैं; हम मोबाइल, वेब, AI सिस्टम, साइबर सुरक्षा और इन्फ़्रास्ट्रक्चर इंजीनियरिंग में काम करते हैं।",
+            whatWeDo: "हम क्या करते हैं",
+            services: {
+                product: { title: "प्रोडक्ट इंजीनियरिंग", desc: "विचारों को तैयार, प्रोडक्शन-रेडी प्रोडक्ट्स में बदलना" },
+                ai: { title: "AI और LLM सिस्टम", desc: "एजेंटिक AI, RAG, ऑर्केस्ट्रेशन और AI API एकीकरण" },
+                cloud: { title: "क्लाउड और इन्फ़्रास्ट्रक्चर", desc: "मल्टी-क्लाउड आर्किटेक्चर, कंटेनर, Kubernetes और इन्फ़्रास्ट्रक्चर ऐज़ कोड" },
+                business: { title: "बिज़नेस सॉफ़्टवेयर", desc: "B2B SaaS, ERP, CRM, वर्कफ़्लो ऑटोमेशन और बिज़नेस इंटेलिजेंस" },
+                security: { title: "साइबर सुरक्षा और DevSecOps", desc: "सुरक्षित डिलीवरी, CI/CD ऑटोमेशन और सिस्टम हार्डनिंग" },
+            },
+            howWeWork: "हम कैसे काम करते हैं",
+            steps: {
+                concept: { title: "कल्पना", desc: "समस्या, उपयोगकर्ताओं, बाधाओं और सफलता के मानदंडों को स्पष्ट करना" },
+                build: { title: "निर्माण", desc: "स्केलेबिलिटी, विश्वसनीयता और रखरखाव को ध्यान में रखते हुए डिज़ाइन और कार्यान्वयन" },
+                launch: { title: "लॉन्च", desc: "संचालन की बुनियाद तैयार होने पर प्रोडक्शन में लॉन्च करना" },
+                scale: { title: "स्केल और संचालन", desc: "उपयोग और आवश्यकताओं के बढ़ने के साथ निगरानी, अनुकूलन और संचालन" },
+            }
+        },
         contact: {
             tag: 'संपर्क करें',
             title: 'Carlier Tech',
-            text: 'इंजीनियरिंग परियोजनाओं और तकनीकी सलाहकार सेवा के लिए उपलब्ध हैं। आवश्यकताओं और समाधानों पर चर्चा करने के लिए हमसे संपर्क करें।'
+            text: 'इंजीनियरिंग परियोजनाओं और तकनीकी सलाहकार सेवा के लिए उपलब्ध हैं। आवश्यकताओं और समाधानों पर चर्चा करने के लिए हमसे संपर्क करें।',
+            location: "रिमोट-फ़र्स्ट · दुनिया भर में उपलब्ध · बहुभाषी सहायता",
         },
         footer: {
+            main: "मुख्य",
+            mobileApps: "मोबाइल ऐप्स",
             tagline: 'स्केलेबल तकनीकी समाधान इंजीनियरिंग।',
             home: 'होम',
             about: 'परिचय',
@@ -911,7 +1134,9 @@ const translations = {
                 ukrainian: 'यूक्रेनियन सीखें'
             },
             copyright: '© 2026 Carlier. सर्वाधिकार सुरक्षित।',
-            crafted: 'जुनून के साथ बनाया गया'
+            crafted: 'जुनून के साथ बनाया गया',
+            privacy: "गोपनीयता नीति",
+            terms: "सेवा की शर्तें"
         },
         accessibility: {
             skipToMain: 'मुख्य सामग्री पर जाएं'
@@ -992,12 +1217,35 @@ const translations = {
                 desc: '音声チャット、カメラベースの語彙、構造化された修正を使用して、AIタイ語教師とリアルタイムでタイ語を学習・練習します。'
             }
         },
+        overview: {
+            tag: "構想・開発・ローンチ・拡張・運用",
+            lead: "Carlier はソフトウェアエンジニアリングと製品開発を行う企業です。最初の構想とアーキテクチャから、ローンチ、拡張、継続的な運用まで、本番品質のデジタル製品をエンドツーエンドで設計・開発します。",
+            note: "リモートファーストで世界各地に対応し、モバイル、Web、AI システム、サイバーセキュリティ、インフラエンジニアリングに取り組んでいます。",
+            whatWeDo: "私たちの事業",
+            services: {
+                product: { title: "プロダクトエンジニアリング", desc: "アイデアを出荷可能な本番品質の製品へと形にします" },
+                ai: { title: "AI・LLM システム", desc: "エージェント型 AI、RAG、オーケストレーション、AI API 連携" },
+                cloud: { title: "クラウド・インフラ", desc: "マルチクラウド設計、コンテナ、Kubernetes、Infrastructure as Code" },
+                business: { title: "ビジネスソフトウェア", desc: "B2B SaaS、ERP、CRM、ワークフロー自動化、ビジネスインテリジェンス" },
+                security: { title: "サイバーセキュリティ・DevSecOps", desc: "セキュアなデリバリー、CI/CD 自動化、システムの堅牢化" },
+            },
+            howWeWork: "進め方",
+            steps: {
+                concept: { title: "構想", desc: "課題、ユーザー、制約、成功基準を明確にします" },
+                build: { title: "開発", desc: "拡張性、信頼性、保守性を考慮して設計・実装します" },
+                launch: { title: "ローンチ", desc: "運用基盤を整えたうえで本番環境へリリースします" },
+                scale: { title: "拡張・運用", desc: "利用量と要件の増加に合わせて監視、最適化、運用します" },
+            }
+        },
         contact: {
             tag: 'お問い合わせ',
             title: 'Carlier Tech',
-            text: 'エンジニアリングプロジェクトや技術コンサルティングを承っています。要件とソリューションについてご相談ください。'
+            text: 'エンジニアリングプロジェクトや技術コンサルティングを承っています。要件とソリューションについてご相談ください。',
+            location: "リモートファースト · 世界各地に対応 · 多言語サポート",
         },
         footer: {
+            main: "メイン",
+            mobileApps: "モバイルアプリ",
             tagline: 'スケーラブルな技術ソリューションをエンジニアリング。',
             home: 'ホーム',
             about: '概要',
@@ -1013,7 +1261,9 @@ const translations = {
                 ukrainian: 'ウクライナ語を学ぶ'
             },
             copyright: '© 2026 Carlier. All rights reserved.',
-            crafted: '情熱を込めて作られました'
+            crafted: '情熱を込めて作られました',
+            privacy: "プライバシーポリシー",
+            terms: "利用規約"
         },
         accessibility: {
             skipToMain: 'メインコンテンツにスキップ'
@@ -1094,12 +1344,35 @@ const translations = {
                 desc: 'تعلم وتدرب على التايلاندية في الوقت الفعلي مع مدرس تايلاندي AI مباشر يتميز بدردشة صوتية، ومفردات تعتمد على الكاميرا، وتصحيحات منظمة.'
             }
         },
+        overview: {
+            tag: "الفكرة، البناء، الإطلاق، التوسع والعمليات",
+            lead: "Carlier شركة متخصصة في هندسة البرمجيات وتطوير المنتجات. نصمم ونبني منتجات رقمية جاهزة للإنتاج من البداية إلى النهاية — من الفكرة الأولى والهندسة المعمارية وحتى الإطلاق والتوسع والعمليات المستمرة.",
+            note: "نعمل عن بُعد ونتوفر في جميع أنحاء العالم، ونغطي تطبيقات الجوال والويب وأنظمة الذكاء الاصطناعي والأمن السيبراني وهندسة البنية التحتية.",
+            whatWeDo: "ما نقوم به",
+            services: {
+                product: { title: "هندسة المنتجات", desc: "تحويل الأفكار إلى منتجات جاهزة للتسليم وبمستوى الإنتاج" },
+                ai: { title: "أنظمة الذكاء الاصطناعي ونماذج LLM", desc: "الذكاء الاصطناعي الوكيلي، وRAG، والتنسيق، وتكامل واجهات AI API" },
+                cloud: { title: "السحابة والبنية التحتية", desc: "هندسة متعددة السحابات، والحاويات، وKubernetes، والبنية التحتية كشيفرة" },
+                business: { title: "برمجيات الأعمال", desc: "B2B SaaS، وERP، وCRM، وأتمتة سير العمل، وذكاء الأعمال" },
+                security: { title: "الأمن السيبراني وDevSecOps", desc: "تسليم آمن، وأتمتة CI/CD، وتحصين الأنظمة" },
+            },
+            howWeWork: "كيف نعمل",
+            steps: {
+                concept: { title: "الفكرة", desc: "توضيح المشكلة والمستخدمين والقيود ومعايير النجاح" },
+                build: { title: "البناء", desc: "التصميم والتنفيذ مع مراعاة قابلية التوسع والموثوقية وسهولة الصيانة" },
+                launch: { title: "الإطلاق", desc: "الإطلاق إلى بيئة الإنتاج مع توفر الأسس التشغيلية" },
+                scale: { title: "التوسع والعمليات", desc: "المراقبة والتحسين والتشغيل مع نمو الاستخدام والمتطلبات" },
+            }
+        },
         contact: {
             tag: 'تواصل معنا',
             title: 'Carlier Tech',
-            text: 'متاح للمشاريع الهندسية والاستشارات التقنية. تواصل معنا لمناقشة المتطلبات والحلول.'
+            text: 'متاح للمشاريع الهندسية والاستشارات التقنية. تواصل معنا لمناقشة المتطلبات والحلول.',
+            location: "عن بُعد · متوفرون عالميًا · دعم متعدد اللغات",
         },
         footer: {
+            main: "الرئيسية",
+            mobileApps: "تطبيقات الجوال",
             tagline: 'هندسة حلول تقنية قابلة للتطوير.',
             home: 'الرئيسية',
             about: 'حول',
@@ -1115,7 +1388,9 @@ const translations = {
                 ukrainian: 'تعلم الأوكرانية'
             },
             copyright: '© 2026 Carlier. جميع الحقوق محفوظة.',
-            crafted: 'صُنع بحب'
+            crafted: 'صُنع بحب',
+            privacy: "سياسة الخصوصية",
+            terms: "شروط الخدمة"
         },
         accessibility: {
             skipToMain: 'انتقل إلى المحتوى الرئيسي'
@@ -1196,12 +1471,35 @@ const translations = {
                 desc: 'Lernen und üben Sie Thai in Echtzeit mit einem live KI-Thai-Lehrer mit Sprachchat, kamerabasiertem Wortschatz und strukturierten Korrekturen.'
             }
         },
+        overview: {
+            tag: "Konzept, Entwicklung, Launch, Skalierung und Betrieb",
+            lead: "Carlier ist ein Unternehmen für Software-Engineering und Produktentwicklung. Wir gestalten und entwickeln digitale Produkte in Produktionsqualität von Anfang bis Ende – vom ersten Konzept und der Architektur über den Launch und die Skalierung bis hin zum laufenden Betrieb.",
+            note: "Wir arbeiten remote-first und sind weltweit verfügbar – in den Bereichen Mobile, Web, KI-Systeme, Cybersicherheit und Infrastruktur-Engineering.",
+            whatWeDo: "Was wir tun",
+            services: {
+                product: { title: "Produkt-Engineering", desc: "Ideen in auslieferbare, produktionsreife Produkte verwandeln" },
+                ai: { title: "KI- und LLM-Systeme", desc: "Agentische KI, RAG, Orchestrierung und KI-API-Integration" },
+                cloud: { title: "Cloud und Infrastruktur", desc: "Multi-Cloud-Architektur, Container, Kubernetes und Infrastructure as Code" },
+                business: { title: "Business-Software", desc: "B2B-SaaS, ERP, CRM, Workflow-Automatisierung und Business Intelligence" },
+                security: { title: "Cybersicherheit und DevSecOps", desc: "sichere Auslieferung, CI/CD-Automatisierung und System-Härtung" },
+            },
+            howWeWork: "Wie wir arbeiten",
+            steps: {
+                concept: { title: "Konzept", desc: "Problem, Nutzer, Einschränkungen und Erfolgskriterien klären" },
+                build: { title: "Entwicklung", desc: "Design und Umsetzung mit Blick auf Skalierbarkeit, Zuverlässigkeit und Wartbarkeit" },
+                launch: { title: "Launch", desc: "in Produktion bringen, mit den nötigen operativen Grundlagen" },
+                scale: { title: "Skalierung und Betrieb", desc: "überwachen, optimieren und betreiben, während Nutzung und Anforderungen wachsen" },
+            }
+        },
         contact: {
             tag: 'Kontaktieren',
             title: 'Carlier Tech',
-            text: 'Verfügbar für Ingenieursprojekte und technische Beratung. Kontaktieren Sie uns, um Anforderungen und Lösungen zu besprechen.'
+            text: 'Verfügbar für Ingenieursprojekte und technische Beratung. Kontaktieren Sie uns, um Anforderungen und Lösungen zu besprechen.',
+            location: "Remote-first · Weltweit verfügbar · Mehrsprachiger Support",
         },
         footer: {
+            main: "Haupt",
+            mobileApps: "Mobile Apps",
             tagline: 'Skalierbare technische Lösungen entwickeln.',
             home: 'Startseite',
             about: 'Über',
@@ -1217,7 +1515,9 @@ const translations = {
                 ukrainian: 'Ukrainisch lernen'
             },
             copyright: '© 2026 Carlier. Alle Rechte vorbehalten.',
-            crafted: 'Mit Leidenschaft erstellt'
+            crafted: 'Mit Leidenschaft erstellt',
+            privacy: "Datenschutzerklärung",
+            terms: "Nutzungsbedingungen"
         },
         accessibility: {
             skipToMain: 'Zum Hauptinhalt springen'
@@ -1298,12 +1598,35 @@ const translations = {
                 desc: 'Impara e pratica il tailandese in tempo reale con un tutor IA tailandese dal vivo con chat vocale, vocabolario basato sulla fotocamera e correzioni strutturate.'
             }
         },
+        overview: {
+            tag: "Concetto, Sviluppo, Lancio, Scalabilità e Operazioni",
+            lead: "Carlier è un’azienda di ingegneria del software e sviluppo prodotti. Progettiamo e realizziamo prodotti digitali di livello produttivo end-to-end — dal primo concept e dall’architettura fino al lancio, alla scalabilità e alle operazioni continue.",
+            note: "Lavoriamo in remoto e siamo disponibili in tutto il mondo, occupandoci di mobile, web, sistemi di IA, cybersicurezza e ingegneria dell’infrastruttura.",
+            whatWeDo: "Cosa facciamo",
+            services: {
+                product: { title: "Ingegneria di prodotto", desc: "trasformiamo le idee in prodotti pronti per la produzione" },
+                ai: { title: "Sistemi di IA e LLM", desc: "IA agentica, RAG, orchestrazione e integrazione di API di IA" },
+                cloud: { title: "Cloud e infrastruttura", desc: "architettura multicloud, container, Kubernetes e infrastructure as code" },
+                business: { title: "Software aziendale", desc: "SaaS B2B, ERP, CRM, automazione dei flussi di lavoro e business intelligence" },
+                security: { title: "Cybersicurezza e DevSecOps", desc: "consegna sicura, automazione CI/CD e hardening dei sistemi" },
+            },
+            howWeWork: "Come lavoriamo",
+            steps: {
+                concept: { title: "Concetto", desc: "chiariamo il problema, gli utenti, i vincoli e i criteri di successo" },
+                build: { title: "Sviluppo", desc: "progettiamo e realizziamo tenendo conto di scalabilità, affidabilità e manutenibilità" },
+                launch: { title: "Lancio", desc: "portiamo in produzione con le basi operative già predisposte" },
+                scale: { title: "Scalabilità e operazioni", desc: "monitoriamo, ottimizziamo e gestiamo al crescere dell’utilizzo e dei requisiti" },
+            }
+        },
         contact: {
             tag: 'Contattaci',
             title: 'Carlier Tech',
-            text: 'Disponibile per progetti di ingegneria e consulenza tecnica. Contattaci per discutere di requisiti e soluzioni.'
+            text: 'Disponibile per progetti di ingegneria e consulenza tecnica. Contattaci per discutere di requisiti e soluzioni.',
+            location: "In remoto · Disponibili in tutto il mondo · Supporto multilingue",
         },
         footer: {
+            main: "Principale",
+            mobileApps: "App mobile",
             tagline: 'Ingegneria di soluzioni tecniche scalabili.',
             home: 'Home',
             about: 'Chi sono',
@@ -1319,7 +1642,9 @@ const translations = {
                 ukrainian: 'Impara l\'Ucraino'
             },
             copyright: '© 2026 Carlier. Tutti i diritti riservati.',
-            crafted: 'Creato con passione'
+            crafted: 'Creato con passione',
+            privacy: "Informativa sulla privacy",
+            terms: "Termini di servizio"
         },
         accessibility: {
             skipToMain: 'Vai al contenuto principale'
@@ -1400,12 +1725,35 @@ const translations = {
                 desc: '음성 채팅, 카메라 기반 어휘 및 구조화된 수정으로 라이브 AI 태어 강사와 실시간으로 태어를 배우고 연습하세요.'
             }
         },
+        overview: {
+            tag: "개념, 구축, 출시, 확장 및 운영",
+            lead: "Carlier는 소프트웨어 엔지니어링과 제품 개발 기업입니다. 첫 개념과 아키텍처부터 출시, 확장, 지속적인 운영까지 프로덕션 수준의 디지털 제품을 엔드투엔드로 설계하고 구축합니다.",
+            note: "원격 우선으로 전 세계에 서비스를 제공하며 모바일, 웹, AI 시스템, 사이버 보안, 인프라 엔지니어링 분야에서 일합니다.",
+            whatWeDo: "주요 업무",
+            services: {
+                product: { title: "제품 엔지니어링", desc: "아이디어를 출시 가능한 프로덕션 수준의 제품으로 구현" },
+                ai: { title: "AI 및 LLM 시스템", desc: "에이전트형 AI, RAG, 오케스트레이션, AI API 통합" },
+                cloud: { title: "클라우드 및 인프라", desc: "멀티클라우드 아키텍처, 컨테이너, Kubernetes, 코드형 인프라" },
+                business: { title: "비즈니스 소프트웨어", desc: "B2B SaaS, ERP, CRM, 워크플로 자동화, 비즈니스 인텔리전스" },
+                security: { title: "사이버 보안 및 DevSecOps", desc: "안전한 배포, CI/CD 자동화, 시스템 강화" },
+            },
+            howWeWork: "일하는 방식",
+            steps: {
+                concept: { title: "개념", desc: "문제, 사용자, 제약 조건, 성공 기준을 명확히 합니다" },
+                build: { title: "구축", desc: "확장성, 안정성, 유지보수성을 고려해 설계하고 구현합니다" },
+                launch: { title: "출시", desc: "운영 기반을 갖춘 상태로 프로덕션에 배포합니다" },
+                scale: { title: "확장 및 운영", desc: "사용량과 요구 사항이 늘어남에 따라 모니터링, 최적화, 운영합니다" },
+            }
+        },
         contact: {
             tag: '연락하기',
             title: 'Carlier Tech',
-            text: '엔지니어링 프로젝트 및 기술 컨설팅을 제공합니다. 요구 사항과 솔루션에 대해 논의하기 위해 문의해 주세요.'
+            text: '엔지니어링 프로젝트 및 기술 컨설팅을 제공합니다. 요구 사항과 솔루션에 대해 논의하기 위해 문의해 주세요.',
+            location: "원격 우선 · 전 세계 이용 가능 · 다국어 지원",
         },
         footer: {
+            main: "주요",
+            mobileApps: "모바일 앱",
             tagline: '확장 가능한 기술 솔루션 엔지니어링.',
             home: '홈',
             about: '소개',
@@ -1421,7 +1769,9 @@ const translations = {
                 ukrainian: '우크라이나어 배우기'
             },
             copyright: '© 2026 Carlier. 모든 권리 보유.',
-            crafted: '열정으로 제작'
+            crafted: '열정으로 제작',
+            privacy: "개인정보 처리방침",
+            terms: "서비스 약관"
         },
         accessibility: {
             skipToMain: '주요 콘텐츠로 건너뛰기'
@@ -1501,12 +1851,35 @@ const translations = {
                 desc: 'Учитесь и практикуйте тайский в реальном времени с живым ИИ-преподавателем тайского с голосовым чатом, словарным запасом на основе камеры и структурированными исправлениями.'
             }
         },
+        overview: {
+            tag: "Концепция, Разработка, Запуск, Масштабирование и Операции",
+            lead: "Carlier — компания по разработке программного обеспечения и продуктов. Мы проектируем и создаём цифровые продукты производственного уровня от начала до конца: от первой концепции и архитектуры до запуска, масштабирования и дальнейшей эксплуатации.",
+            note: "Мы работаем удалённо и доступны по всему миру — в сферах мобильных приложений, веба, AI-систем, кибербезопасности и инфраструктурной инженерии.",
+            whatWeDo: "Что мы делаем",
+            services: {
+                product: { title: "Продуктовая инженерия", desc: "превращаем идеи в готовые к выпуску продукты производственного уровня" },
+                ai: { title: "AI- и LLM-системы", desc: "агентный AI, RAG, оркестрация и интеграция AI API" },
+                cloud: { title: "Облако и инфраструктура", desc: "мультиоблачная архитектура, контейнеры, Kubernetes и инфраструктура как код" },
+                business: { title: "Бизнес-ПО", desc: "B2B SaaS, ERP, CRM, автоматизация рабочих процессов и бизнес-аналитика" },
+                security: { title: "Кибербезопасность и DevSecOps", desc: "безопасная доставка, автоматизация CI/CD и укрепление систем" },
+            },
+            howWeWork: "Как мы работаем",
+            steps: {
+                concept: { title: "Концепция", desc: "проясняем проблему, пользователей, ограничения и критерии успеха" },
+                build: { title: "Разработка", desc: "проектируем и внедряем с учётом масштабируемости, надёжности и поддерживаемости" },
+                launch: { title: "Запуск", desc: "выводим в продакшн с готовыми операционными основами" },
+                scale: { title: "Масштабирование и операции", desc: "мониторим, оптимизируем и эксплуатируем по мере роста нагрузки и требований" },
+            }
+        },
         contact: {
             tag: 'Связаться',
             title: 'Carlier Tech',
-            text: 'Доступен для инженерных проектов и технических консультаций. Свяжитесь с нами, чтобы обсудить требования и решения.'
+            text: 'Доступен для инженерных проектов и технических консультаций. Свяжитесь с нами, чтобы обсудить требования и решения.',
+            location: "Удалённо · Доступны по всему миру · Многоязычная поддержка",
         },
         footer: {
+            main: "Основное",
+            mobileApps: "Мобильные приложения",
             tagline: 'Разработка масштабируемых технических решений.',
             home: 'Главная',
             about: 'О нас',
@@ -1522,7 +1895,9 @@ const translations = {
                 ukrainian: 'Учить украинский'
             },
             copyright: '© 2026 Carlier. Все права защищены.',
-            crafted: 'Создано с любовью'
+            crafted: 'Создано с любовью',
+            privacy: "Политика конфиденциальности",
+            terms: "Условия обслуживания"
         },
         accessibility: {
             skipToMain: 'Перейти к основному содержанию'
@@ -1604,12 +1979,35 @@ const translations = {
                 desc: 'Ucz się tajskiego, ćwicz prawdziwe rozmowy i tłumacz w czasie rzeczywistym z działającym nauczycielem AI tajskiego — z czatem głosowym, kontekstem opartym na kamerze i natychmiastowym wsparciem tłumaczeń.'
             }
         },
+        overview: {
+            tag: "Koncepcja, Budowa, Wdrożenie, Skalowanie i Operacje",
+            lead: "Carlier to firma zajmująca się inżynierią oprogramowania i rozwojem produktów. Projektujemy i tworzymy produkty cyfrowe klasy produkcyjnej od początku do końca — od pierwszej koncepcji i architektury, przez wdrożenie i skalowanie, po bieżącą eksploatację.",
+            note: "Pracujemy zdalnie i jesteśmy dostępni na całym świecie — w obszarach mobile, web, systemów AI, cyberbezpieczeństwa i inżynierii infrastruktury.",
+            whatWeDo: "Co robimy",
+            services: {
+                product: { title: "Inżynieria produktu", desc: "zamieniamy pomysły w gotowe do wdrożenia produkty klasy produkcyjnej" },
+                ai: { title: "Systemy AI i LLM", desc: "AI agentowe, RAG, orkiestracja i integracja AI API" },
+                cloud: { title: "Chmura i infrastruktura", desc: "architektura multi-cloud, kontenery, Kubernetes i infrastruktura jako kod" },
+                business: { title: "Oprogramowanie biznesowe", desc: "B2B SaaS, ERP, CRM, automatyzacja przepływów pracy i business intelligence" },
+                security: { title: "Cyberbezpieczeństwo i DevSecOps", desc: "bezpieczne dostarczanie, automatyzacja CI/CD i hartowanie systemów" },
+            },
+            howWeWork: "Jak pracujemy",
+            steps: {
+                concept: { title: "Koncepcja", desc: "wyjaśniamy problem, użytkowników, ograniczenia i kryteria sukcesu" },
+                build: { title: "Budowa", desc: "projektujemy i wdrażamy z myślą o skalowalności, niezawodności i łatwości utrzymania" },
+                launch: { title: "Wdrożenie", desc: "wdrażamy do produkcji z gotowymi podstawami operacyjnymi" },
+                scale: { title: "Skalowanie i operacje", desc: "monitorujemy, optymalizujemy i obsługujemy wraz ze wzrostem użycia i wymagań" },
+            }
+        },
         contact: {
             tag: 'Napisz do nas',
             title: 'Carlier Tech',
-            text: 'Dostępny do projektów inżynierskich i konsultacji technicznych. Skontaktuj się ze mną, aby omówić wymagania i rozwiązania.'
+            text: 'Dostępny do projektów inżynierskich i konsultacji technicznych. Skontaktuj się ze mną, aby omówić wymagania i rozwiązania.',
+            location: "Zdalnie · Dostępni na całym świecie · Wsparcie wielojęzyczne",
         },
         footer: {
+            main: "Główne",
+            mobileApps: "Aplikacje mobilne",
             tagline: 'Inżynieria skalowalnych rozwiązań technicznych.',
             home: 'Strona główna',
             about: 'O mnie',
@@ -1625,7 +2023,9 @@ const translations = {
                 ukrainian: 'Naucz się ukraińskiego'
             },
             copyright: '© 2026 Carlier. Wszelkie prawa zastrzeżone.',
-            crafted: 'Stworzone z pasją'
+            crafted: 'Stworzone z pasją',
+            privacy: "Polityka prywatności",
+            terms: "Warunki korzystania z usługi"
         },
         accessibility: {
             skipToMain: 'Przejdź do treści głównej'
