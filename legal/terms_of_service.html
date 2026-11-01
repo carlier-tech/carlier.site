@@ -1,76 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms of Service – Carlier</title>
 <meta name="description" content="Terms of service for the Carlier website and its language-learning and identification apps.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://carlier.site/legal/terms_of_service.html">
-<meta name="theme-color" content="#05070f">
-<link rel="icon" type="image/png" href="../images/Carlier_logo_160x160.png">
-<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<meta name="theme-color" content="#171719">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>
+try {
+    const saved = localStorage.getItem("carlier-legal-theme");
+    const theme = saved === "light" || saved === "dark"
+        ? saved
+        : window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", theme);
+} catch {}
+</script>
 </head>
 <body>
-<header class="site-header" aria-label="Primary navigation">
-  <a class="brand" href="../" aria-label="Carlier home">
-    <img src="../images/Carlier_logo_160x160.png" alt="" width="36" height="36">
-    <span>Carlier</span>
-  </a>
-  <nav class="nav-links" aria-label="Legal pages">
-    <a href="privacy_policy.html">Privacy</a>
-    <a href="terms_of_service.html" aria-current="page">Terms</a>
-  </nav>
-</header>
-<main class="legal-page">
-<p class="eyebrow">Legal</p>
-<h1 id="terms-of-service">Terms of Service</h1>
-<p><strong>Last Updated:</strong> October 2026</p>
-<p>These Terms of Service (&quot;Terms&quot;) govern your use of this website (carlier.site, the &quot;Site&quot;) and our mobile applications (the &quot;Apps&quot;). By accessing the Site or using an App, you agree to be bound by these Terms. If you do not agree, do not use the Site or the Apps.</p>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<h2 id="sec-1-acceptance">1. Acceptance of Terms</h2>
-<p>By using the Site or an App, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="privacy_policy.html">Privacy Policy</a>. These Terms apply to all users globally.</p>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="m19 8 3 8a5 5 0 0 1-6 0z"></path><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"></path><path d="m5 8 3 8a5 5 0 0 1-6 0z"></path><path d="M7 21h10"></path></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></symbol>
+</svg>
 
-<h2 id="sec-2-description-of-service">2. Description of Service</h2>
-<p>The Site is an informational website that presents our products and links to their app-store listings. The Apps are mobile applications that provide language-learning and item-identification features. Where an App relies on third-party artificial-intelligence services (such as Google&#39;s Gemini API) to generate results, that processing is performed by those providers.</p>
+<div class="window">
+    <header class="titlebar">
+        <a class="brand" href="index.html" aria-label="Carlier legal home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M16.5 7.5a6.5 6.5 0 1 0 0 9"></path></svg>
+            </span>
+            <span>Carlier</span>
+        </a>
+        <div class="scope">
+            <span class="scope-crumbs">
+                <span class="scope-project">carlier.site</span>
+                <svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+                <span class="scope-name">legal</span>
+            </span>
+            <span class="scope-branch">
+                <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
+                legal · from main
+            </span>
+        </div>
+        <div class="titlebar-right">
+            <a class="chrome-btn" href="privacy_policy.html">Privacy</a>
+            <a class="chrome-btn" href="terms_of_service.html" aria-current="page">Terms</a>
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" aria-pressed="false">
+                <svg class="i theme-icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+                <svg class="i theme-icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+            </button>
+            <button type="button" class="nav-toggle chrome-btn" id="nav-toggle" aria-expanded="false" aria-controls="rail-right" aria-label="Open page outline and terminal">
+                <svg class="i" aria-hidden="true"><use href="#i-menu"></use></svg>
+            </button>
+        </div>
+    </header>
 
-<h2 id="sec-3-as-is">3. AS-IS Service</h2>
-<p><strong>THE SITE AND THE APPS ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE,&quot; WITHOUT WARRANTY OF ANY KIND.</strong></p>
-<p>We make no guarantees regarding the accuracy, reliability, or completeness of any content, translations, identifications, or valuations produced by the Apps. AI models are prone to hallucinated information, errors, and omissions. You understand and agree that any information provided is for informational purposes only and should not be relied upon for financial, legal, or professional decisions.</p>
+    <div class="cols">
+        <aside class="rail-left" aria-label="Legal pages">
+            <div class="rail-heading">Projects</div>
+            <div class="tree">
+                <div class="tree-row active">
+                    <svg class="i" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+                    <svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>
+                    <span>carlier.site</span>
+                </div>
+                <div class="tree-row workspace active">
+                    <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
+                    <span>legal</span>
+                </div>
+                <a class="tree-row page" href="index.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>
+                    <span>Landing</span>
+                </a>
+                <a class="tree-row page" href="privacy_policy.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
+                    <span>Privacy Policy</span>
+                </a>
+                <a class="tree-row page selected" href="terms_of_service.html" aria-current="page">
+                    <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
+                    <span>Terms of Service</span>
+                </a>
+            </div>
+            <div class="rail-note" id="rail-note">
+                <svg class="rail-note-icon" aria-hidden="true"><use href="#i-info"></use></svg>
+                <p>These Terms govern the <strong>website</strong> and the <strong>Apps</strong>. Where an app store listing adds its own terms, those apply too.</p>
+                <button type="button" class="rail-note-dismiss" id="rail-note-dismiss">Understood</button>
+            </div>
+        </aside>
 
-<h2 id="sec-4-limitation-of-liability">4. Limitation of Liability</h2>
-<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER, ITS AFFILIATES, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOSS OF PROFITS, DATA, OR USE) ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR INABILITY TO USE THE SITE OR THE APPS.</p>
-<p>Our liability is strictly limited to the amount paid (if any) by you for an App or its premium features during the twelve (12) months immediately preceding the claim.</p>
+        <div class="center">
+            <nav class="tabstrip" aria-label="Documents">
+                <a class="tab" href="index.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-book"></use></svg>
+                    README.md
+                </a>
+                <a class="tab" href="privacy_policy.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
+                    privacy_policy.html
+                </a>
+                <a class="tab active" href="terms_of_service.html" aria-current="page">
+                    <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
+                    terms_of_service.html
+                </a>
+            </nav>
 
-<h2 id="sec-5-third-party-services">5. Third-Party Services</h2>
-<p>Some Apps integrate third-party services (such as Google Generative AI / Gemini) to provide their core functionality, and the Site links to third-party app stores. Your use of those third-party services is subject to their own Terms of Service and Privacy Policy. Where an App requires you to supply your own API key (&quot;Bring Your Own Key&quot;), you are solely responsible for creating, securing, and managing that key, and for any usage limits, billing, or quotas associated with it. We do not store or have access to your API key outside your local device storage.</p>
+            <main class="editor" id="main" tabindex="-1">
+                <section class="file-section hero" id="terms-of-service">
+                    <p class="file-comment">&lt;!-- legal/terms_of_service.md --&gt;</p>
+                    <p class="hero-kicker">
+                        <span class="pill pill-accent">Legal</span>
+                        <span class="pill">Terms</span>
+                        <span class="pill">Updated October 2026</span>
+                    </p>
+                    <h1 class="hero-title hero-title-doc">Terms of Service</h1>
+                    <p class="hero-lede">
+                        These Terms of Service (&ldquo;Terms&rdquo;) govern your use of this website
+                        (carlier.site, the &ldquo;Site&rdquo;) and our mobile applications (the &ldquo;Apps&rdquo;).
+                        By accessing the Site or using an App, you agree to be bound by these Terms. If you do
+                        not agree, do not use the Site or the Apps.
+                    </p>
+                    <p class="hero-meta">
+                        <span><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>terms_of_service.html</span>
+                        <span><svg class="i" aria-hidden="true"><use href="#i-lock"></use></svg>Applies to the Site and the Apps</span>
+                        <span><svg class="i" aria-hidden="true"><use href="#i-check"></use></svg>Last updated October 2026</span>
+                    </p>
+                </section>
 
-<h2 id="sec-6-user-conduct">6. User Conduct and Responsibility</h2>
-<p>You agree not to use the Site or the Apps to:</p>
-<ul>
-  <li>Submit or upload any illegal, harmful, threatening, abusive, harassing, defamatory, vulgar, or obscene content.</li>
-  <li>Violate any local, state, national, or international law or regulation.</li>
-  <li>Attempt to hack, reverse engineer, or disrupt the operation of the Site or the Apps.</li>
-</ul>
-<p>We reserve the right to suspend or terminate access to the Site or an App (or disable specific features) if you are found attempting to violate these Terms.</p>
+                <section class="file-section doc-body">
+                    <h2 id="sec-1-acceptance">1. Acceptance of Terms</h2>
+                    <p>By using the Site or an App, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="privacy_policy.html">Privacy Policy</a>. These Terms apply to all users globally.</p>
 
-<h2 id="sec-7-intellectual-property">7. Intellectual Property</h2>
-<p>All intellectual property rights in the Site and the Apps (excluding user-generated content and third-party AI models) belong to the Developer. You may not reproduce, distribute, or create derivative works based on the Site or the Apps without explicit permission.</p>
+                    <h2 id="sec-2-description-of-service">2. Description of Service</h2>
+                    <p>The Site is an informational website that presents our products and links to their app-store listings. The Apps are mobile applications that provide language-learning and item-identification features. Where an App relies on third-party artificial-intelligence services (such as Google's Gemini API) to generate results, that processing is performed by those providers.</p>
 
-<h2 id="sec-8-modifications">8. Modifications to Terms, Site, and Apps</h2>
-<p>We reserve the right to modify or discontinue the Site or an App, temporarily or permanently, with or without notice. We may also revise these Terms at any time by updating this document. By continuing to use the Site or an App after any modifications, you agree to be bound by the updated Terms.</p>
+                    <h2 id="sec-3-as-is">3. AS-IS Service</h2>
+                    <p><strong>THE SITE AND THE APPS ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE,&rdquo; WITHOUT WARRANTY OF ANY KIND.</strong></p>
+                    <p>We make no guarantees regarding the accuracy, reliability, or completeness of any content, translations, identifications, or valuations produced by the Apps. AI models are prone to hallucinated information, errors, and omissions. You understand and agree that any information provided is for informational purposes only and should not be relied upon for financial, legal, or professional decisions.</p>
 
-<h2 id="sec-9-governing-law">9. Governing Law and Dispute Resolution</h2>
-<p>These Terms shall be governed by and construed in accordance with the laws of your jurisdiction, without regard to its conflict of law provisions. Any dispute arising from these Terms shall be resolved in a globally recognized arbitration forum or the competent courts of the applicable jurisdiction.</p>
+                    <h2 id="sec-4-limitation-of-liability">4. Limitation of Liability</h2>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER, ITS AFFILIATES, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOSS OF PROFITS, DATA, OR USE) ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR INABILITY TO USE THE SITE OR THE APPS.</p>
+                    <p>Our liability is strictly limited to the amount paid (if any) by you for an App or its premium features during the twelve (12) months immediately preceding the claim.</p>
 
-<h2 id="sec-10-contact">10. Contact Information</h2>
-<p>If you have any questions or concerns about these Terms, contact us at <a href="mailto:hello@carlier.site">hello@carlier.site</a>.</p>
-</main>
-<footer class="site-footer">
-  <p><a href="../">carlier.site</a> · <a href="privacy_policy.html">Privacy Policy</a> · <a href="terms_of_service.html">Terms of Service</a></p>
-</footer>
+                    <h2 id="sec-5-third-party-services">5. Third-Party Services</h2>
+                    <p>Some Apps integrate third-party services (such as Google Generative AI / Gemini) to provide their core functionality, and the Site links to third-party app stores. Your use of those third-party services is subject to their own Terms of Service and Privacy Policy. Where an App requires you to supply your own API key (&ldquo;Bring Your Own Key&rdquo;), you are solely responsible for creating, securing, and managing that key, and for any usage limits, billing, or quotas associated with it. We do not store or have access to your API key outside your local device storage.</p>
+
+                    <h2 id="sec-6-user-conduct">6. User Conduct and Responsibility</h2>
+                    <p>You agree not to use the Site or the Apps to:</p>
+                    <ul>
+                        <li>Submit or upload any illegal, harmful, threatening, abusive, harassing, defamatory, vulgar, or obscene content.</li>
+                        <li>Violate any local, state, national, or international law or regulation.</li>
+                        <li>Attempt to hack, reverse engineer, or disrupt the operation of the Site or the Apps.</li>
+                    </ul>
+                    <p>We reserve the right to suspend or terminate access to the Site or an App (or disable specific features) if you are found attempting to violate these Terms.</p>
+
+                    <h2 id="sec-7-intellectual-property">7. Intellectual Property</h2>
+                    <p>All intellectual property rights in the Site and the Apps (excluding user-generated content and third-party AI models) belong to the Developer. You may not reproduce, distribute, or create derivative works based on the Site or the Apps without explicit permission.</p>
+
+                    <h2 id="sec-8-modifications">8. Modifications to Terms, Site, and Apps</h2>
+                    <p>We reserve the right to modify or discontinue the Site or an App, temporarily or permanently, with or without notice. We may also revise these Terms at any time by updating this document. By continuing to use the Site or an App after any modifications, you agree to be bound by the updated Terms.</p>
+
+                    <h2 id="sec-9-governing-law">9. Governing Law and Dispute Resolution</h2>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of your jurisdiction, without regard to its conflict of law provisions. Any dispute arising from these Terms shall be resolved in a globally recognized arbitration forum or the competent courts of the applicable jurisdiction.</p>
+
+                    <h2 id="sec-10-contact">10. Contact Information</h2>
+                    <p>If you have any questions or concerns about these Terms, contact us at <a href="mailto:hello@carlier.site">hello@carlier.site</a>.</p>
+                </section>
+
+                <section class="file-section footer-section" id="related">
+                    <p class="file-comment">&lt;!-- RELATED.md --&gt;</p>
+                    <h2>Related</h2>
+                    <p>Read the companion document, or head back to the legal center.</p>
+                    <nav class="footer-links" aria-label="Related legal pages">
+                        <a href="privacy_policy.html"><svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg>Privacy Policy</a>
+                        <a href="index.html"><svg class="i" aria-hidden="true"><use href="#i-book"></use></svg>Legal center</a>
+                        <a href="../"><svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>carlier.site</a>
+                        <a href="mailto:hello@carlier.site"><svg class="i" aria-hidden="true"><use href="#i-mail"></use></svg>Email</a>
+                    </nav>
+                    <p class="footer-fineprint">carlier.site · legal/terms_of_service.html · last updated October 2026</p>
+                </section>
+            </main>
+        </div>
+
+        <aside class="rail-right" id="rail-right" aria-label="Page outline and terminal">
+            <div class="rail-tabs">
+                <span class="rail-tab active">On this page</span>
+                <span class="rail-tab">Terminal</span>
+                <button type="button" class="rail-close" id="rail-close" aria-label="Close page outline and terminal">
+                    <svg class="i" aria-hidden="true"><use href="#i-x"></use></svg>
+                </button>
+            </div>
+            <nav class="filetree" aria-label="Terms of service outline">
+                <a class="ft-row active" href="#terms-of-service"><svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>Terms of Service</a>
+                <a class="ft-row depth-1" href="#sec-1-acceptance"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">1</span> Acceptance</a>
+                <a class="ft-row depth-1" href="#sec-2-description-of-service"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">2</span> Description of Service</a>
+                <a class="ft-row depth-1" href="#sec-3-as-is"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">3</span> AS-IS Service</a>
+                <a class="ft-row depth-1" href="#sec-4-limitation-of-liability"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">4</span> Limitation of Liability</a>
+                <a class="ft-row depth-1" href="#sec-5-third-party-services"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">5</span> Third-Party Services</a>
+                <a class="ft-row depth-1" href="#sec-6-user-conduct"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">6</span> User Conduct</a>
+                <a class="ft-row depth-1" href="#sec-7-intellectual-property"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">7</span> Intellectual Property</a>
+                <a class="ft-row depth-1" href="#sec-8-modifications"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">8</span> Modifications</a>
+                <a class="ft-row depth-1" href="#sec-9-governing-law"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">9</span> Governing Law</a>
+                <a class="ft-row depth-1" href="#sec-10-contact"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">10</span> Contact Information</a>
+            </nav>
+            <div class="terminal">
+                <div class="terminal-head">
+                    <span class="terminal-label">Terminal</span>
+                </div>
+                <pre class="term-screen"><span class="term-line"><span class="term-prompt">❯</span> <span class="term-cmd">cat legal/terms_of_service.md</span></span><span class="term-out"><span class="term-ok">✓</span> as-is service · AI can be wrong
+<span class="term-ok">✓</span> liability capped at amount paid
+<span class="term-ok">✓</span> user conduct rules
+<span class="term-ok">✓</span> bring-your-own-key stays local
+<span class="term-ok">✓</span> governed by your jurisdiction</span><span class="term-line"><span class="term-prompt">❯</span> <span class="term-caret"></span></span></pre>
+            </div>
+        </aside>
+    </div>
+
+    <div class="rail-backdrop" id="rail-backdrop" hidden></div>
+
+    <footer class="statusbar">
+        <span class="sb-group">
+            <span class="sb-item">Copyright © 2026 Carlier</span>
+            <span class="sb-sep" aria-hidden="true">·</span>
+            <span class="sb-item">Legal / Terms</span>
+        </span>
+        <span class="sb-group sb-secondary">
+            <span class="sb-item">UTF-8</span>
+            <span class="sb-item">HTML</span>
+            <span class="sb-item">Updated Oct 2026</span>
+        </span>
+    </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

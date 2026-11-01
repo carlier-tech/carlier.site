@@ -1,98 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Carlier</title>
 <meta name="description" content="Privacy policy for the Carlier website and its language-learning and identification apps.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://carlier.site/legal/privacy_policy.html">
-<meta name="theme-color" content="#05070f">
-<link rel="icon" type="image/png" href="../images/Carlier_logo_160x160.png">
-<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<meta name="theme-color" content="#171719">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>
+try {
+    const saved = localStorage.getItem("carlier-legal-theme");
+    const theme = saved === "light" || saved === "dark"
+        ? saved
+        : window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", theme);
+} catch {}
+</script>
 </head>
 <body>
-<header class="site-header" aria-label="Primary navigation">
-  <a class="brand" href="../" aria-label="Carlier home">
-    <img src="../images/Carlier_logo_160x160.png" alt="" width="36" height="36">
-    <span>Carlier</span>
-  </a>
-  <nav class="nav-links" aria-label="Legal pages">
-    <a href="privacy_policy.html" aria-current="page">Privacy</a>
-    <a href="terms_of_service.html">Terms</a>
-  </nav>
-</header>
-<main class="legal-page">
-<p class="eyebrow">Legal</p>
-<h1 id="privacy-policy">Privacy Policy</h1>
-<p><strong>Last Updated:</strong> October 2026</p>
-<p>This Privacy Policy explains how your information is handled when you visit this website (carlier.site, the &quot;Site&quot;) and when you use our mobile applications (the &quot;Apps&quot;). We are committed to protecting your privacy and making it clear how your data is handled.</p>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<h2 id="sec-1-the-website">1. The Website</h2>
-<p>The Site is a static informational website that presents our products. It is designed to collect as little information about you as possible.</p>
-<ul>
-  <li><strong>No accounts, forms, or trackers:</strong> The Site has no sign-up, no contact form, and no advertising or analytics trackers. We do not use cookies.</li>
-  <li><strong>Language preference:</strong> If you switch the Site into another language, that choice is stored in your own browser (via <code>localStorage</code>) so the Site can remember it. This preference stays on your device and is not sent to us.</li>
-  <li><strong>Hosting logs:</strong> Like most websites, the server that hosts the Site may temporarily record standard technical details (such as your IP address, browser, and the page requested) for security and operational purposes. We do not combine this with identifying information.</li>
-  <li><strong>Store links:</strong> The Site links to Google Play and other app stores. Once you follow such a link, that store&#39;s privacy policy applies.</li>
-</ul>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="m19 8 3 8a5 5 0 0 1-6 0z"></path><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"></path><path d="m5 8 3 8a5 5 0 0 1-6 0z"></path><path d="M7 21h10"></path></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></symbol>
+</svg>
 
-<h2 id="sec-2-the-apps">2. The Apps</h2>
-<p>Our Apps process information differently depending on the app, and each App has its own, more specific Privacy Policy. In general:</p>
-<ul>
-  <li><strong>Local storage:</strong> By default, your data within an App (such as saved items, history, or settings) is stored <strong>locally on your device</strong>. We do not operate centralized servers that hold your personal data or your collections.</li>
-  <li><strong>Third-party AI services:</strong> Some Apps use third-party artificial-intelligence services (such as Google&#39;s Gemini API) to deliver their core feature. Where an App does this, the relevant input is transmitted to that provider for analysis, and that provider&#39;s privacy policy applies to that processing.</li>
-  <li><strong>API keys:</strong> If an App lets you enter your own API key, that key is stored locally on your device. We do not have access to it.</li>
-  <li><strong>Feedback and support:</strong> If you contact us, we receive whatever you choose to send (usually your email address and your message).</li>
-</ul>
-<p>Please refer to the Privacy Policy published on each App&#39;s store listing for the details that apply to that specific App.</p>
+<div class="window">
+    <header class="titlebar">
+        <a class="brand" href="index.html" aria-label="Carlier legal home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M16.5 7.5a6.5 6.5 0 1 0 0 9"></path></svg>
+            </span>
+            <span>Carlier</span>
+        </a>
+        <div class="scope">
+            <span class="scope-crumbs">
+                <span class="scope-project">carlier.site</span>
+                <svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+                <span class="scope-name">legal</span>
+            </span>
+            <span class="scope-branch">
+                <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
+                legal · from main
+            </span>
+        </div>
+        <div class="titlebar-right">
+            <a class="chrome-btn" href="privacy_policy.html" aria-current="page">Privacy</a>
+            <a class="chrome-btn" href="terms_of_service.html">Terms</a>
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" aria-pressed="false">
+                <svg class="i theme-icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+                <svg class="i theme-icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+            </button>
+            <button type="button" class="nav-toggle chrome-btn" id="nav-toggle" aria-expanded="false" aria-controls="rail-right" aria-label="Open page outline and terminal">
+                <svg class="i" aria-hidden="true"><use href="#i-menu"></use></svg>
+            </button>
+        </div>
+    </header>
 
-<h2 id="sec-3-how-we-use-information">3. How We Use Information</h2>
-<p>We use the information described above for the following purposes:</p>
-<ul>
-  <li>To operate, maintain, and improve the Site and the Apps.</li>
-  <li>To provide the features an App is built around (which may include sending input to a third-party AI service for analysis).</li>
-  <li>To respond to support requests and to communicate security or update notices.</li>
-</ul>
-<p>We do not sell your personal data to third parties.</p>
+    <div class="cols">
+        <aside class="rail-left" aria-label="Legal pages">
+            <div class="rail-heading">Projects</div>
+            <div class="tree">
+                <div class="tree-row active">
+                    <svg class="i" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+                    <svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>
+                    <span>carlier.site</span>
+                </div>
+                <div class="tree-row workspace active">
+                    <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
+                    <span>legal</span>
+                </div>
+                <a class="tree-row page" href="index.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>
+                    <span>Landing</span>
+                </a>
+                <a class="tree-row page selected" href="privacy_policy.html" aria-current="page">
+                    <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
+                    <span>Privacy Policy</span>
+                </a>
+                <a class="tree-row page" href="terms_of_service.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
+                    <span>Terms of Service</span>
+                </a>
+            </div>
+            <div class="rail-note" id="rail-note">
+                <svg class="rail-note-icon" aria-hidden="true"><use href="#i-info"></use></svg>
+                <p>This policy covers both the <strong>website</strong> and the <strong>Apps</strong>. Each app store listing may add its own app-specific privacy policy.</p>
+                <button type="button" class="rail-note-dismiss" id="rail-note-dismiss">Understood</button>
+            </div>
+        </aside>
 
-<h2 id="sec-4-data-storage-and-security">4. Data Storage and Security</h2>
-<ul>
-  <li><strong>Local by default:</strong> Data an App stores about your usage stays on your device unless an App&#39;s own policy says otherwise.</li>
-  <li><strong>No central profile:</strong> We do not keep a database of your personal data or collections for the Site.</li>
-  <li><strong>Security:</strong> While we take reasonable safeguards, no system is perfectly secure. For Apps, we recommend protecting your device with a passcode or biometric lock.</li>
-</ul>
+        <div class="center">
+            <nav class="tabstrip" aria-label="Documents">
+                <a class="tab" href="index.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-book"></use></svg>
+                    README.md
+                </a>
+                <a class="tab active" href="privacy_policy.html" aria-current="page">
+                    <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
+                    privacy_policy.html
+                </a>
+                <a class="tab" href="terms_of_service.html">
+                    <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
+                    terms_of_service.html
+                </a>
+            </nav>
 
-<h2 id="sec-5-third-party-services">5. Third-Party Services</h2>
-<p>The Site and the Apps rely on a small number of third parties:</p>
-<ul>
-  <li><strong>Google Generative AI (Gemini):</strong> Where an App uses Gemini, input is sent to Google&#39;s APIs. Your use of that feature is also subject to Google&#39;s Privacy Policy and Terms of Service.</li>
-  <li><strong>App stores and fonts:</strong> The Site is distributed through app stores and loads fonts from Google Fonts. These providers process standard technical data under their own policies.</li>
-</ul>
+            <main class="editor" id="main" tabindex="-1">
+                <section class="file-section hero" id="privacy-policy">
+                    <p class="file-comment">&lt;!-- legal/privacy_policy.md --&gt;</p>
+                    <p class="hero-kicker">
+                        <span class="pill pill-accent">Legal</span>
+                        <span class="pill">Privacy</span>
+                        <span class="pill">Updated October 2026</span>
+                    </p>
+                    <h1 class="hero-title hero-title-doc">Privacy Policy</h1>
+                    <p class="hero-lede">
+                        This Privacy Policy explains how your information is handled when you visit this
+                        website (carlier.site, the &ldquo;Site&rdquo;) and when you use our mobile applications
+                        (the &ldquo;Apps&rdquo;). We are committed to protecting your privacy and making it clear
+                        how your data is handled.
+                    </p>
+                    <p class="hero-meta">
+                        <span><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>privacy_policy.html</span>
+                        <span><svg class="i" aria-hidden="true"><use href="#i-lock"></use></svg>Applies to the Site and the Apps</span>
+                        <span><svg class="i" aria-hidden="true"><use href="#i-check"></use></svg>Last updated October 2026</span>
+                    </p>
+                </section>
 
-<h2 id="sec-6-global-privacy-rights">6. Global Privacy Rights (GDPR, CCPA, etc.)</h2>
-<p>Depending on where you live, you may have the following rights regarding your data:</p>
-<ul>
-  <li><strong>Right to Access:</strong> You can ask us what information we hold about you.</li>
-  <li><strong>Right to Deletion:</strong> You can ask us to delete information you have given us (such as a support email). For data stored locally in an App, you can exercise this yourself by clearing the App&#39;s data or deleting the App.</li>
-  <li><strong>Right to Opt-Out:</strong> You can simply stop using the Site or an App; the Site itself sets no tracking cookies to opt out of.</li>
-</ul>
-<p>To exercise any of these rights, contact us at the address below.</p>
+                <section class="file-section doc-body">
+                    <h2 id="sec-1-the-website">1. The Website</h2>
+                    <p>The Site is a static informational website that presents our products. It is designed to collect as little information about you as possible.</p>
+                    <ul>
+                        <li><strong>No accounts, forms, or trackers:</strong> The Site has no sign-up, no contact form, and no advertising or analytics trackers. We do not use cookies.</li>
+                        <li><strong>Language preference:</strong> If you switch the Site into another language, that choice is stored in your own browser (via <code>localStorage</code>) so the Site can remember it. This preference stays on your device and is not sent to us.</li>
+                        <li><strong>Hosting logs:</strong> Like most websites, the server that hosts the Site may temporarily record standard technical details (such as your IP address, browser, and the page requested) for security and operational purposes. We do not combine this with identifying information.</li>
+                        <li><strong>Store links:</strong> The Site links to Google Play and other app stores. Once you follow such a link, that store's privacy policy applies.</li>
+                    </ul>
 
-<h2 id="sec-7-childrens-privacy">7. Children&#39;s Privacy</h2>
-<p>The Site and the Apps are not directed at children under the age of 13 (or under 16 in certain jurisdictions such as the EU). We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us so we can remove it.</p>
+                    <h2 id="sec-2-the-apps">2. The Apps</h2>
+                    <p>Our Apps process information differently depending on the app, and each App has its own, more specific Privacy Policy. In general:</p>
+                    <ul>
+                        <li><strong>Local storage:</strong> By default, your data within an App (such as saved items, history, or settings) is stored <strong>locally on your device</strong>. We do not operate centralized servers that hold your personal data or your collections.</li>
+                        <li><strong>Third-party AI services:</strong> Some Apps use third-party artificial-intelligence services (such as Google's Gemini API) to deliver their core feature. Where an App does this, the relevant input is transmitted to that provider for analysis, and that provider's privacy policy applies to that processing.</li>
+                        <li><strong>API keys:</strong> If an App lets you enter your own API key, that key is stored locally on your device. We do not have access to it.</li>
+                        <li><strong>Feedback and support:</strong> If you contact us, we receive whatever you choose to send (usually your email address and your message).</li>
+                    </ul>
+                    <p>Please refer to the Privacy Policy published on each App's store listing for the details that apply to that specific App.</p>
 
-<h2 id="sec-8-changes">8. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. We will post any changes on this page, and the &quot;Last Updated&quot; date above will reflect the latest revision. You are advised to review this page periodically.</p>
+                    <h2 id="sec-3-how-we-use-information">3. How We Use Information</h2>
+                    <p>We use the information described above for the following purposes:</p>
+                    <ul>
+                        <li>To operate, maintain, and improve the Site and the Apps.</li>
+                        <li>To provide the features an App is built around (which may include sending input to a third-party AI service for analysis).</li>
+                        <li>To respond to support requests and to communicate security or update notices.</li>
+                    </ul>
+                    <p>We do not sell your personal data to third parties.</p>
 
-<h2 id="sec-9-contact-us">9. Contact Us</h2>
-<p>If you have any questions or concerns about this Privacy Policy, contact us at <a href="mailto:hello@carlier.site">hello@carlier.site</a>.</p>
-</main>
-<footer class="site-footer">
-  <p><a href="../">carlier.site</a> · <a href="privacy_policy.html">Privacy Policy</a> · <a href="terms_of_service.html">Terms of Service</a></p>
-</footer>
+                    <h2 id="sec-4-data-storage-and-security">4. Data Storage and Security</h2>
+                    <ul>
+                        <li><strong>Local by default:</strong> Data an App stores about your usage stays on your device unless an App's own policy says otherwise.</li>
+                        <li><strong>No central profile:</strong> We do not keep a database of your personal data or collections for the Site.</li>
+                        <li><strong>Security:</strong> While we take reasonable safeguards, no system is perfectly secure. For Apps, we recommend protecting your device with a passcode or biometric lock.</li>
+                    </ul>
+
+                    <h2 id="sec-5-third-party-services">5. Third-Party Services</h2>
+                    <p>The Site and the Apps rely on a small number of third parties:</p>
+                    <ul>
+                        <li><strong>Google Generative AI (Gemini):</strong> Where an App uses Gemini, input is sent to Google's APIs. Your use of that feature is also subject to Google's Privacy Policy and Terms of Service.</li>
+                        <li><strong>App stores and fonts:</strong> The Site is distributed through app stores and loads fonts from Google Fonts. These providers process standard technical data under their own policies.</li>
+                    </ul>
+
+                    <h2 id="sec-6-global-privacy-rights">6. Global Privacy Rights (GDPR, CCPA, etc.)</h2>
+                    <p>Depending on where you live, you may have the following rights regarding your data:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> You can ask us what information we hold about you.</li>
+                        <li><strong>Right to Deletion:</strong> You can ask us to delete information you have given us (such as a support email). For data stored locally in an App, you can exercise this yourself by clearing the App's data or deleting the App.</li>
+                        <li><strong>Right to Opt-Out:</strong> You can simply stop using the Site or an App; the Site itself sets no tracking cookies to opt out of.</li>
+                    </ul>
+                    <p>To exercise any of these rights, contact us at the address below.</p>
+
+                    <h2 id="sec-7-childrens-privacy">7. Children's Privacy</h2>
+                    <p>The Site and the Apps are not directed at children under the age of 13 (or under 16 in certain jurisdictions such as the EU). We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us so we can remove it.</p>
+
+                    <h2 id="sec-8-changes">8. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. We will post any changes on this page, and the &ldquo;Last Updated&rdquo; date above will reflect the latest revision. You are advised to review this page periodically.</p>
+
+                    <h2 id="sec-9-contact-us">9. Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy, contact us at <a href="mailto:hello@carlier.site">hello@carlier.site</a>.</p>
+                </section>
+
+                <section class="file-section footer-section" id="related">
+                    <p class="file-comment">&lt;!-- RELATED.md --&gt;</p>
+                    <h2>Related</h2>
+                    <p>Read the companion document, or head back to the legal center.</p>
+                    <nav class="footer-links" aria-label="Related legal pages">
+                        <a href="terms_of_service.html"><svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>Terms of Service</a>
+                        <a href="index.html"><svg class="i" aria-hidden="true"><use href="#i-book"></use></svg>Legal center</a>
+                        <a href="../"><svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>carlier.site</a>
+                        <a href="mailto:hello@carlier.site"><svg class="i" aria-hidden="true"><use href="#i-mail"></use></svg>Email</a>
+                    </nav>
+                    <p class="footer-fineprint">carlier.site · legal/privacy_policy.html · last updated October 2026</p>
+                </section>
+            </main>
+        </div>
+
+        <aside class="rail-right" id="rail-right" aria-label="Page outline and terminal">
+            <div class="rail-tabs">
+                <span class="rail-tab active">On this page</span>
+                <span class="rail-tab">Terminal</span>
+                <button type="button" class="rail-close" id="rail-close" aria-label="Close page outline and terminal">
+                    <svg class="i" aria-hidden="true"><use href="#i-x"></use></svg>
+                </button>
+            </div>
+            <nav class="filetree" aria-label="Privacy policy outline">
+                <a class="ft-row active" href="#privacy-policy"><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>Privacy Policy</a>
+                <a class="ft-row depth-1" href="#sec-1-the-website"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">1</span> The Website</a>
+                <a class="ft-row depth-1" href="#sec-2-the-apps"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">2</span> The Apps</a>
+                <a class="ft-row depth-1" href="#sec-3-how-we-use-information"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">3</span> How We Use Information</a>
+                <a class="ft-row depth-1" href="#sec-4-data-storage-and-security"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">4</span> Data Storage and Security</a>
+                <a class="ft-row depth-1" href="#sec-5-third-party-services"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">5</span> Third-Party Services</a>
+                <a class="ft-row depth-1" href="#sec-6-global-privacy-rights"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">6</span> Global Privacy Rights</a>
+                <a class="ft-row depth-1" href="#sec-7-childrens-privacy"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">7</span> Children's Privacy</a>
+                <a class="ft-row depth-1" href="#sec-8-changes"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">8</span> Changes</a>
+                <a class="ft-row depth-1" href="#sec-9-contact-us"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="num">9</span> Contact Us</a>
+            </nav>
+            <div class="terminal">
+                <div class="terminal-head">
+                    <span class="terminal-label">Terminal</span>
+                </div>
+                <pre class="term-screen"><span class="term-line"><span class="term-prompt">❯</span> <span class="term-cmd">cat legal/privacy_policy.md</span></span><span class="term-out"><span class="term-ok">✓</span> no cookies · no analytics
+<span class="term-ok">✓</span> language preference stays on device
+<span class="term-ok">✓</span> app data local by default
+<span class="term-ok">✓</span> third-party AI disclosed where used
+<span class="term-ok">✓</span> access · deletion · opt-out</span><span class="term-line"><span class="term-prompt">❯</span> <span class="term-caret"></span></span></pre>
+            </div>
+        </aside>
+    </div>
+
+    <div class="rail-backdrop" id="rail-backdrop" hidden></div>
+
+    <footer class="statusbar">
+        <span class="sb-group">
+            <span class="sb-item">Copyright © 2026 Carlier</span>
+            <span class="sb-sep" aria-hidden="true">·</span>
+            <span class="sb-item">Legal / Privacy</span>
+        </span>
+        <span class="sb-group sb-secondary">
+            <span class="sb-item">UTF-8</span>
+            <span class="sb-item">HTML</span>
+            <span class="sb-item">Updated Oct 2026</span>
+        </span>
+    </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

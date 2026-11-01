@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171719">
+<title>AI Identifier — know what you're holding</title>
+<meta name="description" content="Point your camera at a coin, antique, or curious find. AI Identifier names it, places it in time, and gives you a realistic value range — then keeps it in a collection on your phone. Android, local-first, 3 free scans.">
+<meta name="author" content="Carlier">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://carlier.site/ai-identifier/">
+<link rel="icon" type="image/png" href="images/Carlier_logo_160x160.png">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/Carlier_logo_512x512.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://carlier.site/ai-identifier/">
+<meta property="og:title" content="AI Identifier — know what you're holding">
+<meta property="og:description" content="One photo. A name, a date, and a realistic value range. AI Identifier is a local-first Android app for coins, antiques, and curious finds.">
+<meta property="og:image" content="https://carlier.site/ai-identifier/images/Carlier_logo_512x512.webp">
+<meta property="og:site_name" content="AI Identifier">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://carlier.site/ai-identifier/">
+<meta property="twitter:title" content="AI Identifier — know what you're holding">
+<meta property="twitter:description" content="One photo. A name, a date, and a realistic value range. Android, local-first, 3 free scans.">
+<meta property="twitter:image" content="https://carlier.site/ai-identifier/images/Carlier_logo_512x512.webp">
+
+<script>
+  try {
+    var saved = localStorage.getItem("ai-identifier-theme");
+    var theme = saved === "light" ? "light" : saved === "dark" ? "dark" : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landing.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AI Identifier",
+  "applicationCategory": "MobileApplication",
+  "operatingSystem": "Android",
+  "description": "Identify coins, antiques, and collectibles from a photo. Get a name, era, and estimated value range, then save finds to a local collection.",
+  "image": "https://carlier.site/ai-identifier/images/Carlier_logo_512x512.webp",
+  "url": "https://carlier.site/ai-identifier/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.carlier.coinidentifier",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download with 3 free scans. Premium unlocks unlimited scans."
+  },
+  "featureList": [
+    "AI identification from one photo",
+    "Name, era, origin, and condition",
+    "Estimated value range with confidence",
+    "Local collection catalog",
+    "Camera zoom and focus controls",
+    "Bring your own Google Gemini API key",
+    "3 free scans"
+  ]
+}
+</script>
+</head>
+
+<body class="landing">
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
+  <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+  <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+  <symbol id="i-collection" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><path d="M8 7h8"/><path d="M8 11h5"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 3 3L22 7l-3-3"/><path d="m18.5 10.5-8.5 8.5a3.5 3.5 0 1 1-5-5L13.5 5.5"/><circle cx="6.5" cy="17.5" r="1.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-message-square" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0z"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0z"/><path d="M7 21h10"/></symbol>
+  <symbol id="i-package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol>
+</svg>
+
+<a class="skip-link" href="#readme">Skip to content</a>
+
+<div class="window">
+  <header class="titlebar">
+    <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="wordmark-logo" aria-hidden="true">
+      <img src="images/Carlier_logo.svg" alt="" width="24" height="24">
+    </span>
+    <div class="scope">
+      <span class="scope-crumbs">
+        <span class="scope-project">carlier</span>
+        <svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+        <span class="scope-name">ai-identifier</span>
+      </span>
+      <span class="scope-branch">
+        <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
+        workspace/landing · from main
+      </span>
+    </div>
+    <div class="titlebar-right">
+      <a class="chrome-btn" href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer">
+        <svg class="i i-fill" aria-hidden="true"><use href="#i-play"></use></svg>
+        <span class="titlebar-cta-label">Google Play</span>
+      </a>
+      <a class="chrome-btn" href="feedback_guide.html">
+        <svg class="i" aria-hidden="true"><use href="#i-message-square"></use></svg>
+        <span class="titlebar-cta-label">Feedback</span>
+      </a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
+        <svg class="i theme-icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+        <svg class="i theme-icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+      </button>
+      <button type="button" class="chrome-btn nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="rail-right" aria-label="Open file tree">
+        <svg class="i" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="rail-left" aria-label="Project files">
+      <div class="rail-left-nav">
+        <div class="rail-heading">Project <svg class="i" aria-hidden="true"><use href="#i-plus"></use></svg></div>
+        <div class="tree">
+          <div class="tree-row active">
+            <svg class="i" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+            <svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>
+            <span>carlier</span>
+          </div>
+          <div class="tree-row workspace active">
+            <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
+            <span>ai-identifier</span>
+          </div>
+          <a class="tree-row page selected" href="#readme" data-section="readme">
+            <svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>
+            <span>Landing</span>
+          </a>
+          <a class="tree-row page" href="privacy_policy.html">
+            <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
+            <span>Privacy Policy</span>
+          </a>
+          <a class="tree-row page" href="terms_of_service.html">
+            <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
+            <span>Terms of Service</span>
+          </a>
+          <a class="tree-row page" href="feedback_guide.html">
+            <svg class="i" aria-hidden="true"><use href="#i-message-square"></use></svg>
+            <span>Feedback</span>
+          </a>
+          <a class="tree-row page" href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer">
+            <svg class="i" aria-hidden="true"><use href="#i-download"></use></svg>
+            <span>Get the app</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="rail-note" id="rail-note">
+        <svg class="rail-note-icon" aria-hidden="true"><use href="#i-info"></use></svg>
+        <p>Local-first: your collection stays on your phone. Only the scan photo is sent to Google Gemini for identification.</p>
+        <button type="button" class="rail-note-dismiss" id="rail-note-dismiss">Understood</button>
+      </div>
+    </aside>
+
+    <div class="center">
+      <nav class="tabstrip" aria-label="Editor tabs">
+        <a class="tab active" href="#readme" data-tab="readme">
+          <svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>
+          README.md
+        </a>
+        <a class="tab" href="#scan" data-tab="scan">
+          <svg class="i" aria-hidden="true"><use href="#i-camera"></use></svg>
+          SCAN.md
+        </a>
+        <a class="tab" href="#pricing" data-tab="pricing">
+          <svg class="i" aria-hidden="true"><use href="#i-tag"></use></svg>
+          PRICING.md
+        </a>
+        <a class="tab" href="#faq" data-tab="faq">
+          <svg class="i" aria-hidden="true"><use href="#i-info"></use></svg>
+          FAQ.md
+        </a>
+      </nav>
+
+      <main class="editor" id="editor-scroll" aria-label="AI Identifier landing page">
+
+        <!-- README.md — hero -->
+        <section class="file-section hero" id="readme" data-file="README.md" data-section="readme">
+          <p class="file-comment">&lt;!-- README.md --&gt;</p>
+          <p class="hero-kicker">
+            <span class="pill pill-accent">Android</span>
+            <span class="pill">Google Gemini</span>
+            <span class="pill">local-first</span>
+          </p>
+          <h1 class="hero-title">AI Identifier</h1>
+          <p class="hero-tagline">Know what you're holding.</p>
+          <p class="hero-lede">
+            Point your camera at a coin, an antique, or a curious find.
+            <strong>AI Identifier</strong> names it, places it in time, and gives you a
+            <strong>realistic value range</strong> — then keeps the whole story in a collection
+            on your phone.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer">
+              <svg class="i i-fill" aria-hidden="true"><use href="#i-play"></use></svg>
+              Get it on Google Play
+            </a>
+            <a class="btn" href="#scan">
+              <svg class="i" aria-hidden="true"><use href="#i-camera"></use></svg>
+              See a real scan
+            </a>
+            <a class="btn" href="feedback_guide.html">
+              <svg class="i" aria-hidden="true"><use href="#i-message-square"></use></svg>
+              Send feedback
+            </a>
+          </div>
+          <p class="hero-note">
+            <svg class="i" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+            3 free scans · no card required · Android only
+          </p>
+        </section>
+
+        <!-- why.md -->
+        <section class="file-section" id="why" data-file="why.md" data-section="why">
+          <p class="file-comment">&lt;!-- WHY AI IDENTIFIER --&gt;</p>
+          <h2>Less guessing. More knowing.</h2>
+          <div class="beats">
+            <div class="beat">
+              <h3>A photo is the whole input.</h3>
+              <p>
+                No model numbers, no forms, no research tabs. Frame the object and let the model read
+                the shape, surface, markings, and patina. It works on the worn, the dirty, and the
+                things you can't quite name.
+              </p>
+            </div>
+            <div class="beat">
+              <h3>Value comes as a range, not a promise.</h3>
+              <p>
+                Every result includes an estimated price band and a confidence score. It's a
+                starting point for research — not a dealer offer, a grading opinion, or a guarantee
+                of what someone will pay.
+              </p>
+            </div>
+            <div class="beat">
+              <h3>Your collection stays yours.</h3>
+              <p>
+                Finds, photos, notes, and API keys live on your device. The scan image goes to Google
+                Gemini only to produce the identification. There is no central shelf of your
+                collection.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- HOW.md -->
+        <section class="file-section" id="how" data-file="HOW.md" data-section="how">
+          <p class="file-comment">&lt;!-- HOW IT WORKS --&gt;</p>
+          <h2>Drawer to answer in three steps.</h2>
+          <p>Designed for the moment before you spend an evening on forums.</p>
+          <div class="feature-grid feature-grid-3">
+            <article class="feature-card step-card">
+              <span class="step-num">01</span>
+              <h3><svg class="i" aria-hidden="true"><use href="#i-camera"></use></svg> Frame it</h3>
+              <p>Use the guided camera with zoom and focus for small, worn, or detailed objects.</p>
+            </article>
+            <article class="feature-card step-card">
+              <span class="step-num">02</span>
+              <h3><svg class="i" aria-hidden="true"><use href="#i-sparkles"></use></svg> Identify it</h3>
+              <p>Get a likely name, era, origin, condition notes, and an estimated value range.</p>
+            </article>
+            <article class="feature-card step-card">
+              <span class="step-num">03</span>
+              <h3><svg class="i" aria-hidden="true"><use href="#i-collection"></use></svg> Keep it</h3>
+              <p>Save the photo and the result to a collection you can browse, compare, and export.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SCAN.md -->
+        <section class="file-section" id="scan" data-file="SCAN.md" data-section="scan">
+          <p class="file-comment">&lt;!-- A REAL SCAN --&gt;</p>
+          <h2>A real screen, not a stock photo.</h2>
+          <p>
+            Here's the shape of an answer: a brass pocket compass, placed between 1930 and 1950,
+            with an honest range for a well-used piece. The confidence score tells you how much to
+            trust the first pass.
+          </p>
+
+          <div class="scan-layout">
+            <figure class="phone" aria-label="Illustration of an AI Identifier scan result">
+              <div class="phone-screen">
+                <div class="phone-status">
+                  <span>9:41</span>
+                  <span class="phone-status-icons" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+                <div class="app-bar">
+                  <span class="app-bar-title"><svg class="i" aria-hidden="true"><use href="#i-sparkles"></use></svg> New scan</span>
+                  <span class="app-bar-close" aria-hidden="true"><svg class="i"><use href="#i-x"></use></svg></span>
+                </div>
+                <div class="viewfinder">
+                  <span class="scan-corner tl"></span>
+                  <span class="scan-corner tr"></span>
+                  <span class="scan-corner bl"></span>
+                  <span class="scan-corner br"></span>
+                  <span class="scan-line" aria-hidden="true"></span>
+                  <svg class="compass-art" viewBox="0 0 240 240" role="img" aria-label="Brass pocket compass">
+                    <defs>
+                      <radialGradient id="brass" cx="38%" cy="30%" r="75%">
+                        <stop offset="0" stop-color="#f8e7a8"/>
+                        <stop offset=".42" stop-color="#c9a34a"/>
+                        <stop offset=".78" stop-color="#8b6526"/>
+                        <stop offset="1" stop-color="#4d3511"/>
+                      </radialGradient>
+                      <linearGradient id="needle" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#ff6b57"/>
+                        <stop offset=".5" stop-color="#e8e1cf"/>
+                        <stop offset="1" stop-color="#d8d2c4"/>
+                      </linearGradient>
+                    </defs>
+                    <circle cx="120" cy="120" r="104" fill="url(#brass)" stroke="#3c2a0d" stroke-width="4"/>
+                    <circle cx="120" cy="120" r="92" fill="none" stroke="#5f451a" stroke-width="2" opacity=".8"/>
+                    <circle cx="120" cy="120" r="78" fill="#e9dfc2" stroke="#6d5120" stroke-width="3"/>
+                    <circle cx="120" cy="120" r="68" fill="none" stroke="#a48b57" stroke-width="1.5"/>
+                    <g fill="#54401d" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" text-anchor="middle">
+                      <text x="120" y="58">N</text>
+                      <text x="188" y="125">E</text>
+                      <text x="120" y="194">S</text>
+                      <text x="52" y="125">W</text>
+                    </g>
+                    <g stroke="#7a5f2d" stroke-width="2">
+                      <path d="M120 45v8"/><path d="M120 187v8"/><path d="M45 120h8"/><path d="M187 120h8"/>
+                      <path d="m67 67 5 5"/><path d="m168 168 5 5"/><path d="m173 67-5 5"/><path d="m72 168-5 5"/>
+                    </g>
+                    <path d="M120 66 136 120 120 174 104 120Z" fill="url(#needle)" stroke="#4c3b1d" stroke-width="1.5"/>
+                    <path d="M120 66 136 120 120 120Z" fill="#ff5a44"/>
+                    <circle cx="120" cy="120" r="7" fill="#4d3511"/>
+                    <circle cx="120" cy="120" r="3" fill="#f8e7a8"/>
+                    <path d="M64 83c18-17 43-27 69-24" fill="none" stroke="#fff7d6" stroke-width="4" stroke-linecap="round" opacity=".38"/>
+                  </svg>
+                  <span class="scan-readout"><span class="pulse-dot"></span> Reading surface &amp; markings</span>
+                </div>
+                <div class="result-sheet">
+                  <div class="result-head">
+                    <div>
+                      <p class="result-overline">Identified</p>
+                      <h3>Brass pocket compass</h3>
+                    </div>
+                    <span class="confidence">94<small>%</small></span>
+                  </div>
+                  <p class="result-meta">c. 1930–1950 · England · good condition</p>
+                  <div class="result-value">
+                    <span>Estimated range</span>
+                    <strong>$40–$85 <small>USD</small></strong>
+                  </div>
+                  <div class="confidence-bar" aria-hidden="true"><span></span></div>
+                </div>
+                <div class="phone-actions">
+                  <span class="phone-action ghost">Scan again</span>
+                  <span class="phone-action primary">Save find</span>
+                </div>
+              </div>
+            </figure>
+
+            <div class="scan-facts">
+              <p class="file-comment">&lt;!-- result.json --&gt;</p>
+              <div class="fact-table">
+                <div class="fact-row"><span>object</span><strong>Brass pocket compass</strong></div>
+                <div class="fact-row"><span>made</span><strong>c. 1930–1950</strong></div>
+                <div class="fact-row"><span>origin</span><strong>England</strong></div>
+                <div class="fact-row"><span>condition</span><strong>Good · honest patina</strong></div>
+                <div class="fact-row"><span>estimate</span><strong class="fact-accent">$40–$85 USD</strong></div>
+                <div class="fact-row"><span>confidence</span><strong>94%</strong></div>
+              </div>
+              <p class="fineprint">
+                <svg class="i" aria-hidden="true"><use href="#i-info"></use></svg>
+                Illustrative output. Condition, mint marks, errors, and provenance can move the real
+                price a lot. Always do your own research before buying or selling.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- features.md -->
+        <section class="file-section" id="features" data-file="features.md" data-section="features">
+          <p class="file-comment">&lt;!-- FEATURES --&gt;</p>
+          <h2>Built for the thing in your hand.</h2>
+          <p>Enough intelligence to be useful. Enough honesty to be trusted.</p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3><svg class="i" aria-hidden="true"><use href="#i-sparkles"></use></svg> Identify from one photo</h3>
+              <p>Coins, antiques, tools, curios, and the objects that don't have a label. One frame is enough to start.</p>
+            </article>
+            <article class="feature-card">
+              <h3><svg class="i" aria-hidden="true"><use href="#i-tag"></use></svg> Value with context</h3>
+              <p>Estimated ranges and confidence scores, plus the era, origin, and condition details that explain them.</p>
+            </article>
+            <article class="feature-card">
+              <h3><svg class="i" aria-hidden="true"><use href="#i-collection"></use></svg> A collection that keeps up</h3>
+              <p>Save photos, results, and notes. Browse your finds later, or export the catalog to CSV.</p>
+            </article>
+            <article class="feature-card">
+              <h3><svg class="i" aria-hidden="true"><use href="#i-camera"></use></svg> Camera controls that matter</h3>
+              <p>Zoom and focus for tiny lettering, worn faces, and details that a default camera would miss.</p>
+            </article>
+            <article class="feature-card">
+              <h3><svg class="i" aria-hidden="true"><use href="#i-key"></use></svg> Bring your own key</h3>
+              <p>Add a free Google AI Studio key in Settings. The key stays on your device; your Gemini quota and terms apply.</p>
+            </article>
+            <article class="feature-card">
+              <h3><svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg> Private by default</h3>
+              <p>No account required. History and collection data are stored locally, not on a Carlier server.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- PRICING.md -->
+        <section class="file-section" id="pricing" data-file="PRICING.md" data-section="pricing">
+          <p class="file-comment">&lt;!-- PRICING --&gt;</p>
+          <h2>Try three finds. Upgrade only if you keep looking.</h2>
+          <p class="pricing-lead">Billed through Google Play. Amounts are in USD; your store localizes tax and currency.</p>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <div class="price-card-head">
+                <h3>Free</h3>
+                <span class="price-tag">No card</span>
+              </div>
+              <p class="price-amount">$0</p>
+              <p class="price-copy">Download and run three full scans, including identification and an estimated value range.</p>
+              <ul>
+                <li>3 scans</li>
+                <li>Name, era, origin, and condition</li>
+                <li>Value range and confidence</li>
+                <li>Camera zoom and focus</li>
+              </ul>
+              <a class="btn btn-block" href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer">Start free</a>
+            </article>
+            <article class="price-card price-card-featured">
+              <div class="price-card-head">
+                <h3>Premium</h3>
+                <span class="price-tag price-tag-accent">Unlimited</span>
+              </div>
+              <p class="price-amount">$4.99<span>/week</span></p>
+              <p class="price-alt">or $9.99 / month</p>
+              <p class="price-copy">Unlimited identifications and the full collection catalog after the free allowance.</p>
+              <ul>
+                <li>Unlimited scans</li>
+                <li>Full collection and history</li>
+                <li>Save photos with estimates</li>
+                <li>Cancel in Google Play anytime</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer">Go Premium</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- FAQ.md -->
+        <section class="file-section" id="faq" data-file="FAQ.md" data-section="faq">
+          <p class="file-comment">&lt;!-- FAQ --&gt;</p>
+          <h2>Before you scan.</h2>
+          <div class="faq-list">
+            <details open>
+              <summary>Is the value in the app what I can sell the object for?</summary>
+              <p>No. It's an estimated range for information only — not a dealer offer, a professional appraisal, or a guarantee of what eBay or a shop will pay. Condition, markings, provenance, and demand can change the real price a lot.</p>
+            </details>
+            <details>
+              <summary>Does AI Identifier work on iPhone?</summary>
+              <p>Not yet. AI Identifier is Android-only on Google Play. If you'd like to be notified about iOS, <a href="feedback_guide.html">send us feedback</a>.</p>
+            </details>
+            <details>
+              <summary>Do I need a Google API key?</summary>
+              <p>Identification uses Google Gemini. In Settings you can add a free key from Google AI Studio. The key stays on your device, and Google's quotas and terms apply. A key is optional if the app is configured with its own access.</p>
+            </details>
+            <details>
+              <summary>What happens to my photos and collection?</summary>
+              <p>The scan photo is sent to Google Gemini for identification. Your collection, photos, notes, and keys stay on your phone. There is no Carlier account or central collection server. Read the <a href="privacy_policy.html">Privacy Policy</a> for details.</p>
+            </details>
+            <details>
+              <summary>How do the free scans work?</summary>
+              <p>Download the app and scan up to three objects with identification and a value estimate, no card required. Premium unlocks unlimited scans and the full collection. You can cancel anytime in Google Play.</p>
+            </details>
+            <details>
+              <summary>Where do I report a bug or request a feature?</summary>
+              <p>Email <a href="mailto:feedback@carlier.site">feedback@carlier.site</a>, or follow the tips in the <a href="feedback_guide.html">feedback guide</a> so we can reproduce the issue quickly.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- DOWNLOAD / footer -->
+        <section class="file-section footer-section" id="download" data-file="DOWNLOAD.md" data-section="download">
+          <p class="file-comment">&lt;!-- DOWNLOAD --&gt;</p>
+          <h2>Take a second look.</h2>
+          <p>
+            There's probably something in a drawer, a jar, or a box in the closet that's more
+            interesting than it looks. Scan it, look it up, and decide what to do next.
+          </p>
+          <div class="download-cta">
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer" aria-label="Get AI Identifier on Google Play">
+              <svg class="play-mark" viewBox="0 0 512 512" aria-hidden="true">
+                <path fill="#00d7fe" d="M99 33 310 244 99 455c-6-5-9-13-9-24V57c0-11 3-19 9-24z"/>
+                <path fill="#00f076" d="M99 33c7-6 18-7 29-1l235 131-53 53z"/>
+                <path fill="#ffd900" d="M310 244 363 297 128 428c-11 6-22 5-29-1z"/>
+                <path fill="#ff3a44" d="M363 297 442 341c20 11 20 29 0 40l-79 44-53-53z"/>
+              </svg>
+              <span class="play-badge-text"><small>GET IT ON</small><strong>Google Play</strong></span>
+            </a>
+            <a class="btn" href="feedback_guide.html">
+              <svg class="i" aria-hidden="true"><use href="#i-message-square"></use></svg>
+              Tell us what you found
+            </a>
+          </div>
+          <p class="hero-note download-note">
+            <svg class="i" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+            3 free scans · Android · no account required
+          </p>
+
+          <nav class="footer-links" aria-label="Project links">
+            <a href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier" target="_blank" rel="noopener noreferrer"><svg class="i i-fill" aria-hidden="true"><use href="#i-play"></use></svg>Google Play</a>
+            <a href="privacy_policy.html"><svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg>Privacy</a>
+            <a href="terms_of_service.html"><svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>Terms</a>
+            <a href="feedback_guide.html"><svg class="i" aria-hidden="true"><use href="#i-message-square"></use></svg>Feedback</a>
+            <a href="https://carlier.site/"><svg class="i" aria-hidden="true"><use href="#i-package"></use></svg>Carlier</a>
+          </nav>
+          <p class="footer-fineprint">
+            © 2026 Carlier · AI Identifier is an Android app. Google Play and the Google Play logo
+            are trademarks of Google LLC. Value estimates are informational, not professional appraisals.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <aside class="rail-right" id="rail-right" aria-label="Files and terminal">
+      <div class="rail-tabs">
+        <span class="rail-tab dim">Specs</span>
+        <span class="rail-tab active">Files</span>
+        <span class="rail-tab dim">Changes</span>
+        <span class="rail-tab dim">Hooks</span>
+      </div>
+      <nav class="filetree" aria-label="Page sections">
+        <a class="ft-row file active" href="#readme" data-ft="readme"><svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>README.md</a>
+        <a class="ft-row file depth-1" href="#why" data-ft="why"><svg class="i" aria-hidden="true"><use href="#i-info"></use></svg>why.md</a>
+        <a class="ft-row file depth-1" href="#how" data-ft="how"><svg class="i" aria-hidden="true"><use href="#i-camera"></use></svg>HOW.md</a>
+        <a class="ft-row file depth-1" href="#scan" data-ft="scan"><svg class="i" aria-hidden="true"><use href="#i-sparkles"></use></svg>SCAN.md</a>
+        <a class="ft-row file depth-1" href="#features" data-ft="features"><svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>features.md</a>
+        <a class="ft-row file depth-1" href="#pricing" data-ft="pricing"><svg class="i" aria-hidden="true"><use href="#i-tag"></use></svg>PRICING.md</a>
+        <a class="ft-row file depth-1" href="#faq" data-ft="faq"><svg class="i" aria-hidden="true"><use href="#i-info"></use></svg>FAQ.md</a>
+        <a class="ft-row file depth-1" href="#download" data-ft="download"><svg class="i" aria-hidden="true"><use href="#i-download"></use></svg>DOWNLOAD.md</a>
+        <a class="ft-row file depth-1" href="privacy_policy.html"><svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg>privacy_policy.html</a>
+        <a class="ft-row file depth-1" href="terms_of_service.html"><svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>terms_of_service.html</a>
+      </nav>
+
+      <div class="terminal">
+        <div class="terminal-head">
+          <span class="terminal-label">Terminal</span>
+          <button type="button" class="term-replay" id="term-replay">Replay</button>
+        </div>
+        <pre class="term-screen" id="term-screen" aria-label="Example scan output"><span class="term-line"><span class="term-prompt">❯</span> <span class="term-cmd">ai-identifier scan drawer-find.jpg</span></span><span class="term-out">⬡ image received · 1.8 MB · 2048×2048</span><span class="term-out">→ reading surface, markings, patina …</span><span class="term-ok">✓ identified — brass pocket compass</span><span class="term-out">  c. 1930–1950 · England · good condition</span><span class="term-out">  estimate <span class="term-price">$40–$85 USD</span> · confidence 94%</span><span class="term-out">  saved → collection / curios</span><span class="term-line"><span class="term-prompt">❯</span> <span class="term-caret"></span></span></pre>
+      </div>
+    </aside>
+
+    <div class="rail-backdrop" id="rail-backdrop" hidden></div>
+  </div>
+
+  <footer class="statusbar">
+    <span class="sb-item">© 2026 <a href="https://carlier.site/" target="_blank" rel="noopener noreferrer">Carlier</a> <span class="sb-sep" aria-hidden="true">·</span> AI Identifier</span>
+    <span class="sb-spacer"></span>
+    <span class="sb-item sb-wide">Android · v1.0</span>
+    <span class="sb-item">local-first <span class="sb-sep" aria-hidden="true">·</span> UTF-8</span>
+  </footer>
+</div>
+
+<script src="landing.js" defer></script>
+</body>
+</html>
