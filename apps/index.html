@@ -1,81 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apps — Language & Coin Learning by Carlier</title>
-<meta name="description" content="Mobile apps for language learning and coin identification: Learn Chinese, Cantonese, Thai, and Coin Identifier.">
-<link rel="canonical" href="https://carlier.site/apps/">
-<meta property="og:title" content="Apps — Carlier">
-<meta property="og:description" content="Learn Chinese, Cantonese, Thai, and identify coins with smart mobile apps.">
-<meta property="og:image" content="https://carlier.site/apps/images/og-chinese.webp">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="en_US">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="https://carlier.site/apps/images/og-chinese.webp">
-<style>
-:root{--bg:#fff8f0;--surface:#fff;--text:#1a1a2e;--accent:#e07a4f;--muted:#6e6e7a;--border:#f0ddd3;}
-*{box-sizing:border-box;}
-body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.55;}
-a{color:var(--accent);text-decoration:none;outline-offset:2px;}
-a:focus,button:focus{outline:2.5px solid var(--accent);outline-offset:2px;}
-header{padding:1.5rem 1.5rem 0;max-width:1080px;margin:0 auto;}
-nav{display:flex;gap:1.25rem;align-items:center;font-size:.95rem;}
-nav a{font-weight:600;color:var(--text);}
-.hero{max-width:1080px;margin:0 auto;padding:4rem 1.5rem 2.5rem;}
-.hero h1{font-size:clamp(2.2rem,6vw,3.4rem);letter-spacing:-.03em;line-height:1.1;margin:0 0 .8rem;}
-.hero p{font-size:1.15rem;color:var(--muted);max-width:55ch;margin:0;}
-.grid{max-width:1080px;margin:0 auto;padding:3rem 1.5rem;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:1.5rem;box-shadow:0 4px 30px rgba(224,122,79,.08);}
-.card img{width:100%;height:auto;border-radius:.6rem;display:block;}
-.card h2{font-size:1.15rem;margin:.75rem 0 .25rem;letter-spacing:-.01em;}
-.card p{margin:0;color:var(--muted);font-size:.95rem;}
-.badge-row{margin-top:.75rem;display:flex;gap:.5rem;flex-wrap:wrap;}
-.badge-row a{display:inline-block;padding:.35rem .7rem;border:1px solid var(--accent);border-radius:.3rem;font-size:.8rem;font-weight:600;background:var(--accent);color:#fff;}
-.skip-link{position:absolute;left:-999px;}
-.skip-link:focus{position:static;height:auto;width:auto;padding:.5rem;}
-footer{max-width:1080px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem;color:var(--muted);}
-</style>
-</head>
-<body>
-<a href="#main" class="skip-link">Skip to main content</a>
-<header><nav aria-label="Primary"><a href="/apps/">Apps</a><a href="/consulting/">Built by Carlier</a><a href="/apps/support/">Support</a></nav></header>
-<main id="main">
-  <section class="hero" aria-label="Intro">
-    <h1>Learn languages and identify coins with smart mobile apps.</h1>
-    <p>Friendly, offline-capable tools for language learners and coin collectors — no ads, no invented reviews.</p>
-  </section>
-  <section class="grid" aria-label="App family">
-    <article class="card" aria-label="Learn Chinese">
-      <a href="/apps/learn-chinese/"><img src="learn-chinese/images/FeatureGraphic1024x500px.webp" width="1024" height="500" alt="Learn Chinese feature graphic" loading="lazy"></a>
-      <h2><a href="/apps/learn-chinese/">Learn Chinese</a></h2>
-      <p>AI-powered tutoring for Mandarin with real-time corrections.</p>
-      <div class="badge-row">
-        <a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi">Google Play</a>
-      </div>
-    </article>
-    <article class="card" aria-label="Learn Cantonese">
-      <a href="/apps/learn-cantonese/"><img src="learn-cantonese/images/FeatureGraphic1024x500px.webp" width="1024" height="500" alt="Learn Cantonese feature graphic" loading="lazy"></a>
-      <h2><a href="/apps/learn-cantonese/">Learn Cantonese</a></h2>
-      <p>Voice tutoring and vocabulary for Cantonese learners.</p>
-      <div class="badge-row"><a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi">Google Play</a></div>
-    </article>
-    <article class="card" aria-label="Learn Thai">
-      <a href="/apps/learn-thai/"><img src="learn-thai/images/FeatureGraphic1024x500.png" width="1024" height="500" alt="Learn Thai feature graphic" loading="lazy"></a>
-      <h2><a href="/apps/learn-thai/">Learn Thai</a></h2>
-      <p>Thai language practice with an AI agent that corrects in real time.</p>
-      <div class="badge-row"><a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi">Google Play</a></div>
-    </article>
-    <article class="card" aria-label="Coin Identifier">
-      <a href="/apps/coin-identifier/"><img src="coin-identifier/images/banner1254x540.webp" width="1254" height="540" alt="Coin Identifier banner" loading="lazy"></a>
-      <h2><a href="/apps/coin-identifier/">Coin Identifier</a></h2>
-      <p>Identify coins from images with fast, offline-capable recognition.</p>
-      <div class="badge-row"><a href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier">Google Play</a></div>
-    </article>
-  </section>
-  <section style="max-width:1080px;margin:0 auto;padding:3rem 1.5rem;" aria-label="Family"><h2 style="font-size:1.3rem;margin:0 0 1rem;">Learn Asian languages</h2><p>Chinese, Cantonese, and Thai share the same tutoring design — try one and cross-link to the others.</p></section>
-</main>
-<footer><p>© Carlier Apps</p><a href="/consulting/">Built by Carlier</a><a href="/apps/support/">Support</a><a href="/apps/legal/privacy_policy.html">Privacy</a><a href="/apps/legal/terms_of_service.html">Terms</a></footer>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Primary Meta Tags -->
+        <title>Apps | Carlier</title>
+        <meta name="title" content="Apps | Carlier">
+        <meta name="description" content="Mobile apps for language learning and coin identification: Learn Chinese, Cantonese, Thai, and Coin Identifier.">
+        <meta name="author" content="Carlier">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://carlier.site/apps/">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://carlier.site/apps/">
+        <meta property="og:title" content="Apps | Carlier">
+        <meta property="og:description" content="Mobile apps for language learning and coin identification: Learn Chinese, Cantonese, Thai, and Coin Identifier.">
+        <meta property="og:image" content="https://carlier.site/apps/images/og-chinese.webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://carlier.site/apps/">
+        <meta property="twitter:title" content="Apps | Carlier">
+        <meta property="twitter:description" content="Mobile apps for language learning and coin identification: Learn Chinese, Cantonese, Thai, and Coin Identifier.">
+        <meta property="twitter:image" content="https://carlier.site/apps/images/og-chinese.webp">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/Carlier_logo_512x512.png">
+        <link rel="icon" type="image/png" href="../images/Carlier_logo_160x160.png">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="512x512" href="../images/Carlier_logo_512x512.png">
+        <meta name="theme-color" content="#171719">
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600&display=swap"
+            rel="stylesheet">
+
+        <style>
+            :root {
+                --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code", monospace;
+                --font-display: "Orbitron", "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+                --chrome: #171719;
+                --bg: #09090b;
+                --elevated: #2b2d30;
+                --border: #2b2d30;
+                --border2: #43454a;
+                --text: #dfe1e5;
+                --muted: #a8adb5;
+                --hint: #71757c;
+                --accent: #8dff4f;
+                --on-accent: #0a0a0a;
+
+                color-scheme: dark;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: var(--font-sans);
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--text);
+                background: var(--chrome);
+                -webkit-font-smoothing: antialiased;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+                transition: color .15s ease-out;
+            }
+
+            a:hover {
+                color: color-mix(in srgb, var(--accent) 85%, white);
+                text-decoration: underline;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 60px 40px;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-container {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            nav {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            nav a {
+                color: var(--text);
+                padding: 8px 0;
+                border-bottom: 2px solid transparent;
+                transition: border-color .15s ease-out, color .15s ease-out;
+            }
+
+            nav a:hover {
+                color: var(--accent);
+                border-bottom-color: var(--accent);
+            }
+
+            .hero {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .hero h1 {
+                font-family: var(--font-display);
+                font-size: 32px;
+                font-weight: 500;
+                color: var(--accent);
+                margin: 0 0 16px;
+                letter-spacing: .5px;
+            }
+
+            .hero p {
+                font-size: 16px;
+                color: var(--muted);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .grid {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .card {
+                background: var(--elevated);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                padding: 24px;
+                transition: border-color .15s ease-out, transform .15s ease-out;
+            }
+
+            .card:hover {
+                border-color: var(--accent);
+                transform: translateY(-2px);
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+                display: block;
+                margin-bottom: 16px;
+            }
+
+            .card h2 {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 8px;
+                color: var(--text);
+            }
+
+            .card h2 a {
+                color: var(--text);
+            }
+
+            .card h2 a:hover {
+                color: var(--accent);
+            }
+
+            .card p {
+                margin: 0 0 16px;
+                color: var(--muted);
+                font-size: 14px;
+            }
+
+            .badge-row {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .badge-row a {
+                display: inline-block;
+                padding: 6px 12px;
+                border: 1px solid var(--accent);
+                border-radius: 4px;
+                background: var(--accent);
+                color: var(--on-accent);
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .badge-row a:hover {
+                background: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                border-color: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                color: var(--on-accent);
+            }
+
+            .family-section {
+                margin-top: 60px;
+                text-align: center;
+            }
+
+            .family-section h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0 0 12px;
+                color: var(--text);
+            }
+
+            .family-section p {
+                margin: 0;
+                color: var(--muted);
+                font-size: 15px;
+            }
+
+            .footer {
+                margin-top: auto;
+                padding: 40px 40px 20px;
+                text-align: center;
+                font-size: 13px;
+                color: var(--hint);
+                border-top: 1px solid var(--border);
+            }
+
+            .footer p {
+                margin: 0 0 8px;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .footer-links a {
+                color: var(--muted);
+                font-size: 13px;
+            }
+
+            .footer-links a:hover {
+                color: var(--accent);
+            }
+
+            .skip-link {
+                position: absolute;
+                left: -999px;
+            }
+
+            .skip-link:focus {
+                position: static;
+                height: auto;
+                width: auto;
+                padding: .5rem;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    padding: 40px 20px;
+                }
+
+                .nav-container {
+                    margin-bottom: 30px;
+                }
+
+                nav {
+                    gap: 16px;
+                    font-size: 14px;
+                }
+
+                .hero h1 {
+                    font-size: 24px;
+                }
+
+                .hero p {
+                    font-size: 15px;
+                }
+
+                .grid {
+                    gap: 16px;
+                }
+
+                .card {
+                    padding: 16px;
+                }
+
+                .footer {
+                    padding: 30px 20px 16px;
+                }
+
+                .footer-links {
+                    gap: 16px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <div class="container">
+            <div class="nav-container">
+                <nav aria-label="Primary">
+                    <a href="https://carlier.site/apps/">Apps</a>
+                    <a href="https://carlier.site/">Built by Carlier</a>
+                    <a href="https://carlier.site/contact.html">Support</a>
+                </nav>
+            </div>
+
+            <main id="main">
+                <section class="hero" aria-label="Intro">
+                    <h1>Apps</h1>
+                    <p>Learn languages and identify coins with smart mobile apps. Friendly, offline-capable tools for language learners and coin collectors — no ads, no invented reviews.</p>
+                </section>
+
+                <section class="grid" aria-label="App family">
+                    <article class="card" aria-label="Learn Chinese">
+                        <a href="/apps/learn-chinese/"><img src="learn-chinese/images/FeatureGraphic1024x500px.webp" width="1024" height="500" alt="Learn Chinese feature graphic" loading="lazy"></a>
+                        <h2><a href="/apps/learn-chinese/">Learn Chinese</a></h2>
+                        <p>AI-powered tutoring for Mandarin with real-time corrections.</p>
+                        <div class="badge-row">
+                            <a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi">Google Play</a>
+                        </div>
+                    </article>
+                    <article class="card" aria-label="Learn Cantonese">
+                        <a href="/apps/learn-cantonese/"><img src="learn-cantonese/images/FeatureGraphic1024x500px.webp" width="1024" height="500" alt="Learn Cantonese feature graphic" loading="lazy"></a>
+                        <h2><a href="/apps/learn-cantonese/">Learn Cantonese</a></h2>
+                        <p>Voice tutoring and vocabulary for Cantonese learners.</p>
+                        <div class="badge-row"><a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi">Google Play</a></div>
+                    </article>
+                    <article class="card" aria-label="Learn Thai">
+                        <a href="/apps/learn-thai/"><img src="learn-thai/images/FeatureGraphic1024x500.png" width="1024" height="500" alt="Learn Thai feature graphic" loading="lazy"></a>
+                        <h2><a href="/apps/learn-thai/">Learn Thai</a></h2>
+                        <p>Thai language practice with an AI agent that corrects in real time.</p>
+                        <div class="badge-row"><a href="https://play.google.com/store/apps/details?id=com.carlier.ai_agent_laoshi">Google Play</a></div>
+                    </article>
+                    <article class="card" aria-label="Coin Identifier">
+                        <a href="/apps/coin-identifier/"><img src="coin-identifier/images/banner1254x540.webp" width="1254" height="540" alt="Coin Identifier banner" loading="lazy"></a>
+                        <h2><a href="/apps/coin-identifier/">Coin Identifier</a></h2>
+                        <p>Identify coins from images with fast, offline-capable recognition.</p>
+                        <div class="badge-row"><a href="https://play.google.com/store/apps/details?id=com.carlier.coinidentifier">Google Play</a></div>
+                    </article>
+                </section>
+
+                <section class="family-section" aria-label="Family">
+                    <h2>Learn Asian languages</h2>
+                    <p>Chinese, Cantonese, and Thai share the same tutoring design — try one and cross-link to the others.</p>
+                </section>
+            </main>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Carlier. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://carlier.site/">Built by Carlier</a>
+                <a href="https://carlier.site/contact.html">Support</a>
+                <a href="https://carlier.site/legal/privacy_policy.html">Privacy</a>
+                <a href="https://carlier.site/legal/terms_of_service.html">Terms</a>
+            </div>
+        </div>
+    </body>
+
 </html>
