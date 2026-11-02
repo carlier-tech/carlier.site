@@ -30,7 +30,7 @@ const CODING_DESC =
 // lookupKey MUST match the data-price-id attribute in index.html
 const PRODUCTS = [
   { id: 'openclaw',  name: 'OpenCLaw',  description: CODING_DESC, amount: 4900,  lookupKey: 'price_openclaw_monthly' },
-  { id: 'hermes',    name: 'Hermes',    description: 'Searches, reads, and synthesizes hundreds of sources into cited reports. Your on-demand analyst.', amount: 7900, lookupKey: 'price_hermes_monthly' },
+  { id: 'hermes',    name: 'Hermes',    description: 'Searches, reads, and synthesizes hundreds of sources into cited reports. Your on-demand analyst.', amount: 4900, lookupKey: 'price_hermes_monthly' },
   { id: 'nanobot',   name: 'NanoBot',   description: CODING_DESC, amount: 4900,  lookupKey: 'price_nanobot_monthly' },
   { id: 'nanoclaw',  name: 'NanoClaw',  description: CODING_DESC, amount: 4900,  lookupKey: 'price_nanoclaw_monthly' },
   { id: 'paperclip', name: 'PaperClip', description: CODING_DESC, amount: 4900,  lookupKey: 'price_paperclip_monthly' },

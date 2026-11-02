@@ -2,7 +2,6 @@
   "mode": "live",
   "links": {
     "price_openclaw_monthly": "https://buy.stripe.com/8x2dR95L20Xddp525xd7q00",
-    "price_hermes_monthly": "https://buy.stripe.com/8x24gzflC7lBbgX7pRd7q01",
     "price_nanobot_monthly": "https://buy.stripe.com/4gM7sLehyfS770H5hJd7q02",
     "price_nanoclaw_monthly": "https://buy.stripe.com/cNi14nehybBR2Kr4dFd7q03",
     "price_paperclip_monthly": "https://buy.stripe.com/7sYaEXc9q0XdgBhh0rd7q04",
@@ -13,6 +12,7 @@
     "price_nullclaw_monthly": "https://buy.stripe.com/eVqfZhb5m35l2Kr8tVd7q09",
     "price_fleet_monthly": "https://buy.stripe.com/aFadR98XefS7acT4dFd7q0a",
     "price_langchain_monthly": "https://buy.stripe.com/6oU5kDflC0Xd5WDfWnd7q0b",
-    "price_crewai_monthly": "https://buy.stripe.com/6oUbJ10qI49pcl19xZd7q0c"
+    "price_crewai_monthly": "https://buy.stripe.com/6oUbJ10qI49pcl19xZd7q0c",
+    "price_hermes_monthly": "https://buy.stripe.com/cNicN5c9qaxNacTdOfd7q0d"
   }
 }
