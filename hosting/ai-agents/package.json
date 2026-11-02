@@ -1,0 +1,13 @@
+{
+  "name": "su-agents",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SU Agents marketplace with Stripe Payment Links (static site)",
+  "scripts": {
+    "setup-stripe": "node create-stripe-products.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "stripe": "^16.0.0"
+  }
+}

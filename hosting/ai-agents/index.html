@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Primary Meta Tags -->
+        <title>AI Agents — Carlier</title>
+        <meta name="title" content="AI Agents — Carlier">
+        <meta name="description" content="Private, isolated hosting for AI agent frameworks. Autonomous agents that write code, run research, and ship results 24/7.">
+        <meta name="author" content="Carlier">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://carlier.site/hosting/ai-agents/">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://carlier.site/hosting/ai-agents/">
+        <meta property="og:title" content="AI Agents — Carlier">
+        <meta property="og:description" content="Private, isolated hosting for AI agent frameworks. Autonomous agents that write code, run research, and ship results 24/7.">
+        <meta property="og:image" content="https://carlier.site/hosting/images/og-1200x630.webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://carlier.site/hosting/ai-agents/">
+        <meta property="twitter:title" content="AI Agents — Carlier">
+        <meta property="twitter:description" content="Private, isolated hosting for AI agent frameworks. Autonomous agents that write code, run research, and ship results 24/7.">
+        <meta property="twitter:image" content="https://carlier.site/hosting/images/og-1200x630.webp">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/Carlier_logo_512x512.png">
+        <link rel="icon" type="image/png" href="../../images/Carlier_logo_160x160.png">
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="512x512" href="../../images/Carlier_logo_512x512.png">
+        <meta name="theme-color" content="#171719">
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600&display=swap"
+            rel="stylesheet">
+
+        <style>
+            :root {
+                --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code", monospace;
+                --font-display: "Orbitron", "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+                --chrome: #171719;
+                --bg: #09090b;
+                --elevated: #2b2d30;
+                --border: #2b2d30;
+                --border2: #43454a;
+                --text: #dfe1e5;
+                --muted: #a8adb5;
+                --hint: #71757c;
+                --accent: #8dff4f;
+                --on-accent: #0a0a0a;
+
+                color-scheme: dark;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: var(--font-sans);
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--text);
+                background: var(--chrome);
+                -webkit-font-smoothing: antialiased;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+                transition: color .15s ease-out;
+            }
+
+            a:hover {
+                color: color-mix(in srgb, var(--accent) 85%, white);
+                text-decoration: underline;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 60px 40px;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-container {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            nav {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            nav a {
+                color: var(--text);
+                padding: 8px 0;
+                border-bottom: 2px solid transparent;
+                transition: border-color .15s ease-out, color .15s ease-out;
+            }
+
+            nav a:hover {
+                color: var(--accent);
+                border-bottom-color: var(--accent);
+            }
+
+            .hero {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .hero h1 {
+                font-family: var(--font-display);
+                font-size: 32px;
+                font-weight: 500;
+                color: var(--accent);
+                margin: 0 0 16px;
+                letter-spacing: .5px;
+            }
+
+            .hero p {
+                font-size: 16px;
+                color: var(--muted);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .section {
+                margin-bottom: 60px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0 0 12px;
+                color: var(--text);
+            }
+
+            .section p {
+                font-size: 16px;
+                color: var(--muted);
+                margin: 0 0 24px;
+            }
+
+            .grid {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .card {
+                background: var(--elevated);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                padding: 24px;
+                transition: border-color .15s ease-out, transform .15s ease-out;
+            }
+
+            .card:hover {
+                border-color: var(--accent);
+                transform: translateY(-2px);
+            }
+
+            .card h3 {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 8px;
+                color: var(--text);
+            }
+
+            .card h3 a {
+                color: var(--text);
+            }
+
+            .card h3 a:hover {
+                color: var(--accent);
+            }
+
+            .card .card-tag {
+                font-size: 14px;
+                color: var(--muted);
+                margin: 0 0 8px;
+            }
+
+            .card .card-desc {
+                margin: 0 0 16px;
+                color: var(--muted);
+                font-size: 14px;
+            }
+
+            .price {
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--accent);
+                margin: 0 0 16px;
+            }
+
+            .price span {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--muted);
+            }
+
+            .features {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 16px;
+            }
+
+            .features li {
+                padding: 6px 0;
+                font-size: 14px;
+                color: var(--muted);
+            }
+
+            .features li::before {
+                content: "\2713 ";
+                color: var(--accent);
+                margin-right: 8px;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 12px 24px;
+                border: 1px solid var(--accent);
+                border-radius: 4px;
+                background: var(--accent);
+                color: var(--on-accent);
+                font-family: inherit;
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: none;
+                transition: background .15s ease-out, border-color .15s ease-out;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                border-color: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                color: var(--on-accent);
+            }
+
+            .card-badge {
+                display: inline-block;
+                padding: 4px 8px;
+                border: 1px solid var(--accent);
+                border-radius: 4px;
+                background: var(--accent);
+                color: var(--on-accent);
+                font-size: 11px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            .faq-item {
+                margin-bottom: 16px;
+            }
+
+            .faq-item summary {
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--text);
+                padding: 12px 0;
+            }
+
+            .faq-item p {
+                margin: 0 0 16px;
+                color: var(--muted);
+                font-size: 14px;
+                padding-left: 20px;
+            }
+
+            .footer {
+                margin-top: auto;
+                padding: 40px 40px 20px;
+                text-align: center;
+                font-size: 13px;
+                color: var(--hint);
+                border-top: 1px solid var(--border);
+            }
+
+            .footer p {
+                margin: 0 0 8px;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .footer-links a {
+                color: var(--muted);
+                font-size: 13px;
+            }
+
+            .footer-links a:hover {
+                color: var(--accent);
+            }
+
+            .skip-link {
+                position: absolute;
+                left: -999px;
+            }
+
+            .skip-link:focus {
+                position: static;
+                height: auto;
+                width: auto;
+                padding: .5rem;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    padding: 40px 20px;
+                }
+
+                .nav-container {
+                    margin-bottom: 30px;
+                }
+
+                nav {
+                    gap: 16px;
+                    font-size: 14px;
+                }
+
+                .hero h1 {
+                    font-size: 24px;
+                }
+
+                .hero p {
+                    font-size: 15px;
+                }
+
+                .grid {
+                    gap: 16px;
+                    grid-template-columns: 1fr;
+                }
+
+                .card {
+                    padding: 16px;
+                }
+
+                .footer {
+                    padding: 30px 20px 16px;
+                }
+
+                .footer-links {
+                    gap: 16px;
+                }
+
+                .price {
+                    font-size: 20px;
+                }
+            }
+        </style>
+
+        <!-- Schema.org JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://carlier.site/hosting/ai-agents/#organization",
+                    "name": "Carlier",
+                    "url": "https://carlier.site/hosting/ai-agents/",
+                    "description": "Private, isolated hosting for AI agent frameworks. Autonomous agents that write code, run research, and ship results 24/7."
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://carlier.site/hosting/ai-agents/#website",
+                    "url": "https://carlier.site/hosting/ai-agents/",
+                    "name": "AI Agents — Carlier",
+                    "description": "Private, isolated hosting for AI agent frameworks. Autonomous agents that write code, run research, and ship results 24/7."
+                }
+            ]
+        }
+        </script>
+    </head>
+
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <div class="container">
+            <div class="nav-container">
+                <nav aria-label="Primary">
+                    <a href="https://carlier.site/hosting/">Hosting</a>
+                    <a href="https://carlier.site/consulting/">Consulting</a>
+                    <a href="https://carlier.site/">Built by Carlier</a>
+                    <a href="https://carlier.site/contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <main id="main">
+                <section class="hero" aria-label="Intro">
+                    <h1>AI Agents</h1>
+                    <p>Private, isolated hosting for superintelligence frameworks. Autonomous AI agents that write code, run research, and ship results — 24/7. Powered by secure Stripe checkout.</p>
+                </section>
+
+                <section class="section" aria-label="Agents">
+                    <p>One-click deployment, no configuration required. Choose your agent. Customers supply their own API key. Each agent includes a 7-day money-back guarantee.</p>
+                    <div class="grid">
+                        <article class="card" aria-label="OpenCLaw">
+                            <div class="card-badge">Best Seller</div>
+                            <h3>OpenCLaw</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get OpenCLaw</a>
+                        </article>
+
+                        <article class="card" aria-label="Hermes">
+                            <div class="card-badge">Most Powerful</div>
+                            <h3>Hermes</h3>
+                            <p class="card-tag">Deep research agent</p>
+                            <p class="card-desc">Searches, reads, and synthesizes hundreds of sources into cited reports. Your on-demand analyst.</p>
+                            <div class="price">$79<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited research reports</li>
+                                <li>Source citations included</li>
+                                <li>Web, papers & data access</li>
+                                <li>Export to PDF / Notion</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get Hermes</a>
+                        </article>
+
+                        <article class="card" aria-label="NanoBot">
+                            <h3>NanoBot</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get NanoBot</a>
+                        </article>
+
+                        <article class="card" aria-label="NanoClaw">
+                            <h3>NanoClaw</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get NanoClaw</a>
+                        </article>
+
+                        <article class="card" aria-label="PaperClip">
+                            <h3>PaperClip</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get PaperClip</a>
+                        </article>
+
+                        <article class="card" aria-label="PicoClaw">
+                            <h3>PicoClaw</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get PicoClaw</a>
+                        </article>
+
+                        <article class="card" aria-label="ZeroClaw">
+                            <h3>ZeroClaw</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get ZeroClaw</a>
+                        </article>
+
+                        <article class="card" aria-label="OpenFang">
+                            <h3>OpenFang</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get OpenFang</a>
+                        </article>
+
+                        <article class="card" aria-label="IronClaw">
+                            <h3>IronClaw</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get IronClaw</a>
+                        </article>
+
+                        <article class="card" aria-label="NullClaw">
+                            <h3>NullClaw</h3>
+                            <p class="card-tag">Autonomous coding agent</p>
+                            <p class="card-desc">Writes, tests, and ships production code. Opens PRs, reviews diffs, and fixes bugs while you sleep.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get NullClaw</a>
+                        </article>
+
+                        <article class="card" aria-label="LangChain">
+                            <h3>LangChain</h3>
+                            <p class="card-tag">LLM application framework</p>
+                            <p class="card-desc">Build and run LangChain-powered agents, chains, and RAG pipelines on private, isolated hosting — one click, ready to serve.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get LangChain</a>
+                        </article>
+
+                        <article class="card" aria-label="CrewAI">
+                            <h3>CrewAI</h3>
+                            <p class="card-tag">Multi-agent orchestration framework</p>
+                            <p class="card-desc">Deploy CrewAI crews on private, isolated hosting — coordinated agents that plan, delegate, and execute complex workflows around the clock.</p>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul class="features">
+                                <li>Unlimited repositories</li>
+                                <li>PR creation & review</li>
+                                <li>CI failure auto-fix</li>
+                                <li>Slack & GitHub integration</li>
+                            </ul>
+                            <a href="https://carlier.site/contact.html" class="btn">Get CrewAI</a>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section" aria-label="FAQ">
+                    <h2>FAQ</h2>
+                    <details class="faq-item">
+                        <summary>How do I pay?</summary>
+                        <p>Click any "Get" button and you'll be contacted to arrange secure payment.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>When do I get access?</summary>
+                        <p>Immediately after payment confirmation.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I get a refund?</summary>
+                        <p>Yes — every plan includes a 7-day, no-questions-asked money-back guarantee.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I cancel anytime?</summary>
+                        <p>Absolutely. Manage or cancel your subscription anytime.</p>
+                    </details>
+                </section>
+            </main>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Carlier. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://carlier.site/">Built by Carlier</a>
+                <a href="https://carlier.site/contact.html">Contact</a>
+                <a href="https://carlier.site/legal/privacy_policy.html">Privacy</a>
+                <a href="https://carlier.site/legal/terms_of_service.html">Terms</a>
+            </div>
+        </div>
+    </body>
+
+</html>
