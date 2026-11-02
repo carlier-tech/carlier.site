@@ -1,256 +1,46 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
 <title>Send Feedback – AI Live Agent</title>
-<meta name="description" content="How to send feedback and report issues for the AI Live Agent app by Carlier.">
+<meta name="description" content="How to send feedback and report issues for the AI Live Agent Android app by Carlier.">
 <meta name="theme-color" content="#171719">
-<link rel="icon" type="image/png" href="images/Carlier_logo_160x160.png">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" href="../images/Carlier_logo_160x160.png">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="thinkrail.css">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
-  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></symbol>
-  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></symbol>
-  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></symbol>
-  <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path></symbol>
-  <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></symbol>
-  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="M12 5v14"></path></symbol>
-  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></symbol>
-  <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></symbol>
-  <symbol id="i-message" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></symbol>
-  <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></symbol>
-  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="m19 8 3 8a5 5 0 0 1-6 0z"></path><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"></path><path d="m5 8 3 8a5 5 0 0 1-6 0z"></path><path d="M7 21h10"></path></symbol>
-  <symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"></path><path d="m21 2-9.6 9.6"></path><circle cx="7.5" cy="15.5" r="5.5"></circle></symbol>
-  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></symbol>
-</svg>
-
-<a class="skip-link" href="#top">Skip to content</a>
-
-<div class="window">
-
-  <header class="titlebar">
-    <span class="wordmark-logo" aria-hidden="true">
-      <svg viewBox="0 0 512 512" fill="currentColor"><path d="M 378.14,160.57 A 155 155 0 1 0 378.14,351.43 L 322.98,308.33 A 85 85 0 1 1 322.98,203.67 Z"></path></svg>
-    </span>
-    <div class="scope">
-      <span class="scope-crumbs">
-        <span class="scope-project">carlier</span>
-        <svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
-        <span class="scope-name">ai-live-agent</span>
-      </span>
-      <span class="scope-branch">
-        <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
-        workspace/site · from main
-      </span>
-    </div>
-    <div class="titlebar-right">
-      <a class="chrome-btn" href="index.html" aria-label="All documents">
-        <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
-      </a>
-      <a class="chrome-btn" href="mailto:feedback@carlier.site" aria-label="Email feedback">
-        <svg class="i" aria-hidden="true"><use href="#i-message"></use></svg>
-      </a>
-      <a class="chrome-btn" href="https://github.com/carlier" target="_blank" rel="noopener noreferrer" aria-label="Carlier on GitHub">
-        <svg class="i i-fill" aria-hidden="true"><use href="#i-github"></use></svg>
-      </a>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
-        <svg class="i theme-icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
-        <svg class="i theme-icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
-      </button>
-      <button type="button" class="chrome-btn nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="rail-right" aria-label="Open outline">
-        <svg class="i" aria-hidden="true"><use href="#i-menu"></use></svg>
-      </button>
-    </div>
-  </header>
-
-  <div class="cols">
-
-    <aside class="rail-left" aria-label="Projects">
-      <div class="rail-left-nav">
-        <div class="rail-heading">Projects
-          <svg class="i" aria-hidden="true"><use href="#i-plus"></use></svg>
-        </div>
-        <div class="tree">
-          <div class="tree-row active">
-            <svg class="i" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
-            <svg class="i" aria-hidden="true"><use href="#i-folder"></use></svg>
-            <span>carlier</span>
-          </div>
-          <div class="tree-row workspace active">
-            <svg class="i" aria-hidden="true"><use href="#i-branch"></use></svg>
-            <span>site</span>
-          </div>
-          <a class="tree-row page" href="index.html">
-            <svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>
-            <span>Landing</span>
-          </a>
-          <a class="tree-row page" href="privacy_policy.html">
-            <svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg>
-            <span>Privacy</span>
-          </a>
-          <a class="tree-row page" href="terms_of_service.html">
-            <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
-            <span>Terms</span>
-          </a>
-          <a class="tree-row page selected" href="feedback_guide.html" aria-current="page">
-            <svg class="i" aria-hidden="true"><use href="#i-message"></use></svg>
-            <span>Support</span>
-          </a>
-        </div>
-      </div>
-      <div class="rail-note">
-        <svg class="rail-note-icon" aria-hidden="true"><use href="#i-info"></use></svg>
-        <p>Found a bug or want a feature? Email <code>feedback@carlier.site</code> — it goes straight to the developer.</p>
-        <button type="button" class="rail-note-dismiss" id="rail-note-dismiss">Understood</button>
-      </div>
-    </aside>
-
-    <div class="center">
-      <nav class="tabstrip" aria-label="Editor tabs">
-        <a class="tab" href="index.html">
-          <svg class="i" aria-hidden="true"><use href="#i-file"></use></svg>
-          overview.md
-        </a>
-        <a class="tab" href="privacy_policy.html">
-          <svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg>
-          privacy-policy.md
-        </a>
-        <a class="tab" href="terms_of_service.html">
-          <svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>
-          terms-of-service.md
-        </a>
-        <a class="tab active" href="feedback_guide.html" aria-current="page">
-          <svg class="i" aria-hidden="true"><use href="#i-message"></use></svg>
-          support.md
-        </a>
-      </nav>
-
-      <main class="editor" id="editor-scroll" aria-label="Send Feedback">
-        <section class="file-section doc" id="top">
-          <p class="file-comment">&lt;!-- feedback_guide.md --&gt;</p>
-          <h1>Send Feedback</h1>
-          <p class="doc-meta">Support · Carlier</p>
-
-          <p>
-            We are always looking to improve our App, and your feedback is incredibly
-            valuable to us!
-          </p>
-          <p>
-            If you encounter any issues, have feature requests, or simply want to share
-            your thoughts about your experience, please reach out to us at:
-          </p>
-          <div class="callout">
-            <p><strong><a href="mailto:feedback@carlier.site">feedback@carlier.site</a></strong></p>
-          </div>
-
-          <h2 id="best-practices-when-sending-feedback">Best Practices When Sending Feedback</h2>
-          <p>
-            To help us resolve your issue or understand your request as quickly as possible,
-            please consider including the following information in your email:
-          </p>
-
-          <h3 id="1-give-your-email-a-clear-subject-line">1. Give Your Email a Clear Subject Line</h3>
-          <ul>
-            <li>Example: <em>Bug: App crashes when scanning a specific item</em></li>
-            <li>Example: <em>Feature Request: Export collections to CSV</em></li>
-          </ul>
-
-          <h3 id="2-include-details-if-reporting-an-issue">2. Include Details (If reporting an issue)</h3>
-          <ul>
-            <li><strong>What happened?</strong> A brief description of the issue.</li>
-            <li><strong>What did you expect to happen?</strong> How should it have worked?</li>
-            <li><strong>Steps to reproduce:</strong> What were you doing right before the issue occurred?</li>
-          </ul>
-
-          <h3 id="3-provide-device-information">3. Provide Device Information</h3>
-          <ul>
-            <li>Your device model (e.g., iPhone 15, Samsung Galaxy S23).</li>
-            <li>The operating system version (e.g., iOS 17.4, Android 14).</li>
-          </ul>
-
-          <h3 id="4-attach-screenshots-or-context">4. Attach Screenshots or Context</h3>
-          <p>
-            If a picture tells a thousand words, a screenshot tells ten thousand! Attaching
-            a screenshot or screen recording will greatly accelerate the troubleshooting
-            process.
-          </p>
-          <p>Thank you for helping us make our App better!</p>
-
-          <div class="doc-actions">
-            <a class="btn" href="index.html">
-              <svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg>
-              All documents
-            </a>
-            <a class="btn btn-primary" href="mailto:feedback@carlier.site">
-              <svg class="i" aria-hidden="true"><use href="#i-message"></use></svg>
-              Email feedback
-            </a>
-          </div>
-
-          <nav class="footer-links" aria-label="Related documents">
-            <a href="privacy_policy.html"><svg class="i" aria-hidden="true"><use href="#i-shield"></use></svg>Privacy Policy</a>
-            <a href="terms_of_service.html"><svg class="i" aria-hidden="true"><use href="#i-scale"></use></svg>Terms of Service</a>
-            <a href="mailto:feedback@carlier.site"><svg class="i" aria-hidden="true"><use href="#i-message"></use></svg>feedback@carlier.site</a>
-          </nav>
-          <p class="footer-fineprint">Copyright © 2026 Carlier · AI Live Agent</p>
-        </section>
-      </main>
-    </div>
-
-    <aside class="rail-right" id="rail-right" aria-label="Outline">
-      <div class="rail-tabs">
-        <span class="rail-tab active">Outline</span>
-        <span class="rail-tab dim">Files</span>
-        <span class="rail-tab dim">Changes</span>
-      </div>
-      <nav class="filetree" aria-label="Outline">
-        <a class="ft-row file active" href="#top">
-          <svg class="i" aria-hidden="true"><use href="#i-message"></use></svg>
-          <span>Send Feedback</span>
-        </a>
-        <a class="ft-row file" href="#best-practices-when-sending-feedback"><svg class="i" aria-hidden="true"><use href="#i-box"></use></svg><span>Best Practices</span></a>
-        <a class="ft-row file depth-1" href="#1-give-your-email-a-clear-subject-line"><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg><span>1. Subject line</span></a>
-        <a class="ft-row file depth-1" href="#2-include-details-if-reporting-an-issue"><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg><span>2. Include details</span></a>
-        <a class="ft-row file depth-1" href="#3-provide-device-information"><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg><span>3. Device info</span></a>
-        <a class="ft-row file depth-1" href="#4-attach-screenshots-or-context"><svg class="i" aria-hidden="true"><use href="#i-file-text"></use></svg><span>4. Screenshots</span></a>
-      </nav>
-      <div class="terminal">
-        <div class="terminal-head">
-          <span class="terminal-label">Terminal</span>
-          <span class="terminal-tab">feedback_guide.md</span>
-        </div>
-        <pre class="term-screen"><span class="term-line"><span class="term-prompt">❯</span> mail feedback@carlier.site</span><span class="term-out">subject: Bug: App crashes when scanning
-attach:  screenshot.png
-device:   Android 14</span><span class="term-line"><span class="term-prompt">❯</span> _<span class="term-caret" aria-hidden="true"></span></span></pre>
-      </div>
-    </aside>
-    <div class="rail-backdrop" id="rail-backdrop"></div>
-
-  </div>
-
-  <footer class="statusbar">
-    <span class="sb-item">
-      Copyright © 2026 <a href="https://carlier.site" target="_blank" rel="noopener noreferrer">Carlier</a>
-      <span class="sb-sep" aria-hidden="true">·</span>
-      <span class="sb-wide">AI Live Agent</span>
-    </span>
-    <span class="sb-spacer"></span>
-    <span class="sb-item sb-wide">feedback_guide.md</span>
-  </footer>
-
-</div>
-
-<script src="thinkrail.js"></script>
+<main class="legal-page">
+<p class="eyebrow">Support</p>
+<h1 id='send-feedback'>Send Feedback</h1>
+<p>We are always looking to improve our App, and your feedback is incredibly valuable to us!</p>
+<p>If you encounter any issues, have feature requests, or simply want to share your thoughts about your experience, please reach out to us at:</p>
+<p><strong><a href='mailto:feedback@carlier.site'>feedback@carlier.site</a></strong></p>
+<hr />
+<h2 id='best-practices-when-sending-feedback'>Best Practices When Sending Feedback</h2>
+<p>To help us resolve your issue or understand your request as quickly as possible, please consider including the following information in your email:</p>
+<h3 id='1-give-your-email-a-clear-subject-line'>1. Give Your Email a Clear Subject Line</h3>
+<ul>
+<li><p>Example: <em>Bug: App crashes when scanning a specific item</em></p></li>
+<li><p>Example: <em>Feature Request: Export collections to CSV</em></p></li>
+</ul>
+<h3 id='2-include-details-if-reporting-an-issue'>2. Include Details (If reporting an issue)</h3>
+<ul>
+<li><p><strong>What happened?</strong> A brief description of the issue.</p></li>
+<li><p><strong>What did you expect to happen?</strong> How should it have worked?</p></li>
+<li><p><strong>Steps to reproduce:</strong> What were you doing right before the issue occurred?</p></li>
+</ul>
+<h3 id='3-provide-device-information'>3. Provide Device Information</h3>
+<ul>
+<li><p>Your device model (e.g., iPhone 15, Samsung Galaxy S23).</p></li>
+<li><p>The operating system version (e.g., iOS 17.4, Android 14).</p></li>
+</ul>
+<h3 id='4-attach-screenshots-or-context'>4. Attach Screenshots or Context</h3>
+<p>If a picture tells a thousand words, a screenshot tells ten thousand! Attaching a screenshot or screen recording will greatly accelerate the troubleshooting process.</p>
+<p>Thank you for helping us make our App better!</p>
+</main>
 </body>
 </html>
