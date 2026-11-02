@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Primary Meta Tags -->
+        <title>Odoo Hosting Backups Add-on | Carlier</title>
+        <meta name="title" content="Odoo Hosting Backups Add-on | Carlier">
+        <meta name="description" content="Add optional off-site backups to your managed Odoo Community hosting plan. €240 per year.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://carlier.site/hosting/odoo/AutoBackUps.html">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://carlier.site/hosting/odoo/AutoBackUps.html">
+        <meta property="og:title" content="Odoo Hosting Backups Add-on | Carlier">
+        <meta property="og:description" content="Add optional off-site backups to your managed Odoo Community hosting plan.">
+        <meta property="og:image" content="https://carlier.site/hosting/odoo/images/Carlier_logo_1024x1024.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#171719">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/Carlier_logo_160x160.png">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/Carlier_logo_512x512.png">
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600&display=swap"
+            rel="stylesheet">
+
+        <style>
+            :root {
+                --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code", monospace;
+                --font-display: "Orbitron", "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+                --chrome: #171719;
+                --bg: #09090b;
+                --elevated: #2b2d30;
+                --border: #2b2d30;
+                --border2: #43454a;
+                --text: #dfe1e5;
+                --muted: #a8adb5;
+                --hint: #71757c;
+                --accent: #8dff4f;
+                --on-accent: #0a0a0a;
+
+                color-scheme: dark;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: var(--font-sans);
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--text);
+                background: var(--chrome);
+                -webkit-font-smoothing: antialiased;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+                transition: color .15s ease-out;
+            }
+
+            a:hover {
+                color: color-mix(in srgb, var(--accent) 85%, white);
+                text-decoration: underline;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 80px 40px;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-container {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            nav {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            nav a {
+                color: var(--text);
+                padding: 8px 0;
+                border-bottom: 2px solid transparent;
+                transition: border-color .15s ease-out, color .15s ease-out;
+            }
+
+            nav a:hover {
+                color: var(--accent);
+                border-bottom-color: var(--accent);
+            }
+
+            .hero {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .hero h1 {
+                font-family: var(--font-display);
+                font-size: 32px;
+                font-weight: 500;
+                color: var(--accent);
+                margin: 0 0 16px;
+                letter-spacing: .5px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                color: var(--muted);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .section {
+                margin: 60px 0;
+            }
+
+            .section h2 {
+                font-family: var(--font-sans);
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--text);
+                margin: 0 0 20px;
+                letter-spacing: -.02em;
+            }
+
+            .section p {
+                font-size: 16px;
+                color: var(--muted);
+                line-height: 1.7;
+                margin: 0 0 16px;
+            }
+
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding: 12px 24px;
+                border: 1px solid var(--accent);
+                border-radius: 4px;
+                background: var(--accent);
+                color: var(--on-accent);
+                font-family: inherit;
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: none;
+                transition: background .15s ease-out, border-color .15s ease-out;
+            }
+
+            .btn:hover {
+                background: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                border-color: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                color: var(--on-accent);
+            }
+
+            .btn-secondary {
+                background: transparent;
+                color: var(--accent);
+                border-color: var(--accent);
+            }
+
+            .btn-secondary:hover {
+                background: var(--accent);
+                color: var(--on-accent);
+            }
+
+            .hero-ctas {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                gap: 10px;
+                margin-top: 22px;
+                justify-content: center;
+            }
+
+            .footer {
+                margin-top: auto;
+                padding: 40px 40px 20px;
+                text-align: center;
+                font-size: 13px;
+                color: var(--hint);
+                border-top: 1px solid var(--border);
+            }
+
+            .footer p {
+                margin: 0 0 8px;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .footer-links a {
+                color: var(--muted);
+                font-size: 13px;
+            }
+
+            .footer-links a:hover {
+                color: var(--accent);
+            }
+
+            .skip-link {
+                position: absolute;
+                left: -999px;
+            }
+
+            .skip-link:focus {
+                position: static;
+                height: auto;
+                width: auto;
+                padding: .5rem;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    padding: 40px 20px;
+                }
+
+                .nav-container {
+                    margin-bottom: 30px;
+                }
+
+                nav {
+                    gap: 16px;
+                    font-size: 14px;
+                }
+
+                .hero h1 {
+                    font-size: 24px;
+                }
+
+                .hero p {
+                    font-size: 15px;
+                }
+
+                .hero-ctas .btn {
+                    flex: 1 1 100%;
+                    justify-content: center;
+                }
+
+                .footer {
+                    padding: 30px 20px 16px;
+                }
+
+                .footer-links {
+                    gap: 16px;
+                }
+            }
+        </style>
+
+        <!-- Schema.org JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Odoo Hosting Backups Add-on",
+            "serviceType": "Off-site backup service",
+            "url": "https://carlier.site/hosting/odoo/AutoBackUps.html",
+            "description": "Optional off-site backups add-on for managed Odoo Community hosting with automated backups and customizable retention policy.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Carlier",
+                "url": "https://carlier.site/"
+            },
+            "areaServed": "Worldwide",
+            "offers": {
+                "@type": "Offer",
+                "name": "Annual backups add-on",
+                "price": "240.00",
+                "priceCurrency": "EUR",
+                "url": "https://buy.stripe.com/test_4Fk4gX2sS7KQ0eL9VQ",
+                "description": "Automated off-site backups for managed Odoo hosting with configurable retention policy. Billed annually."
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <div class="container">
+            <div class="nav-container">
+                <nav aria-label="Primary">
+                    <a href="/hosting/odoo/">Odoo Hosting</a>
+                    <a href="https://carlier.site/">Built by Carlier</a>
+                    <a href="https://carlier.site/contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <main id="main-content">
+                <section class="hero" aria-label="Intro">
+                    <h1>Odoo Hosting Backups</h1>
+                    <p>Add optional off-site backups to your managed Odoo Community hosting plan.</p>
+                    <div class="hero-ctas">
+                        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                        <stripe-buy-button buy-button-id="buy_btn_1UN2DNPs9xUnmLhgVokZIB5O"
+                            publishable-key="pk_live_51TvainPs9xUnmLhg2L6E2WjMss3MX6CoPAAv9R8KDRkj6xsawJmlAGtdRgRNYr90HCM3giAxWoQb4XRSEZkKE2pd00p9mME1Il">
+                        </stripe-buy-button>
+                        <a href="./" class="btn btn-secondary">← Back to Odoo Hosting</a>
+                    </div>
+                </section>
+
+                <section class="section" aria-label="Description">
+                    <h2>What you get</h2>
+                    <p>Automated off-site backups with a retention policy you define. Backups are stored securely and independently from your hosting instance.</p>
+                    <p><strong>€240 per year</strong> - Billed annually through Stripe.</p>
+                </section>
+            </main>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Carlier. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://carlier.site/">Built by Carlier</a>
+                <a href="https://carlier.site/contact.html">Support</a>
+                <a href="https://carlier.site/legal/privacy_policy.html">Privacy</a>
+                <a href="https://carlier.site/legal/terms_of_service.html">Terms</a>
+            </div>
+        </div>
+    </body>
+
+</html>

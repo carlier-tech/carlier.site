@@ -1,14 +1,996 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Odoo ERP Hosting — Carlier</title><meta name="description" content="Hosted Odoo ERP with backups, updates, monitoring, and support."><link rel="canonical" href="https://carlier.site/hosting/odoo/"><meta property="og:title" content="Odoo ERP Hosting"><meta property="og:description" content="Hosted Odoo with backups, updates, monitoring."><meta property="og:image" content="https://carlier.site/hosting/images/og-1200x630.webp"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Odoo ERP Hosting","provider":{"@type":"Organization","name":"Carlier"},"url":"https://carlier.site/hosting/odoo/","description":"Hosted Odoo with backups, updates, monitoring, and support."}</script><style>:root{--bg:#f7f9fb;--surface:#fff;--text:#151920;--accent:#2c7a7b;--muted:#5a6577;--border:#dde2e7;}body{font-family:system-ui,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.55;}a{color:var(--accent);outline-offset:2px;}a:focus,button:focus{outline:2.5px solid var(--accent);outline-offset:2px;}nav{max-width:1080px;margin:0 auto;padding:1rem 1.5rem;display:flex;gap:1.25rem;font-size:.95rem;}main{max-width:1080px;margin:0 auto;padding:5rem 1.5rem;}h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.03em;line-height:1.1;margin:0 0 1rem;}h2{font-size:1.2rem;margin-top:2rem;}</style></head><body>
-<header><nav aria-label="Primary"><a href="/hosting/">Hosting</a><a href="/consulting/">Consulting</a></nav></header>
-<main>
-<a href="#main" style="position:absolute;left:-999px;">Skip</a>
-<h1 id="main">Odoo ERP Hosting</h1>
-<p>Hosted Odoo with automated backups, scheduled updates, monitoring, and direct support.</p>
-<h2>What's included</h2>
-<ul><li>Daily backups</li><li>Scheduled updates</li><li>Basic monitoring</li><li>Email support</li></ul>
-<h2>Plans</h2>
-<p>Standard {{PRICE}} / Managed {{PRICE}} — compare on pricing page.</p>
-<a href="/hosting/contact/" class="cta">Get started</a>
-</main>
-</body></html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Primary Meta Tags -->
+        <title>Managed Odoo Community Hosting | Carlier</title>
+        <meta name="title" content="Managed Odoo Community Hosting | Carlier">
+        <meta name="description"
+            content="Managed Odoo Community hosting from Carlier. A dedicated, hardened Odoo instance with unlimited users, automated SSL, monitoring, and optional off-site backups. €55 per month or €594 per year.">
+        <meta name="keywords"
+            content="Odoo ERP hosting, managed Odoo hosting, Odoo Community hosting, Odoo cloud hosting, Odoo hosting plans">
+        <meta name="author" content="Carlier">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://carlier.site/hosting/odoo/">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://carlier.site/hosting/odoo/">
+        <meta property="og:title" content="Managed Odoo Community Hosting | Carlier">
+        <meta property="og:description"
+            content="A dedicated Odoo Community instance, provisioned, hardened, monitored, and maintained by Carlier. Unlimited users. One flat rate.">
+        <meta property="og:image" content="https://carlier.site/hosting/odoo/images/Carlier_logo_1024x1024.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta property="og:image:alt" content="Carlier logo">
+        <meta property="og:site_name" content="Carlier">
+        <meta property="og:locale" content="en_US">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://carlier.site/hosting/odoo/">
+        <meta property="twitter:title" content="Managed Odoo Community Hosting | Carlier">
+        <meta property="twitter:description"
+            content="A dedicated Odoo Community instance, provisioned, hardened, monitored, and maintained by Carlier. Unlimited users. One flat rate.">
+        <meta property="twitter:image" content="https://carlier.site/hosting/odoo/images/Carlier_logo_1024x1024.png">
+        <meta name="theme-color" content="#171719">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/Carlier_logo_160x160.png">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/Carlier_logo_512x512.png">
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600&display=swap"
+            rel="stylesheet">
+
+        <style>
+            :root {
+                --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code", monospace;
+                --font-display: "Orbitron", "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+                --chrome: #171719;
+                --bg: #09090b;
+                --elevated: #2b2d30;
+                --border: #2b2d30;
+                --border2: #43454a;
+                --text: #dfe1e5;
+                --muted: #a8adb5;
+                --hint: #71757c;
+                --accent: #8dff4f;
+                --on-accent: #0a0a0a;
+
+                color-scheme: dark;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: var(--font-sans);
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--text);
+                background: var(--chrome);
+                -webkit-font-smoothing: antialiased;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+                transition: color .15s ease-out;
+            }
+
+            a:hover {
+                color: color-mix(in srgb, var(--accent) 85%, white);
+                text-decoration: underline;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 80px 40px;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-container {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            nav {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            nav a {
+                color: var(--text);
+                padding: 8px 0;
+                border-bottom: 2px solid transparent;
+                transition: border-color .15s ease-out, color .15s ease-out;
+            }
+
+            nav a:hover {
+                color: var(--accent);
+                border-bottom-color: var(--accent);
+            }
+
+            .hero {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .hero h1 {
+                font-family: var(--font-display);
+                font-size: 32px;
+                font-weight: 500;
+                color: var(--accent);
+                margin: 0 0 16px;
+                letter-spacing: .5px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                color: var(--muted);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .section {
+                margin: 60px 0;
+            }
+
+            .section h2 {
+                font-family: var(--font-sans);
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--text);
+                margin: 0 0 20px;
+                letter-spacing: -.02em;
+            }
+
+            .section p {
+                font-size: 16px;
+                color: var(--muted);
+                line-height: 1.7;
+                margin: 0 0 16px;
+            }
+
+            .section-lede {
+                max-width: 64ch;
+                margin: 0 0 22px;
+                font-size: 15px;
+                color: var(--muted);
+            }
+
+            .grid {
+                display: grid;
+                gap: 20px;
+            }
+
+            @media (min-width: 720px) {
+                .grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            .grid article {
+                padding: 20px;
+                background: var(--elevated);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+            }
+
+            .grid article h3 {
+                font-family: var(--font-sans);
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--text);
+                margin: 0 0 12px;
+            }
+
+            .grid article p {
+                font-size: 14px;
+                color: var(--muted);
+                line-height: 1.6;
+                margin: 0;
+            }
+
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding: 12px 24px;
+                border: 1px solid var(--accent);
+                border-radius: 4px;
+                background: var(--accent);
+                color: var(--on-accent);
+                font-family: inherit;
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: none;
+                transition: background .15s ease-out, border-color .15s ease-out;
+            }
+
+            .btn:hover {
+                background: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                border-color: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
+                color: var(--on-accent);
+            }
+
+            .btn-secondary {
+                background: transparent;
+                color: var(--accent);
+                border-color: var(--accent);
+            }
+
+            .btn-secondary:hover {
+                background: var(--accent);
+                color: var(--on-accent);
+            }
+
+            /* Split grid for scope */
+            .split-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 14px;
+                margin-top: 22px;
+            }
+
+            .scope-card {
+                padding: 20px;
+                background: var(--elevated);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+            }
+
+            .scope-head {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .scope-head h3 {
+                margin: 0;
+            }
+
+            .pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                padding: 3px 10px;
+                border: 1px solid var(--border2);
+                border-radius: 4px;
+                font-family: var(--font-mono);
+                font-size: 11px;
+                letter-spacing: .4px;
+                color: var(--muted);
+                white-space: nowrap;
+            }
+
+            .pill-accent {
+                border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+                background: color-mix(in srgb, var(--accent) 10%, transparent);
+                color: var(--accent);
+            }
+
+            .check-list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .check-list li {
+                display: flex;
+                align-items: flex-start;
+                gap: 9px;
+                margin: 0;
+                font-size: 13.5px;
+                line-height: 1.55;
+                color: var(--muted);
+            }
+
+            .check-list .i-check {
+                width: 13px;
+                height: 13px;
+                margin-top: 3px;
+                flex: none;
+                color: var(--accent);
+            }
+
+            .check-list .i-x {
+                width: 13px;
+                height: 13px;
+                margin-top: 3px;
+                flex: none;
+                color: var(--hint);
+            }
+
+            /* Pricing */
+            .pricing-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 14px;
+                margin-top: 22px;
+            }
+
+            .price-card {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                background: var(--elevated);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+            }
+
+            .price-card--featured {
+                border-color: color-mix(in srgb, var(--accent) 55%, var(--border2));
+                background: color-mix(in srgb, var(--accent) 4%, color-mix(in srgb, var(--elevated) 40%, var(--bg)));
+            }
+
+            .price-head {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .price-head h3 {
+                margin: 0;
+                font-size: 15px;
+            }
+
+            .price-amount {
+                margin: 0 0 4px;
+                font-family: var(--font-display);
+                font-size: clamp(34px, 4.6vw, 48px);
+                font-weight: 500;
+                line-height: 1;
+                letter-spacing: .5px;
+                color: var(--accent);
+            }
+
+            .price-amount span {
+                margin-left: 4px;
+                font-family: var(--font-mono);
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: var(--hint);
+            }
+
+            .price-note {
+                max-width: 38ch;
+                margin: 0 0 16px;
+                font-size: 13px;
+                line-height: 1.6;
+                color: var(--muted);
+            }
+
+            .price-card .check-list {
+                flex: 1;
+                margin-bottom: 18px;
+            }
+
+            .fine-print {
+                margin: 22px 0 0;
+                font-size: 12.5px;
+                line-height: 1.65;
+                color: var(--hint);
+            }
+
+            .fine-print a {
+                color: var(--muted);
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+
+            .fine-print a:hover {
+                color: var(--accent);
+            }
+
+            /* FAQ */
+            .faq-list {
+                margin-top: 22px;
+                border-top: 1px solid var(--border);
+            }
+
+            .faq {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .faq summary {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 16px;
+                padding: 15px 0;
+                list-style: none;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--text);
+                cursor: pointer;
+            }
+
+            .faq summary::-webkit-details-marker {
+                display: none;
+            }
+
+            .faq summary::after {
+                content: "+";
+                flex: none;
+                font-family: var(--font-mono);
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1;
+                color: var(--hint);
+                transition: color .15s ease-out;
+            }
+
+            .faq[open] summary::after {
+                content: "-";
+                color: var(--accent);
+            }
+
+            .faq summary:hover::after {
+                color: var(--text);
+            }
+
+            .faq p {
+                max-width: 72ch;
+                margin: 0;
+                padding: 0 0 16px;
+                font-size: 14px;
+                line-height: 1.7;
+                color: var(--muted);
+            }
+
+            .faq p a {
+                color: var(--accent);
+                text-underline-offset: 2px;
+                text-decoration: underline;
+            }
+
+            /* Contact */
+            .contact-panel {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                align-items: end;
+                gap: 24px;
+                margin-top: 22px;
+                padding: 20px;
+                border: 1px solid var(--border2);
+                border-radius: 4px;
+                background: color-mix(in srgb, var(--elevated) 40%, var(--bg));
+            }
+
+            .contact-panel h3 {
+                margin: 0 0 6px;
+                font-size: 16px;
+            }
+
+            .contact-panel p {
+                margin: 0 0 8px;
+                font-size: 13.5px;
+            }
+
+            .contact-panel .fine-print {
+                margin-top: 12px;
+            }
+
+            .contact-actions {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .contact-actions .btn {
+                justify-content: center;
+            }
+
+            .hero-ctas {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                gap: 10px;
+                margin-top: 22px;
+                justify-content: center;
+            }
+
+            .footer {
+                margin-top: auto;
+                padding: 40px 40px 20px;
+                text-align: center;
+                font-size: 13px;
+                color: var(--hint);
+                border-top: 1px solid var(--border);
+            }
+
+            .footer p {
+                margin: 0 0 8px;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .footer-links a {
+                color: var(--muted);
+                font-size: 13px;
+            }
+
+            .footer-links a:hover {
+                color: var(--accent);
+            }
+
+            .skip-link {
+                position: absolute;
+                left: -999px;
+            }
+
+            .skip-link:focus {
+                position: static;
+                height: auto;
+                width: auto;
+                padding: .5rem;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    padding: 40px 20px;
+                }
+
+                .nav-container {
+                    margin-bottom: 30px;
+                }
+
+                nav {
+                    gap: 16px;
+                    font-size: 14px;
+                }
+
+                .hero h1 {
+                    font-size: 24px;
+                }
+
+                .hero p {
+                    font-size: 15px;
+                }
+
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .split-grid,
+                .pricing-grid,
+                .contact-panel {
+                    grid-template-columns: 1fr;
+                }
+
+                .hero-ctas .btn {
+                    flex: 1 1 100%;
+                    justify-content: center;
+                }
+
+                .footer {
+                    padding: 30px 20px 16px;
+                }
+
+                .footer-links {
+                    gap: 16px;
+                }
+            }
+        </style>
+
+        <!-- Schema.org JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://carlier.site/hosting/odoo/#organization",
+                    "name": "Carlier",
+                    "url": "https://carlier.site/",
+                    "description": "Managed Odoo Community hosting with unlimited users, automated SSL, security hardening, monitoring, and stable updates"
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://carlier.site/hosting/odoo/#website",
+                    "url": "https://carlier.site/hosting/odoo/",
+                    "name": "Managed Odoo Community Hosting | Carlier"
+                },
+                {
+                    "@type": "Service",
+                    "name": "Managed Odoo Community Hosting",
+                    "serviceType": "Managed Odoo Community hosting",
+                    "url": "https://carlier.site/hosting/odoo/",
+                    "description": "A dedicated Odoo Community instance with unlimited users, automated SSL, security hardening, monitoring, stable updates, and optional off-site backups.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Carlier",
+                        "url": "https://carlier.site/"
+                    },
+                    "areaServed": "Worldwide",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Monthly managed Odoo hosting",
+                            "price": "55.00",
+                            "priceCurrency": "EUR",
+                            "url": "https://buy.stripe.com/dRmbJ36J8ghmaTp8RN73G03",
+                            "description": "Managed Odoo Community instance with unlimited users, automated SSL, security hardening, monitoring, and stable updates. Billed monthly."
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Annual managed Odoo hosting",
+                            "price": "594.00",
+                            "priceCurrency": "EUR",
+                            "url": "https://buy.stripe.com/28EaEZ2sS7KQ0eL9VR73G01",
+                            "description": "Managed Odoo Community instance with unlimited users, automated SSL, security hardening, monitoring, and stable updates. Billed annually at €49.50 per month equivalent."
+                        }
+                    ]
+                }
+            ]
+        }
+        </script>
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <div class="container">
+            <div class="nav-container">
+                <nav aria-label="Primary">
+                    <a href="/hosting/odoo/">Odoo Hosting</a>
+                    <a href="https://carlier.site/">Built by Carlier</a>
+                    <a href="https://carlier.site/contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <main id="main-content">
+                <section class="hero" aria-label="Intro">
+                    <h1>Odoo Hosting</h1>
+                    <p>Managed Odoo Community hosting from Carlier. A dedicated, hardened Odoo instance with unlimited users, automated SSL, monitoring, and optional off-site backups.</p>
+                    <div class="hero-ctas">
+                        <a href="#pricing" class="btn btn-primary">Start hosting</a>
+                        <a href="#included" class="btn">What is included</a>
+                        <a href="mailto:hello@carlier.site" class="btn">hello@carlier.site</a>
+                    </div>
+                </section>
+
+                <section class="section" aria-label="Included">
+                    <h2 id="included">What the plan includes</h2>
+                    <p class="section-lede">
+                        Every instance is configured before handover. These items are part of the standard plan, not optional extras.
+                    </p>
+
+                    <div class="grid">
+                        <article>
+                            <h3>Dedicated instance</h3>
+                            <p>A separate Odoo Community instance for your organisation. Not a shared tenant.</p>
+                        </article>
+                        <article>
+                            <h3>Unlimited users</h3>
+                            <p>No per-user, per-module, or per-database fees. Add the whole team without changing the bill.</p>
+                        </article>
+                        <article>
+                            <h3>Automated SSL</h3>
+                            <p>Certificates are issued and renewed automatically for your domain.</p>
+                        </article>
+                        <article>
+                            <h3>Hardened stack</h3>
+                            <p>Nginx, PostgreSQL, and Odoo workers configured and tuned, with OS-level firewall rules and a security baseline applied.</p>
+                        </article>
+                        <article>
+                            <h3>Monitoring and updates</h3>
+                            <p>Continuous uptime and service monitoring with alerts routed to Carlier. Stable Odoo updates are managed for you.</p>
+                        </article>
+                        <article>
+                            <h3>Optional off-site backups</h3>
+                            <p>Automated backups with a retention policy you define. Available as a separate add-on.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section" aria-label="Scope">
+                    <h2 id="scope">Clear boundaries, stated up front</h2>
+                    <p class="section-lede">
+                        Managed hosting covers the server and the application runtime. It does not replace Odoo configuration, development, or licensing.
+                    </p>
+
+                    <div class="split-grid">
+                        <div class="scope-card">
+                            <div class="scope-head">
+                                <h3>Handled by Carlier</h3>
+                                <span class="pill pill-accent">Included</span>
+                            </div>
+                            <ul class="check-list">
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Provisioning and configuration of the Odoo instance
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Nginx, PostgreSQL, and Odoo worker management
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    SSL, firewall, and operating-system security
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Uptime monitoring, alerts, and incident response
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Stable Odoo updates and patch management
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="scope-card">
+                            <div class="scope-head">
+                                <h3>Not included</h3>
+                                <span class="pill">Out of scope</span>
+                            </div>
+                            <ul class="check-list">
+                                <li>
+                                    <svg class="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18"></path>
+                                        <path d="m6 6 12 12"></path>
+                                    </svg>
+                                    Odoo Enterprise licence and Enterprise-only apps
+                                </li>
+                                <li>
+                                    <svg class="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18"></path>
+                                        <path d="m6 6 12 12"></path>
+                                    </svg>
+                                    Database migration from an existing Odoo installation
+                                </li>
+                                <li>
+                                    <svg class="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18"></path>
+                                        <path d="m6 6 12 12"></path>
+                                    </svg>
+                                    Custom module development and functional consulting
+                                </li>
+                                <li>
+                                    <svg class="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18"></path>
+                                        <path d="m6 6 12 12"></path>
+                                    </svg>
+                                    Root access to the server
+                                </li>
+                                <li>
+                                    <svg class="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 6 6 18"></path>
+                                        <path d="m6 6 12 12"></path>
+                                    </svg>
+                                    Automated off-site backups unless the add-on is purchased
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" aria-label="Pricing">
+                    <h2 id="pricing">One rate. Two billing terms</h2>
+                    <p class="section-lede">
+                        The plan is the same either way. Annual billing lowers the effective monthly price by €5.50.
+                    </p>
+
+                    <div class="pricing-grid">
+                        <div class="price-card">
+                            <div class="price-head">
+                                <h3>Monthly</h3>
+                                <span class="pill">Cancel anytime</span>
+                            </div>
+                            <div class="price-amount">€55 <span>/ month</span></div>
+                            <p class="price-note">
+                                Billed monthly in EUR through Stripe. Cancel anytime; service remains active until the end of the current billing period.
+                            </p>
+                            <ul class="check-list">
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Dedicated Odoo Community instance
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Unlimited users and records
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Managed SSL, security, monitoring, and updates
+                                </li>
+                            </ul>
+                            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                            <div class="stripe-slot">
+                                <stripe-buy-button buy-button-id="buy_btn_1TwMDWPs9xUnmLhgVmNvJhUP"
+                                    publishable-key="pk_live_51TvainPs9xUnmLhg2L6E2WjMss3MX6CoPAAv9R8KDRkj6xsawJmlAGtdRgRNYr90HCM3giAxWoQb4XRSEZkKE2pd00p9mME1Il">
+                                </stripe-buy-button>
+                            </div>
+                            <a class="btn btn-primary checkout-fallback"
+                                href="https://buy.stripe.com/dRmbJ36J8ghmaTp8RN73G03" target="_blank"
+                                rel="noopener noreferrer">Subscribe monthly</a>
+                        </div>
+
+                        <div class="price-card price-card--featured">
+                            <div class="price-head">
+                                <h3>Annual</h3>
+                                <span class="pill pill-accent">Save €66</span>
+                            </div>
+                            <div class="price-amount">€49.50 <span>/ month</span></div>
+                            <p class="price-note">
+                                Billed as €594 per year in EUR through Stripe. That is €66 less than twelve monthly payments.
+                            </p>
+                            <ul class="check-list">
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Everything in the monthly plan
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    Price fixed for twelve months
+                                </li>
+                                <li>
+                                    <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg>
+                                    €66 less than paying monthly
+                                </li>
+                            </ul>
+                            <div class="stripe-slot">
+                                <stripe-buy-button buy-button-id="buy_btn_1TwMDWPs9xUnmLhgswKZc5rh"
+                                    publishable-key="pk_live_51TvainPs9xUnmLhg2L6E2WjMss3MX6CoPAAv9R8KDRkj6xsawJmlAGtdRgRNYr90HCM3giAxWoQb4XRSEZkKE2pd00p9mME1Il">
+                                </stripe-buy-button>
+                            </div>
+                            <a class="btn btn-primary checkout-fallback"
+                                href="https://buy.stripe.com/28EaEZ2sS7KQ0eL9VR73G01" target="_blank"
+                                rel="noopener noreferrer">Subscribe annually</a>
+                        </div>
+                    </div>
+
+                    <p class="fine-print">
+                        Both plans include unlimited users and records, automated SSL, 24/7 monitoring, a 99.9% uptime SLA, security hardening, and stable Odoo updates. Off-site backups are a €240 add-on, billed separately — <a href="AutoBackUps.html">view the backups add-on</a>.
+                    </p>
+                    <p class="fine-print">
+                        Prices in EUR, billed through Stripe. Odoo is a trademark of Odoo S.A. Carlier is an independent software company and is not affiliated with Odoo S.A.
+                    </p>
+                </section>
+
+                <section class="section" aria-label="FAQ">
+                    <h2 id="faq">Common questions</h2>
+                    <p class="section-lede">Licensing, access, migration, backups, and billing.</p>
+
+                    <div class="faq-list">
+                        <details class="faq">
+                            <summary>Is this Odoo Enterprise or Odoo Community?</summary>
+                            <p>
+                                This is the open-source Odoo Community edition. It is not an Odoo Enterprise licence and does not include Enterprise-only apps. If you need those apps, use Odoo's Enterprise plan directly.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>How many users can I add?</summary>
+                            <p>
+                                Unlimited. There are no per-user, per-module, or per-database fees on the plan.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>Can I migrate an existing Odoo database?</summary>
+                            <p>
+                                Migration is not included by default. Email <a href="mailto:hello@carlier.site">hello@carlier.site</a> with your current Odoo version and database size to discuss whether a migration can be arranged.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>Do I get root access to the server?</summary>
+                            <p>
+                                No. This is managed hosting. You get the Odoo application; server administration, Nginx, PostgreSQL, SSL, and monitoring are handled by Carlier.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>Are backups included?</summary>
+                            <p>
+                                No. Automated off-site backups are an optional €240 add-on with a retention policy you choose. The base hosting plan does not include them.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>Can I cancel my plan?</summary>
+                            <p>
+                                The monthly plan can be cancelled at any time and remains active until the end of the current billing period. For annual billing questions, contact <a href="mailto:hello@carlier.site">hello@carlier.site</a>.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+
+                <section class="section" aria-label="Contact">
+                    <h2 id="contact">Questions about scope, migration, or fit?</h2>
+                    <p class="section-lede">
+                        Email Carlier directly. Include your current Odoo version and database size if you are asking about a migration.
+                    </p>
+
+                    <div class="contact-panel">
+                        <div>
+                            <h3>Talk to the operator</h3>
+                            <p>
+                                One person provisions and maintains your instance. No ticket queue, no reseller.
+                            </p>
+                            <p class="fine-print">hello@carlier.site · usually within one business day</p>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="mailto:hello@carlier.site" class="btn btn-primary">Email Carlier</a>
+                            <a href="#pricing" class="btn">View plans</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Carlier. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://carlier.site/">Built by Carlier</a>
+                <a href="https://carlier.site/contact.html">Support</a>
+                <a href="AutoBackUps.html">Backups add-on</a>
+                <a href="../">Hosting</a>
+                <a href="https://carlier.site/legal/privacy_policy.html">Privacy</a>
+                <a href="https://carlier.site/legal/terms_of_service.html">Terms</a>
+            </div>
+        </div>
+    </body>
+
+</html>
