@@ -1,0 +1,3 @@
+# Redirect rules (prepared, not applied to DNS)
+# Legacy BTCPay paths redirect to /hosting/btcpay/
+/bitcoin-tx/* /hosting/btcpay/ 301

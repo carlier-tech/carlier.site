@@ -1,0 +1,24 @@
+{
+    "name": "Carlier",
+    "short_name": "Carlier",
+    "icons": [
+        {
+            "src": "/img/favicon.ico",
+            "sizes": "16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/img/Carlier_logo_160x160.webp",
+            "sizes": "160x160",
+            "type": "image/webp"
+        },
+        {
+            "src": "/img/Carlier_logo_512x512.webp",
+            "sizes": "512x512",
+            "type": "image/webp"
+        }
+    ],
+    "theme_color": "#0a0a0f",
+    "background_color": "#0a0a0f",
+    "display": "standalone"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "carlier-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:consulting": "node scripts/build.js",
+    "build:apps": "node scripts/build.js",
+    "build:hosting": "node scripts/build.js",
+    "preview": "echo 'Serve /dist/* folders separately'"
+  }
+}
