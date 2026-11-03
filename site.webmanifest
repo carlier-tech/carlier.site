@@ -3,9 +3,9 @@
     "short_name": "Carlier",
     "icons": [
         {
-            "src": "/img/favicon.ico",
-            "sizes": "16x16",
-            "type": "image/x-icon"
+            "src": "/images/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
         },
         {
             "src": "/img/Carlier_logo_160x160.webp",
