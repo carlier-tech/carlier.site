@@ -2,45 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Homepage (English default) -->
+  <!-- Homepage -->
   <url>
     <loc>https://carlier.site/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlier.site/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://carlier.site/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://carlier.site/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://carlier.site/?lang=it"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://carlier.site/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlier.site/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://carlier.site/?lang=hi"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://carlier.site/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://carlier.site/?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://carlier.site/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://carlier.site/?lang=uk"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://carlier.site/?lang=th"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://carlier.site/?lang=ar"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://carlier.site/?lang=zh-TW"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://carlier.site/?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://carlier.site/?lang=pl"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlier.site/"/>
   </url>
 
-  <!-- Learn Chinese -->
+  <!-- Contact -->
+  <url>
+    <loc>https://carlier.site/contact.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Consulting -->
+  <url>
+    <loc>https://carlier.site/consulting/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cybersecurity -->
+  <url>
+    <loc>https://carlier.site/cybersecurity/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Managed Hosting -->
+  <url>
+    <loc>https://carlier.site/hosting/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Odoo ERP Hosting -->
+  <url>
+    <loc>https://carlier.site/hosting/odoo/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Odoo Hosting Backups Add-on -->
+  <url>
+    <loc>https://carlier.site/hosting/odoo/AutoBackUps.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- AI Agents Hosting -->
+  <url>
+    <loc>https://carlier.site/hosting/ai-agents/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Apps -->
+  <url>
+    <loc>https://carlier.site/apps/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Learn Chinese (external app landing) -->
   <url>
     <loc>https://carlier.site/learn-chinese/</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- Learn Chinese — 10 Reasons landing page -->
-  <url>
-    <loc>https://carlier.site/learn-chinese/pages/offer/</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <!-- Learn Cantonese -->
@@ -67,44 +107,48 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- AI Mobile Apps -->
+  <!-- AI Identifier privacy & feedback (app store support pages) -->
   <url>
-    <loc>https://carlier.site/ai-mobile-apps/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Odoo ERP Hosting -->
-  <url>
-    <loc>https://carlier.site/odoo-hosting/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Odoo ERP Hosting — 10 Reasons landing page -->
-  <url>
-    <loc>https://carlier.site/odoo-hosting/pages/10-reasons/</loc>
+    <loc>https://carlier.site/ai-identifier/privacy_policy.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://carlier.site/ai-identifier/terms_of_service.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- AI Live Agent privacy & feedback (app store support pages) -->
+  <url>
+    <loc>https://carlier.site/ai-live-agent/privacy_policy.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://carlier.site/ai-live-agent/terms_of_service.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <!-- Privacy Policy -->
   <url>
     <loc>https://carlier.site/legal/privacy_policy.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.4</priority>
   </url>
 
   <!-- Terms of Service -->
   <url>
     <loc>https://carlier.site/legal/terms_of_service.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.4</priority>
   </url>
 
 </urlset>
