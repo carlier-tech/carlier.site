@@ -4,7 +4,7 @@ We are always looking to improve our App, and your feedback is incredibly valuab
 
 If you encounter any issues, have feature requests, or simply want to share your thoughts about your experience, please reach out to us at:
 
-**[feedback@carlier.site](mailto:feedback@carlier.site)**
+**[https://carlier.site/contact.html](https://carlier.site/contact.html)**
 
 ---
 
