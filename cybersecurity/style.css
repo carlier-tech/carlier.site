@@ -20,9 +20,9 @@
   --text:          #d8e4f0;
   --text-dim:      #7f8ea3;
 
-  --font-display:  'Orbitron', system-ui, sans-serif;
-  --font-body:     'Rajdhani', system-ui, sans-serif;
-  --font-mono:     'Share Tech Mono', ui-monospace, monospace;
+  --font-display:  'Orbitron', 'Geist', system-ui, sans-serif;
+  --font-body:     'Geist', system-ui, sans-serif;
+  --font-mono:     'JetBrains Mono', ui-monospace, monospace;
 
   --clip:          polygon(0 14px, 14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
   --ease:          cubic-bezier(.22, .61, .36, 1);
@@ -39,8 +39,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }

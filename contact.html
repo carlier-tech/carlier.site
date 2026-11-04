@@ -43,68 +43,10 @@
             href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
             rel="stylesheet">
 
+        <link rel="stylesheet" href="shared/site.css">
+
         <style>
-            :root {
-                --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-                --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code", monospace;
-
-                --chrome: #171719;
-                --bg: #09090b;
-                --elevated: #2b2d30;
-                --border: #2b2d30;
-                --border2: #43454a;
-                --text: #dfe1e5;
-                --muted: #a8adb5;
-                --hint: #71757c;
-                --accent: #8dff4f;
-                --on-accent: #0a0a0a;
-                --red: #ff4b75;
-
-                color-scheme: dark;
-            }
-
-            *,
-            *::before,
-            *::after {
-                box-sizing: border-box;
-            }
-
-            html,
-            body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                font-family: var(--font-sans);
-                font-size: 14px;
-                line-height: 1.6;
-                color: var(--text);
-                background: var(--chrome);
-                -webkit-font-smoothing: antialiased;
-            }
-
-            a {
-                color: var(--accent);
-                text-decoration: none;
-                transition: color .15s ease-out;
-            }
-
-            a:hover {
-                color: color-mix(in srgb, var(--accent) 85%, white);
-                text-decoration: underline;
-            }
-
-            .container {
-                max-width: 700px;
-                margin: 0 auto;
-                padding: 60px 40px;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-            }
-
+            /* Contact page */
             .back-link {
                 display: inline-flex;
                 align-items: center;
@@ -116,6 +58,7 @@
 
             .back-link:hover {
                 color: var(--text);
+                text-decoration: none;
             }
 
             .back-link svg {
@@ -142,6 +85,7 @@
                 font-weight: 700;
                 margin: 0 0 8px;
                 color: var(--text);
+                letter-spacing: 0;
             }
 
             .form-card p {
@@ -149,85 +93,6 @@
                 color: var(--muted);
                 margin: 0 0 32px;
                 line-height: 1.7;
-            }
-
-            .form-group {
-                margin-bottom: 24px;
-            }
-
-            .form-group label {
-                display: block;
-                margin-bottom: 6px;
-                font-size: 13px;
-                font-weight: 500;
-                color: var(--text);
-            }
-
-            .form-group input,
-            .form-group textarea {
-                width: 100%;
-                padding: 12px 14px;
-                border: 1px solid var(--border2);
-                border-radius: 4px;
-                background: var(--bg);
-                color: var(--text);
-                font-family: inherit;
-                font-size: 14px;
-                line-height: 1.5;
-            }
-
-            .form-group input:focus,
-            .form-group textarea:focus {
-                outline: none;
-                border-color: var(--accent);
-                box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
-            }
-
-            .form-group input::placeholder,
-            .form-group textarea::placeholder {
-                color: var(--hint);
-            }
-
-            .form-group textarea {
-                min-height: 140px;
-                resize: vertical;
-            }
-
-            .form-group.full-width {
-                grid-column: 1 / -1;
-            }
-
-            .btn {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-                padding: 12px 24px;
-                border: 1px solid var(--accent);
-                border-radius: 4px;
-                background: var(--accent);
-                color: var(--on-accent);
-                font-family: inherit;
-                font-size: 15px;
-                font-weight: 500;
-                cursor: pointer;
-                transition: background .15s ease-out, border-color .15s ease-out;
-            }
-
-            .btn:hover {
-                background: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
-                border-color: color-mix(in srgb, var(--accent) 85%, var(--on-accent));
-                color: var(--on-accent);
-            }
-
-            .btn:disabled {
-                opacity: .5;
-                cursor: not-allowed;
-            }
-
-            .btn svg {
-                width: 16px;
-                height: 16px;
             }
 
             .success-message {
@@ -248,33 +113,17 @@
             .success-message svg {
                 width: 24px;
                 height: 24px;
-                margin-bottom: 8px;
-            }
-
-            .footer {
-                margin-top: auto;
-                padding: 40px 40px 20px;
-                text-align: center;
-                font-size: 13px;
-                color: var(--hint);
-            }
-
-            .footer p {
-                margin: 0;
+                margin: 0 auto 8px;
             }
 
             .error {
-                color: var(--red);
+                color: var(--danger);
                 font-size: 12px;
                 margin-top: 4px;
                 display: none;
             }
 
             @media (max-width: 600px) {
-                .container {
-                    padding: 40px 20px;
-                }
-
                 .form-card {
                     padding: 32px 24px;
                 }
@@ -306,7 +155,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container container--narrow">
             <a href="./" class="back-link">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M19 12H5M12 19l-7-7 7-7"></path>
