@@ -124,7 +124,6 @@ const translations = {
             terms: "Terms of Service"
         },
         accessibility: {
-            skipToMain: 'Skip to main content'
         }
     },
     uk: {
@@ -251,7 +250,6 @@ const translations = {
             terms: "Умови надання послуг"
         },
         accessibility: {
-            skipToMain: 'Перейти до основного вмісту'
         }
     },
     th: {
@@ -378,7 +376,6 @@ const translations = {
             terms: "ข้อกำหนดการให้บริการ"
         },
         accessibility: {
-            skipToMain: 'ข้ามไปยังเนื้อหาหลัก'
         }
     },
     pt: {
@@ -505,7 +502,6 @@ const translations = {
             terms: "Termos de Serviço"
         },
         accessibility: {
-            skipToMain: 'Saltar para o conteúdo principal'
         }
     },
     es: {
@@ -632,7 +628,6 @@ const translations = {
             terms: "Términos del servicio"
         },
         accessibility: {
-            skipToMain: 'Saltar al contenido principal'
         }
     },
     fr: {
@@ -759,7 +754,6 @@ const translations = {
             terms: "Conditions d’utilisation"
         },
         accessibility: {
-            skipToMain: 'Aller au contenu principal'
         }
     },
     'zh-TW': {
@@ -886,7 +880,6 @@ const translations = {
             terms: "服務條款"
         },
         accessibility: {
-            skipToMain: '跳至主要內容'
         }
     },
     'zh-CN': {
@@ -1013,7 +1006,6 @@ const translations = {
             terms: "服务条款"
         },
         accessibility: {
-            skipToMain: '跳至主要内容'
         }
     },
     hi: {
@@ -1139,7 +1131,6 @@ const translations = {
             terms: "सेवा की शर्तें"
         },
         accessibility: {
-            skipToMain: 'मुख्य सामग्री पर जाएं'
         }
     },
     ja: {
@@ -1266,7 +1257,6 @@ const translations = {
             terms: "利用規約"
         },
         accessibility: {
-            skipToMain: 'メインコンテンツにスキップ'
         }
     },
     ar: {
@@ -1393,7 +1383,6 @@ const translations = {
             terms: "شروط الخدمة"
         },
         accessibility: {
-            skipToMain: 'انتقل إلى المحتوى الرئيسي'
         }
     },
     de: {
@@ -1520,7 +1509,6 @@ const translations = {
             terms: "Nutzungsbedingungen"
         },
         accessibility: {
-            skipToMain: 'Zum Hauptinhalt springen'
         }
     },
     it: {
@@ -1647,7 +1635,6 @@ const translations = {
             terms: "Termini di servizio"
         },
         accessibility: {
-            skipToMain: 'Vai al contenuto principale'
         }
     },
     ko: {
@@ -1774,7 +1761,6 @@ const translations = {
             terms: "서비스 약관"
         },
         accessibility: {
-            skipToMain: '주요 콘텐츠로 건너뛰기'
         }
     },
     ru: {
@@ -1900,7 +1886,6 @@ const translations = {
             terms: "Условия обслуживания"
         },
         accessibility: {
-            skipToMain: 'Перейти к основному содержанию'
         }
     },
     pl: {
@@ -2028,7 +2013,6 @@ const translations = {
             terms: "Warunki korzystania z usługi"
         },
         accessibility: {
-            skipToMain: 'Przejdź do treści głównej'
         }
     }
 };
