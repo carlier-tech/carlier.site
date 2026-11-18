@@ -8,12 +8,7 @@
             "type": "image/svg+xml"
         },
         {
-            "src": "/img/Carlier_logo_160x160.webp",
-            "sizes": "160x160",
-            "type": "image/webp"
-        },
-        {
-            "src": "/img/Carlier_logo_512x512.webp",
+            "src": "/images/Carlier_logo_512x512.webp",
             "sizes": "512x512",
             "type": "image/webp"
         }
